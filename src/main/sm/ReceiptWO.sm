@@ -1,0 +1,62 @@
+%class ReceiptWO		
+		
+%package com.drgeb.receiptentry.sm
+%import com.drgeb.receiptentry.*
+%start MainMap::Created
+%map MainMap
+%%
+Created
+		{
+		submit(userId:String, itemID:String, itemCount:int) CheckingCredit
+		{
+			updateState(ctxt.getReceipt(), ReceiptState.CheckingCredit);									
+			
+		}
+view Created
+		{
+			updateState(ctxt.getReceipt(), ReceiptState.Created);									
+			
+		}
+					
+		}
+CheckingCredit
+		{
+		reject 
+		[				 		
+		  !ctxt.isCreditOK(ctxt.getReceipt())						
+		]				
+	Created
+		{
+			notifyCustomer(ctxt.getReceipt());									
+	updateState(ctxt.getReceipt(), ReceiptState.Created);									
+			
+		}
+	fill 
+		[				 		
+		  ctxt.isCreditOK(ctxt.getReceipt())						
+		]				
+	Filled
+		{
+			doFill(ctxt.getReceipt());									
+	updateState(ctxt.getReceipt(), ReceiptState.Filled);									
+			
+		}
+					
+		}
+	Filled
+		{
+		ship Shipped
+		{
+			notifyCustomer(ctxt.getReceipt());									
+	updateState(ctxt.getReceipt(), ReceiptState.Shipped);									
+			
+		}
+					
+		}
+	Shipped
+		{
+						
+		}
+			
+		%%
+	
