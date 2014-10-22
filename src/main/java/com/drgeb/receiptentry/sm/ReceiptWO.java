@@ -1,6 +1,8 @@
 package com.drgeb.receiptentry.sm;
 
 import com.drgeb.receiptentry.bo.Receipt;
+import com.drgeb.receiptentry.sm.ReceiptConditions;
+import com.drgeb.receiptentry.sm.ReceiptTransitions;
 
 /** 
  * The wrapper object ( or working object) to

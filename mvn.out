@@ -1,0 +1,1044 @@
+Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T16:58:10-04:00)
+Maven home: /usr/local/Cellar/maven/3.2.3/libexec
+Java version: 1.8.0_20, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.9.5", arch: "x86_64", family: "mac"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /usr/local/Cellar/maven/3.2.3/libexec/conf/settings.xml
+[DEBUG] Reading user settings from /Volumes/lucky/Users/drgeb/.m2/settings.xml
+[DEBUG] Using local repository at /Users/drgeb/Programming/workspace/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /Users/drgeb/Programming/workspace/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://jcenter.bintray.com).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://jcenter.bintray.com).
+[DEBUG] Extension realms for project com.drgeb:receiptentry:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.drgeb:receiptentry:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building receiptentry 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Cannot access apache-central (https://repository.apache.org/content/groups/public/) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access codehaus-plugins-snapshots (http://snapshots.repository.codehaus.org/) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access forge (http://repository.sonatype.org/content/groups/public) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jrebirth-plugin-snapshot (http://repo.jrebirth.org/plugins-snapshot) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access snapshots (http://oss.jfrog.org/artifactory/plugins-snapshot) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access apache-central (https://repository.apache.org/content/groups/public/) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access codehaus-plugins-snapshots (http://snapshots.repository.codehaus.org/) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access forge (http://repository.sonatype.org/content/groups/public) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jrebirth-plugin-snapshot (http://repo.jrebirth.org/plugins-snapshot) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access snapshots (http://oss.jfrog.org/artifactory/plugins-snapshot) in offline mode and the metadata com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access apache-central (https://repository.apache.org/content/groups/public/) in offline mode and the metadata com.salesforce.smc:smc.app:0.0.1-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access codehaus-plugins-snapshots (http://snapshots.repository.codehaus.org/) in offline mode and the metadata com.salesforce.smc:smc.app:0.0.1-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access forge (http://repository.sonatype.org/content/groups/public) in offline mode and the metadata com.salesforce.smc:smc.app:0.0.1-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/) in offline mode and the metadata com.salesforce.smc:smc.app:0.0.1-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jrebirth-plugin-snapshot (http://repo.jrebirth.org/plugins-snapshot) in offline mode and the metadata com.salesforce.smc:smc.app:0.0.1-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access snapshots (http://oss.jfrog.org/artifactory/plugins-snapshot) in offline mode and the metadata com.salesforce.smc:smc.app:0.0.1-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.drgeb:receiptentry:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile]
+[DEBUG] Repositories (dependencies): [apacherepository (https://repository.apache.org/content/repositories/releases, releases+snapshots), mvnrepository (http://www.mvnrepository.com, snapshots), apache-central (https://repository.apache.org/content/groups/public/, releases+snapshots), forge (http://repository.sonatype.org/content/groups/public, releases+snapshots), maven2-repository.dev.java.net (http://download.java.net/maven/2/, releases), jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/, releases+snapshots), prime-repo-group (http://repository.primefaces.org, releases), jrebirth-release (http://repo.jrebirth.org/libs-release, releases), jrebirth-snapshot (http://repo.jrebirth.org/libs-snapshot, releases+snapshots), repo1 (http://repo1.maven.org/maven2, releases), snapshots (http://oss.jfrog.org/artifactory/libs-snapshot, releases+snapshots)]
+[DEBUG] Repositories (plugins)     : [apache-central (https://repository.apache.org/content/groups/public/, releases+snapshots), codehaus-plugins-snapshots (http://snapshots.repository.codehaus.org/, snapshots), forge (http://repository.sonatype.org/content/groups/public, releases+snapshots), jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/, releases+snapshots), jrebirth-plugin-release (http://repo.jrebirth.org/plugins-release, releases), jrebirth-plugin-snapshot (http://repo.jrebirth.org/plugins-snapshot, releases+snapshots), repo1 (http://repo1.maven.org/maven2, releases), snapshots (http://oss.jfrog.org/artifactory/plugins-snapshot, releases+snapshots)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT:generate (generate)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <docDirectory>doc</docDirectory>
+  <graph>true</graph>
+  <graphLevel>2</graphLevel>
+  <project default-value="${project}"/>
+  <sync>true</sync>
+  <table>true</table>
+  <targetDirectory>target/generated-sources/sm</targetDirectory>
+  <verbose>true</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Cannot access apacherepository (https://repository.apache.org/content/repositories/releases) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access mvnrepository (http://www.mvnrepository.com) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access apache-central (https://repository.apache.org/content/groups/public/) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access forge (http://repository.sonatype.org/content/groups/public) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jrebirth-snapshot (http://repo.jrebirth.org/libs-snapshot) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access snapshots (http://oss.jfrog.org/artifactory/libs-snapshot) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access apacherepository (https://repository.apache.org/content/repositories/releases) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access mvnrepository (http://www.mvnrepository.com) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access apache-central (https://repository.apache.org/content/groups/public/) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access forge (http://repository.sonatype.org/content/groups/public) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public-jboss/) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access jrebirth-snapshot (http://repo.jrebirth.org/libs-snapshot) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Cannot access snapshots (http://oss.jfrog.org/artifactory/libs-snapshot) in offline mode and the metadata com.airhacks:afterburner.fx:1.6.2-SNAPSHOT/maven-metadata.xml has not been downloaded from it before
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=12, DefaultDependencyCollector.collectTime=45, DefaultDependencyCollector.transformTime=10}
+[DEBUG] com.drgeb:receiptentry:jar:1.0-SNAPSHOT
+[DEBUG]    junit:junit:jar:4.11:test
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]    org.eclipse.persistence:eclipselink:jar:2.5.1:compile
+[DEBUG]       org.eclipse.persistence:javax.persistence:jar:2.1.0:compile
+[DEBUG]       org.eclipse.persistence:commonj.sdo:jar:2.1.1:compile
+[DEBUG]    org.apache.derby:derby:jar:10.9.1.0:compile
+[DEBUG]    com.airhacks:afterburner.fx:jar:1.6.2-SNAPSHOT:compile
+[DEBUG]    org.mockito:mockito-all:jar:1.9.5:test
+[DEBUG]    net.sf.sm.statemap:statemap:jar:6.4.0:compile
+[DEBUG]    net.sf.sm.generator:SmcGenerator:jar:6.4.0:compile
+[DEBUG]    net.sf.sm.parser:SmcParser:jar:6.4.0:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.6:compile
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ receiptentry ---
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=15, DefaultDependencyCollector.transformTime=0}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@2503dbd3]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG]   (f) reportDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org/drgeb/receiptenry/bo/TestRegistrationService.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org/drgeb/receiptenry/bo/TestReceipt.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org/drgeb/receiptenry/bo/TestMio.class
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org/drgeb/receiptenry/bo
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org/drgeb/receiptenry
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org/drgeb
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes/org
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/maven-status
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb/receiptentry/sm/ReceiptWOContext.java
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb/receiptentry/sm
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb/receiptentry
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/annotations
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/ReceiptWO.sm
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/META-INF/persistence.xml
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/META-INF
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter$3.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter$2.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter$1.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/receipttable.fxml
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/receipttable.css
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/Receipttable.class
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry/EntryView.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry/EntryPresenter.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry/entry.fxml
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry/entry.css
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptWOFactory.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptWOContextWrapper.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptWOContext.java
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptWO.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptTransitions.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptState.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptConditions.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptActions.class
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/impl
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/bo/registrations/boundary/RegistrationService.class
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/bo/registrations/boundary
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/bo/registrations
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/bo/Receipt.class
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/bo/Mio.class
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/bo
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/app.css
+[INFO] Deleting file /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/App.class
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/action
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[INFO] Deleting directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target
+[DEBUG] Skipping non-existing directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG] Skipping non-existing directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/test-classes
+[DEBUG] Skipping non-existing directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/site
+[INFO] 
+[INFO] --- smc-plugin:6.1.0-SNAPSHOT:generate (generate) @ receiptentry ---
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=36, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=19, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=36, DefaultDependencyCollector.collectTime=71, DefaultDependencyCollector.transformTime=3}
+[DEBUG] com.salesforce.smc:smc-plugin:jar:6.1.0-SNAPSHOT:
+[DEBUG]    net.sf.sm.parser:SmcParser:jar:6.4.0:runtime
+[DEBUG]    net.sf.sm.statemap:statemap:jar:6.4.0:runtime
+[DEBUG]    net.sf.sm.generator:SmcGenerator:jar:6.4.0:runtime
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.15:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG] Created new class realm plugin>com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT
+[DEBUG] Importing foreign packages into class realm plugin>com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT
+[DEBUG]   Included: com.salesforce.smc:smc-plugin:jar:6.1.0-SNAPSHOT
+[DEBUG]   Included: net.sf.sm.parser:SmcParser:jar:6.4.0
+[DEBUG]   Included: net.sf.sm.statemap:statemap:jar:6.4.0
+[DEBUG]   Included: net.sf.sm.generator:SmcGenerator:jar:6.4.0
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.15
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.2.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.2.1
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1-alpha-2
+[DEBUG] Configuring mojo com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT:generate from plugin realm ClassRealm[plugin>com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT, parent: sun.misc.Launcher$AppClassLoader@2503dbd3]
+[DEBUG] Configuring mojo 'com.salesforce.smc:smc-plugin:6.1.0-SNAPSHOT:generate' with basic configurator -->
+[DEBUG]   (s) docDirectory = doc
+[DEBUG]   (s) graph = true
+[DEBUG]   (s) graphLevel = 2
+[DEBUG]   (s) project = MavenProject: com.drgeb:receiptentry:1.0-SNAPSHOT @ /Volumes/lucky/Users/drgeb/git/ReceiptEntry/pom.xml
+[DEBUG]   (s) sync = true
+[DEBUG]   (s) table = true
+[DEBUG]   (s) targetDirectory = target/generated-sources/sm
+[DEBUG]   (s) verbose = true
+[DEBUG] -- end configuration --
+[parsing started /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm/ReceiptWO.sm]
+[parsing completed 50ms]
+[checking /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm/ReceiptWO.sm]
+[wrote /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb/receiptentry/sm/ReceiptWOContext.java]
+[total 65ms]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ receiptentry ---
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=76, DefaultDependencyCollector.transformTime=4}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.6
+[DEBUG]   Excluded: classworlds:classworlds:jar:1.1
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.6
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.6
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@2503dbd3]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.drgeb:receiptentry:1.0-SNAPSHOT @ /Volumes/lucky/Users/drgeb/git/ReceiptEntry/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java, PatternSet [includes: {**/*.fxml, **/*.css, **/*.sm}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/resources, PatternSet [includes: {**/*.xml}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm, PatternSet [includes: {**/*.sm}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm, PatternSet [includes: {**/*.java}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@756cf158
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.__CHECKFIX1436934=1, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.SECURITYSESSIONID=186a5, env._system_arch=x86_64, env.JAVA_MAIN_CLASS_13449=org.codehaus.plexus.classworlds.launcher.Launcher, env.COLORFGBG=7;0, env.GEM_HOME=/Volumes/lucky/Users/drgeb/.rvm/gems/ruby-2.1.2, os.name=Mac OS X, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/classes, env.TMPDIR=/var/folders/0r/1l3pvz3556zdv_dfrfzrb1w00000gn/T/, env.PWD=/Volumes/lucky/Users/drgeb/git/ReceiptEntry, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_20-b26, env.MY_RUBY_HOME=/Volumes/lucky/Users/drgeb/.rvm/rubies/ruby-2.1.2, env.Apple_PubSub_Socket_Render=/tmp/launch-jLIndi/Render, project.build.sourceEncoding=UTF-8, env.DISPLAY=/tmp/launch-yGsgTZ/org.macosforge.xquartz:0, env.rvm_version=1.25.19 (stable), user.name=drgeb, maven.build.version=Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T16:58:10-04:00), env.USER=drgeb, env.SHELL=/bin/bash, env.__CF_USER_TEXT_ENCODING=0x1F5:0:0, env._system_type=Darwin, env.PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/php55/bin:/Volumes/lucky/Users/drgeb/.rbenv/shims:/usr/local/sbin:/opt/chefdk/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Volumes/lucky/Users/drgeb/.rvm/gems/ruby-2.1.2/bin:/Volumes/lucky/Users/drgeb/.rvm/gems/ruby-2.1.2@global/bin:/Volumes/lucky/Users/drgeb/.rvm/rubies/ruby-2.1.2/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Volumes/lucky/Users/drgeb/.rvm/bin:/Volumes/lucky/Users/drgeb/.rvm/bin, user.language=en, env.rvm_prefix=/Volumes/lucky/Users/drgeb, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib, classworlds.conf=/usr/local/Cellar/maven/3.2.3/libexec/bin/m2.conf, env.rvm_path=/Volumes/lucky/Users/drgeb/.rvm, java.version=1.8.0_20, user.timezone=America/Aruba, sun.arch.data.model=64, env._system_name=OSX, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, env.ITERM_SESSION_ID=w0t2p0, env.rvm_bin_path=/Volumes/lucky/Users/drgeb/.rvm/bin, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, env._system_version=10.9, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre, java.vm.info=mixed mode, env.LOGNAME=drgeb, os.version=10.9.5, maven.compiler.target=1.8, path.separator=:, java.vm.version=25.20-b23, env.IRBRC=/Volumes/lucky/Users/drgeb/.rvm/rubies/ruby-2.1.2/.irbrc, env.JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, env.TERM=xterm, sun.io.unicode.encoding=UnicodeBig, awt.toolkit=sun.lwawt.macosx.LWCToolkit, env.GEM_PATH=/Volumes/lucky/Users/drgeb/.rvm/gems/ruby-2.1.2:/Volumes/lucky/Users/drgeb/.rvm/gems/ruby-2.1.2@global, user.home=/Volumes/lucky/Users/drgeb, env.OLDPWD=/Volumes/lucky/Users/drgeb/git/ReceiptEntry, java.specification.vendor=Oracle Corporation, env.TERM_PROGRAM=iTerm.app, java.library.path=/Volumes/lucky/Users/drgeb/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS=-o -X clean compile, java.vm.vendor=Oracle Corporation, gopherProxySet=false, maven.home=/usr/local/Cellar/maven/3.2.3/libexec, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -o -X clean compile, java.class.path=/usr/local/Cellar/maven/3.2.3/libexec/boot/plexus-classworlds-2.5.1.jar, maven.version=3.2.3, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/Volumes/lucky/Users/drgeb, java.io.tmpdir=/var/folders/0r/1l3pvz3556zdv_dfrfzrb1w00000gn/T/, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.SSH_AUTH_SOCK=/tmp/launch-DJaWJq/Listeners, maven.compiler.source=1.8, env.COMMAND_MODE=unix2003, os.arch=x86_64, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.ext.dirs=/Volumes/lucky/Users/drgeb/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, user.dir=/Volumes/lucky/Users/drgeb/git/ReceiptEntry, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.ITERM_PROFILE=Dark Background, file.encoding=UTF-8, java.specification.version=1.8}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] resource with targetPath null
+directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java
+excludes []
+includes [**/*.fxml, **/*.css, **/*.sm]
+[DEBUG] ignoreDelta true
+[INFO] Copying 5 resources
+[DEBUG] file app.css has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/app.css to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/app.css
+[DEBUG] file entry.css has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/entry/entry.css to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry/entry.css
+[DEBUG] file entry.fxml has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/entry/entry.fxml to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/entry/entry.fxml
+[DEBUG] file receipttable.css has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/receipttable/receipttable.css to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/receipttable.css
+[DEBUG] file receipttable.fxml has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/receipttable/receipttable.fxml to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/vw/receipttable/receipttable.fxml
+[DEBUG] resource with targetPath null
+directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/resources
+excludes []
+includes [**/*.xml]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file persistence.xml has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/resources/META-INF/persistence.xml to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/META-INF/persistence.xml
+[DEBUG] resource with targetPath null
+directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm
+excludes []
+includes [**/*.sm]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file ReceiptWO.sm has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm/ReceiptWO.sm to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/ReceiptWO.sm
+[DEBUG] resource with targetPath null
+directory /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm
+excludes []
+includes [**/*.java]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file ReceiptWOContext.java has a filtered file extension
+[DEBUG] copy /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb/receiptentry/sm/ReceiptWOContext.java to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes/com/drgeb/receiptentry/sm/ReceiptWOContext.java
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ receiptentry ---
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (http://repo1.maven.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Using mirror repo1 (http://repo1.maven.org/maven2) for central (https://repo.maven.apache.org/maven2).
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=161, DefaultDependencyCollector.transformTime=3}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-profile:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-error-diagnostics:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-project:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-registry:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-descriptor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-artifact-manager:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-monitor:jar:2.0.9
+[DEBUG]   Excluded: org.apache.maven:maven-toolchain:jar:1.0
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-container-default:jar:1.5.5
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@2503dbd3]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /Volumes/lucky/Users/drgeb/git/ReceiptEntry
+[DEBUG]   (f) buildDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target
+[DEBUG]   (f) classpathElements = [/Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes, /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/eclipselink/2.5.1/eclipselink-2.5.1.jar, /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0.jar, /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar, /Users/drgeb/Programming/workspace/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar, /Users/drgeb/Programming/workspace/.m2/repository/com/airhacks/afterburner.fx/1.6.2-SNAPSHOT/afterburner.fx-1.6.2-SNAPSHOT.jar, /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/statemap/statemap/6.4.0/statemap-6.4.0.jar, /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/generator/SmcGenerator/6.4.0/SmcGenerator-6.4.0.jar, /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/parser/SmcParser/6.4.0/SmcParser-6.4.0.jar, /Users/drgeb/Programming/workspace/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar]
+[DEBUG]   (f) compileSourceRoots = [/Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java, /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm, /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG]   (f) projectArtifact = com.drgeb:receiptentry:jar:1.0-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@756cf158
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@756cf158
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java
+ /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm
+ /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm]
+[DEBUG] Classpath: [/Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+ /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/eclipselink/2.5.1/eclipselink-2.5.1.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/com/airhacks/afterburner.fx/1.6.2-SNAPSHOT/afterburner.fx-1.6.2-SNAPSHOT.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/statemap/statemap/6.4.0/statemap-6.4.0.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/generator/SmcGenerator/6.4.0/SmcGenerator-6.4.0.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/parser/SmcParser/6.4.0/SmcParser-6.4.0.jar
+ /Users/drgeb/Programming/workspace/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar]
+[DEBUG] Output directory: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptTransitions.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptWOContextWrapper.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/entry/EntryView.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptState.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/App.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/bo/Receipt.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/bo/Mio.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptConditions.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptWOFactory.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/bo/registrations/boundary/RegistrationService.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/receipttable/Receipttable.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/entry/EntryPresenter.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptActions.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm/com/drgeb/receiptentry/sm/ReceiptWOContext.java
+[DEBUG] Stale source detected: /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptWO.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/eclipselink/2.5.1/eclipselink-2.5.1.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/com/airhacks/afterburner.fx/1.6.2-SNAPSHOT/afterburner.fx-1.6.2-SNAPSHOT.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/statemap/statemap/6.4.0/statemap-6.4.0.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/generator/SmcGenerator/6.4.0/SmcGenerator-6.4.0.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/parser/SmcParser/6.4.0/SmcParser-6.4.0.jar
+[DEBUG]  /Users/drgeb/Programming/workspace/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar
+[DEBUG] Source roots:
+[DEBUG]  /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java
+[DEBUG]  /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm
+[DEBUG]  /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm
+[DEBUG] Command line options:
+[DEBUG] -d /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes -classpath /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes:/Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/eclipselink/2.5.1/eclipselink-2.5.1.jar:/Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/javax.persistence/2.1.0/javax.persistence-2.1.0.jar:/Users/drgeb/Programming/workspace/.m2/repository/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar:/Users/drgeb/Programming/workspace/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar:/Users/drgeb/Programming/workspace/.m2/repository/com/airhacks/afterburner.fx/1.6.2-SNAPSHOT/afterburner.fx-1.6.2-SNAPSHOT.jar:/Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/statemap/statemap/6.4.0/statemap-6.4.0.jar:/Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/generator/SmcGenerator/6.4.0/SmcGenerator-6.4.0.jar:/Users/drgeb/Programming/workspace/.m2/repository/net/sf/sm/parser/SmcParser/6.4.0/SmcParser-6.4.0.jar:/Users/drgeb/Programming/workspace/.m2/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar: -sourcepath /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java:/Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/sm:/Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/sm: -s /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/generated-sources/annotations -g -nowarn -target 1.8 -source 1.8 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 16 source files to /Volumes/lucky/Users/drgeb/git/ReceiptEntry/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[WARNING] /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter.java: Some input files use unchecked or unsafe operations.
+[WARNING] /Volumes/lucky/Users/drgeb/git/ReceiptEntry/src/main/java/com/drgeb/receiptentry/vw/receipttable/ReceipttablePresenter.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.126 s
+[INFO] Finished at: 2014-10-21T11:04:30-04:00
+[INFO] Final Memory: 15M/171M
+[INFO] ------------------------------------------------------------------------

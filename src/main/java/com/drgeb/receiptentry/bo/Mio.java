@@ -19,42 +19,42 @@ import com.drgeb.receiptentry.sm.ReceiptState;
 
 @Entity
 @NamedQueries({ @NamedQuery(name = Mio.findAll, query = "SELECT a from Receipt a") })
-public class Receipt {
+public class Mio {
 
 	private static final long serialVersionUID = 1;
 
 	public final static String PREFIX = "com.drgeb.receiptentry.bo.Mio.";
 	public final static String findAll = PREFIX + "findAll";
 
-	private StringProperty receiptId;
+	private StringProperty idProperty;
 	private StringProperty vendorProperty;
 	private StringProperty author;
 	private ObjectProperty <ReceiptState> state;
-	private ObjectProperty <LocalDate> purchasedDate;
+	private ObjectProperty <LocalDate> purchaseDate;
 	private ObjectProperty <LocalDate> createDate;
 	private ObjectProperty <LocalDate> updateDate;
 	private DoubleProperty amount;
 
 
-	public Receipt() {
-		this.receiptId = new SimpleStringProperty(UUID.randomUUID().toString());
+	public Mio() {
+		this.idProperty = new SimpleStringProperty(UUID.randomUUID().toString());
 		this.createDate=new SimpleObjectProperty<LocalDate>(LocalDate.now());
 
 		this.vendorProperty=new SimpleStringProperty();
 		this.author=new SimpleStringProperty();		
 		this.state=new SimpleObjectProperty<ReceiptState>();
-		this.purchasedDate=new SimpleObjectProperty<LocalDate>();
+		this.purchaseDate=new SimpleObjectProperty<LocalDate>();
 		this.updateDate=new SimpleObjectProperty<LocalDate>();
 		this.amount = new SimpleDoubleProperty();
 	}
 	
     @Id
-    public String getReceiptId() {
-        return receiptId.get();
+    public String getId() {
+        return idProperty.get();
     }
 
-    public void setReceiptId(String id) {
-        this.receiptId.set(id);
+    public void setId(String id) {
+        this.idProperty.set(id);
     }
 
 	public String getVendor() {
@@ -82,11 +82,11 @@ public class Receipt {
 	}
 
 	public LocalDate getPurchaseDate() {
-		return this.purchasedDate.get();
+		return this.purchaseDate.get();
 	}
 
 	public void setPurchaseDate(LocalDate purchaseDate) {
-		this.purchasedDate.set(purchaseDate);
+		this.purchaseDate.set(purchaseDate);
 	}
 
 	public LocalDate getCreateDate() {

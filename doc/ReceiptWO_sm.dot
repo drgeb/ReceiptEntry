@@ -1,0 +1,78 @@
+digraph ReceiptWO {
+
+    node
+        [shape=Mrecord width=1.5];
+
+    subgraph cluster_ReceiptEntryMap {
+
+        label="ReceiptEntryMap";
+
+        //
+        // States (Nodes)
+        //
+
+        "ReceiptEntryMap::TABLEVIEW"
+            [label="{TABLEVIEW}"];
+
+        "ReceiptEntryMap::CreateState"
+            [label="{CreateState}"];
+
+        "ReceiptEntryMap::ViewState"
+            [label="{ViewState}"];
+
+        "ReceiptEntryMap::EditState"
+            [label="{EditState}"];
+
+        "ReceiptEntryMap::DeleteState"
+            [label="{DeleteState}"];
+
+        "ReceiptEntryMap::ExportState"
+            [label="{ExportState}"];
+
+        "%start"
+            [label="" shape=circle style=filled fillcolor=black width=0.25];
+
+        //
+        // Transitions (Edges)
+        //
+
+        "ReceiptEntryMap::TABLEVIEW" -> "ReceiptEntryMap::CreateState"
+            [label="createTRN/\l"];
+
+        "ReceiptEntryMap::TABLEVIEW" -> "ReceiptEntryMap::ViewState"
+            [label="viewTRN/\l"];
+
+        "ReceiptEntryMap::TABLEVIEW" -> "ReceiptEntryMap::EditState"
+            [label="editTRN/\l"];
+
+        "ReceiptEntryMap::TABLEVIEW" -> "ReceiptEntryMap::DeleteState"
+            [label="deleteTRN/\l"];
+
+        "ReceiptEntryMap::TABLEVIEW" -> "ReceiptEntryMap::ExportState"
+            [label="exportTRN/\l"];
+
+        "ReceiptEntryMap::CreateState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="saveReceiptTRN/\l"];
+
+        "ReceiptEntryMap::CreateState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="closeReceiptTRN/\l"];
+
+        "ReceiptEntryMap::ViewState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="closeReceiptTRN/\l"];
+
+        "ReceiptEntryMap::EditState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="saveReceiptTRN/\l"];
+
+        "ReceiptEntryMap::EditState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="closeReceiptTRN/\l"];
+
+        "ReceiptEntryMap::DeleteState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="deleteReceiptTRN/\l"];
+
+        "ReceiptEntryMap::ExportState" -> "ReceiptEntryMap::TABLEVIEW"
+            [label="exportReceiptsTRN/\l"];
+
+        "%start" -> "ReceiptEntryMap::TABLEVIEW"
+    }
+
+}

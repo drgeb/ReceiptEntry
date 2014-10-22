@@ -2,61 +2,38 @@
 		
 %package com.drgeb.receiptentry.sm
 %import com.drgeb.receiptentry.*
-%start MainMap::Created
-%map MainMap
+%start ReceiptEntryMap::TABLEVIEW
+%map ReceiptEntryMap
 %%
-Created
-		{
-		submit(userId:String, itemID:String, itemCount:int) CheckingCredit
-		{
-			updateState(ctxt.getReceipt(), ReceiptState.CheckingCredit);									
-			
-		}
-view Created
-		{
-			updateState(ctxt.getReceipt(), ReceiptState.Created);									
-			
-		}
-					
-		}
-CheckingCredit
-		{
-		reject 
-		[				 		
-		  !ctxt.isCreditOK(ctxt.getReceipt())						
-		]				
-	Created
-		{
-			notifyCustomer(ctxt.getReceipt());									
-	updateState(ctxt.getReceipt(), ReceiptState.Created);									
-			
-		}
-	fill 
-		[				 		
-		  ctxt.isCreditOK(ctxt.getReceipt())						
-		]				
-	Filled
-		{
-			doFill(ctxt.getReceipt());									
-	updateState(ctxt.getReceipt(), ReceiptState.Filled);									
-			
-		}
-					
-		}
-	Filled
-		{
-		ship Shipped
-		{
-			notifyCustomer(ctxt.getReceipt());									
-	updateState(ctxt.getReceipt(), ReceiptState.Shipped);									
-			
-		}
-					
-		}
-	Shipped
-		{
-						
-		}
-			
-		%%
-	
+// State		Transition		End State	Action(s)
+TABLEVIEW {
+			createTRN		CreateState	{createAction();}
+			viewTRN			ViewState	{viewAction();}
+			editTRN			EditState	{editAction();}
+			deleteTRN		DeleteState	{deleteAction();}
+			exportTRN		ExportState	{exportAction();}
+
+}
+
+CreateState {
+			saveReceiptTRN		TABLEVIEW	{saveAction();}		
+			closeReceiptTRN		TABLEVIEW	{closeAction();}
+}
+
+ViewState {
+			closeReceiptTRN		TABLEVIEW	{closeAction();}
+}
+
+EditState {
+	   		saveReceiptTRN		TABLEVIEW	{saveAction();}	
+			closeReceiptTRN		TABLEVIEW	{closeAction();}	
+}
+
+DeleteState {
+			deleteReceiptTRN	TABLEVIEW	{deleteAction();}
+}
+
+ExportState {
+			exportReceiptsTRN	TABLEVIEW	{exportAction();}
+}
+%%

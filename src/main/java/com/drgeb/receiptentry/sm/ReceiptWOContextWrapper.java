@@ -1,12 +1,11 @@
 package com.drgeb.receiptentry.sm;
 
-
-/** 
- * The state machine wrapper. This class can be generated using, for
- * example, XDoclet, based on the generated <code>ReceiptWOContext</code>.
+/**
+ * The state machine wrapper. This class can be generated using, for example,
+ * XDoclet, based on the generated <code>ReceiptWOContext</code>.
  * 
- * This main purpose of this class is to synchronize the state 
- * machine internal state to the state of the business object 
+ * This main purpose of this class is to synchronize the state machine internal
+ * state to the state of the business object
  *
  * @author Jason Zhicheng Li (jason@lizjason.com)
  */
@@ -21,14 +20,23 @@ public class ReceiptWOContextWrapper implements ReceiptTransitions {
 	private void synchronizeState(ReceiptWO owner) {
 		ReceiptState state = owner.getReceipt().getState();
 		switch (state) {
-		case Created:
-			receiptContext.setState(ReceiptWOContext.MainMap.Created);
+		case TABLEVIEW:
+			receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.TABLEVIEW);
 			break;
-		case Paid:
-			receiptContext.setState(ReceiptWOContext.MainMap.CheckingCredit);
+		case CreateState:
+			receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.CreateState);
 			break;
-		case Filled:
-			receiptContext.setState(ReceiptWOContext.MainMap.Filled);
+		case ViewState:
+			receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.ViewState);
+			break;
+		case EditState:
+			receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.EditState);
+			break;
+		case DeleteState:
+			receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.DeleteState);
+			break;
+		case ExportState:
+			receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.ExportState);
 			break;
 		default:
 			throw new IllegalArgumentException("Unsupported receipt state:"
@@ -36,23 +44,41 @@ public class ReceiptWOContextWrapper implements ReceiptTransitions {
 		}
 	}
 
-	public void view() {
-		receiptContext.view();		
+	// TRANSACTIONS
+	public void createTransaction() {
+		receiptContext.createTRN();
 	}
 
-	public void submit(String userId, String itemId, int itemCount) {
-		receiptContext.submit(userId, itemId,itemCount);
+	public void viewTransaction() {
+		receiptContext.viewTRN();
 	}
 
-	public void fill() {
-		receiptContext.fill();
+	public void editTransaction() {
+		receiptContext.editTRN();
 	}
 
-	public void ship() {
-		receiptContext.ship();
+	public void deleteTransaction() {
+		receiptContext.deleteTRN();
 	}
 
-	public void reject() {
-		receiptContext.reject();
+	public void exportTransaction() {
+		receiptContext.exportTRN();
 	}
+
+	public void saveReceiptTRN() {
+		receiptContext.saveReceiptTRN();
+	}
+
+	public void closeReceiptTRN() {
+		receiptContext.closeReceiptTRN();
+	}
+
+	public void deleteReceiptTRN() {
+		receiptContext.deleteReceiptTRN();
+	}
+
+	public void exportReceiptsTRN() {
+		receiptContext.exportReceiptsTRN();
+	}
+
 }
