@@ -1,5 +1,10 @@
 package com.drgeb.receiptentry.impl;
 
+/**
+*
+* @author Dr. Gerald E. Bennett
+* 
+**/
 import com.drgeb.receiptentry.sm.ReceiptActions;
 
 public class ReceiptsActionImpl implements ReceiptActions {
@@ -7,7 +12,6 @@ public class ReceiptsActionImpl implements ReceiptActions {
 	@Override
 	public void createAction() {
 		// TODO Auto-generated method stub
-
 	}
 
 	@Override

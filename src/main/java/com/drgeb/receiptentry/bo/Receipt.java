@@ -1,5 +1,9 @@
 package com.drgeb.receiptentry.bo;
 
+/**
+*
+* @author Dr. Gerald E. Bennett
+*/
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -18,7 +22,7 @@ import javax.persistence.NamedQuery;
 import com.drgeb.receiptentry.sm.ReceiptState;
 
 @Entity
-@NamedQueries({ @NamedQuery(name = Mio.findAll, query = "SELECT a from Receipt a") })
+@NamedQueries({ @NamedQuery(name = Receipt.findAll, query = "SELECT a from Receipt a") })
 public class Receipt {
 
 	private static final long serialVersionUID = 1;

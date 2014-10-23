@@ -1,6 +1,12 @@
 package com.drgeb.receiptentry.vw.receipttable;
 
+/**
+ *
+ * @author Dr. Gerald E. Bennett
+ * 
+ **/
 import java.net.URL;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -38,8 +44,12 @@ import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOContext;
 import com.drgeb.receiptentry.vw.entry.EntryPresenter;
 import com.drgeb.receiptentry.vw.entry.EntryView;
+import com.drgeb.receiptentry.sm.ReceiptActions;
 
-public class ReceipttablePresenter extends Control implements Initializable {
+;
+
+public class ReceipttablePresenter extends Control implements Initializable,
+		ReceiptActions {
 
 	@FXML
 	Button create;
@@ -72,17 +82,10 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	TableColumn amountColumn;
 
 	private ObservableList<Receipt> receipts;
-	private BooleanProperty editingStarted;
 	private ObjectProperty<Receipt> deletedReceipt;
-
-	private EntryView entryView;
-
-	private EntryPresenter entryPresenter;
 
 	@Inject
 	RegistrationService service;
-
-	private ObjectProperty<Receipt> selectedAttendee;
 
 	private SimpleObjectProperty<Object> selectedReceipt;
 
@@ -92,7 +95,7 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		this.selectedReceipt = new SimpleObjectProperty<>();
 		this.receipts = FXCollections.observableArrayList();
-		this.editingStarted = new SimpleBooleanProperty();
+		new SimpleBooleanProperty();
 		this.deletedReceipt = new SimpleObjectProperty<>();
 
 		receiptIDColumn.setCellValueFactory(new PropertyValueFactory(
@@ -108,11 +111,11 @@ public class ReceipttablePresenter extends Control implements Initializable {
 				.setSelectionMode(SelectionMode.SINGLE);
 		registerListeners();
 		buttonEnablement();
-//		ReceiptWO owner = new ReceiptWO();
-		
-//    	_fsm = new ReceiptWOContext(owner);
-        // Uncomment to see debug output.
-        // _fsm.setDebugFlag(true);
+		// ReceiptWO owner = new ReceiptWO();
+
+		// _fsm = new ReceiptWOContext(owner);
+		// Uncomment to see debug output.
+		// _fsm.setDebugFlag(true);
 	}
 
 	private void buttonEnablement() {
@@ -133,16 +136,13 @@ public class ReceipttablePresenter extends Control implements Initializable {
 		}
 	}
 
-	@FXML
-	private void createAction(ActionEvent event) {
-		Receipt receipt = new Receipt();
-		initiateEntry(receipt);
-	}
+
 
 	private void initiateEntry(Receipt receipt) {
 		// create stage which has set stage style transparent
 		Stage stage = new Stage(StageStyle.UTILITY);
 
+		@SuppressWarnings("rawtypes")
 		HashMap<Class, Object> contextMap = new HashMap<Class, Object>();
 		contextMap.put(Receipt.class, receipt);
 		contextMap.put(Stage.class, stage);
@@ -156,34 +156,30 @@ public class ReceipttablePresenter extends Control implements Initializable {
 		receiptsTable.getSelectionModel().clearSelection();
 		stage.show();
 	}
+	
+	@FXML
+	private void createAction(ActionEvent event) {
+		createAction();
+	}
 
 	@FXML
 	private void viewAction(ActionEvent event) {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		initiateEntry(selectedItem);
+		viewAction();
 	}
 
 	@FXML
 	private void editAction(ActionEvent event) {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		initiateEntry(selectedItem);
+		editAction();
 	}
 
 	@FXML
 	private void deleteAction(ActionEvent event) {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		fireReceiptsDeleted(selectedItem);
-		receiptsTable.getSelectionModel().clearSelection();
+		deleteAction();
 	}
 
 	@FXML
 	private void exportAction(ActionEvent event) {
-		// TODO Implement export data to CVS
-		// 1. Ask user for file location.
-		// 2. Export the data to an Excel file.
+		exportAction();
 	}
 
 	public void add(Receipt receipt) {
@@ -251,5 +247,43 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	private void fireReceiptsDeleted(Receipt deletedItem) {
 		receiptsTable.getSelectionModel().clearSelection();
 		this.deletedReceipt.set(deletedItem);
+	}
+
+	public void createAction() {
+		Receipt receipt = new Receipt();
+		initiateEntry(receipt);
+	}
+
+	public void viewAction() {
+		Receipt selectedItem = receiptsTable.getSelectionModel()
+				.getSelectedItem();
+		initiateEntry(selectedItem);
+	}
+
+	public void editAction() {
+		Receipt selectedItem = receiptsTable.getSelectionModel()
+				.getSelectedItem();
+		initiateEntry(selectedItem);
+	}
+
+	public void deleteAction() {
+		Receipt selectedItem = receiptsTable.getSelectionModel()
+				.getSelectedItem();
+		fireReceiptsDeleted(selectedItem);
+		receiptsTable.getSelectionModel().clearSelection();
+	}
+
+	public void exportAction() {
+		// TODO Implement export data to CVS
+		// 1. Ask user for file location.
+		// 2. Export the data to an Excel file.
+	}
+
+	@Override
+	public void saveAction() {
+	}
+
+	@Override
+	public void closeAction() {
 	}
 }

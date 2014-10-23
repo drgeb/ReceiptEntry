@@ -1,5 +1,9 @@
 package com.drgeb.receiptentry.impl;
-
+/**
+*
+* @author Dr. Gerald E. Bennett
+* 
+**/
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 

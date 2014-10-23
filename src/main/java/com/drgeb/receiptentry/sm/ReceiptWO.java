@@ -1,5 +1,9 @@
 package com.drgeb.receiptentry.sm;
-
+/**
+*
+* @author Dr. Gerald E. Bennett
+* Following architectural pattern of Jason Zhicheng Li (jason@lizjason.com)
+*/
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptConditions;
 import com.drgeb.receiptentry.sm.ReceiptTransitions;

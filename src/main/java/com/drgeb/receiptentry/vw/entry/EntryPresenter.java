@@ -1,5 +1,9 @@
 package com.drgeb.receiptentry.vw.entry;
-
+/**
+*
+* @author Dr. Gerald E. Bennett
+* 
+**/
 import java.net.URL;
 import java.util.HashMap;
 import java.util.ResourceBundle;

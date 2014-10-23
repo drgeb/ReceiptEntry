@@ -1,5 +1,10 @@
 package com.drgeb.receiptentry.bo.registrations.boundary;
 
+/**
+*
+* @author Dr. Gerald E. Bennett
+* 
+**/
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -7,12 +12,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import javax.persistence.Query;
 
 import com.drgeb.receiptentry.bo.Receipt;
 
 /**
  *
- * @author adam-bien.com
+ * @author Dr. Gerald E. Bennett
  */
 public class RegistrationService {
 
@@ -28,7 +34,10 @@ public class RegistrationService {
     }
 
     public List<Receipt> all() {
-        return this.em.createNamedQuery(Receipt.findAll).getResultList();
+        RegistrationService registrationService = this;
+        Query q=registrationService.em.createNamedQuery(Receipt.findAll);
+		List<Receipt> resultList = q.getResultList();
+		return resultList;
     }
 
     public Receipt save(Receipt receipt) {

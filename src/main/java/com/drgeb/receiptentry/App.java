@@ -1,5 +1,9 @@
 package com.drgeb.receiptentry;
-
+/**
+*
+* @author Dr. Gerald E. Bennett
+* 
+**/
 import java.util.List;
 
 import com.airhacks.afterburner.injection.Injector;

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Implementation-Title: Receipt Entry
+Implementation-Version: 1
+Specification-Vendor: DRGEB Company
+Built-By: Gerald E. Bennett
+Class-Path: 
+Created-By: Apache Maven 3.0.5
+Specification-Timestamp: 2013-07-24 21:58:10+0200
+Build-Jdk: 1.7.0_25
+Implementation-Timestamp: 1374695891398
+Specification-Version: 1.9.8
+Main-Class: com.test.webtest.WebTest
+Archiver-Version: Plexus Archiver
+Appcast-Version: 2.0.1322
+Appcast-Url: http://jfx4ee.org/WebTest/appcast/appcast.xml
