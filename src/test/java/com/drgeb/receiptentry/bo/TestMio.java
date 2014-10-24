@@ -1,10 +1,9 @@
 /**
  * 
  */
-package org.drgeb.receiptenry.bo;
+package com.drgeb.receiptentry.bo;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -20,7 +19,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.drgeb.receiptentry.bo.Mio;
-import com.drgeb.receiptentry.bo.Receipt;
 
 /**
  * @author drgeb

@@ -6,7 +6,6 @@ package com.drgeb.receiptentry.vw.receipttable;
  * 
  **/
 import java.net.URL;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -40,13 +39,9 @@ import javafx.stage.StageStyle;
 
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
-import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOContext;
-import com.drgeb.receiptentry.vw.entry.EntryPresenter;
 import com.drgeb.receiptentry.vw.entry.EntryView;
 import com.drgeb.receiptentry.sm.ReceiptActions;
-
-;
 
 public class ReceipttablePresenter extends Control implements Initializable,
 		ReceiptActions {
@@ -136,8 +131,6 @@ public class ReceipttablePresenter extends Control implements Initializable,
 		}
 	}
 
-
-
 	private void initiateEntry(Receipt receipt) {
 		// create stage which has set stage style transparent
 		Stage stage = new Stage(StageStyle.UTILITY);
@@ -156,7 +149,7 @@ public class ReceipttablePresenter extends Control implements Initializable,
 		receiptsTable.getSelectionModel().clearSelection();
 		stage.show();
 	}
-	
+
 	@FXML
 	private void createAction(ActionEvent event) {
 		createAction();

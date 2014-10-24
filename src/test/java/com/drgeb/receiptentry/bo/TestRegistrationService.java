@@ -1,4 +1,4 @@
-package org.drgeb.receiptenry.bo;
+package com.drgeb.receiptentry.bo;
 
 import java.util.List;
 

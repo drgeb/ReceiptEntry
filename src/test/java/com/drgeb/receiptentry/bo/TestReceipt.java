@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.drgeb.receiptenry.bo;
+package com.drgeb.receiptentry.bo;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

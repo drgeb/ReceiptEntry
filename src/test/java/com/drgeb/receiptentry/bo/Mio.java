@@ -18,10 +18,8 @@ import javax.persistence.NamedQuery;
 import com.drgeb.receiptentry.sm.ReceiptState;
 
 @Entity
-@NamedQueries({ @NamedQuery(name = Mio.findAll, query = "SELECT a from Receipt a") })
+@NamedQueries({ @NamedQuery(name = Mio.findAll, query = "SELECT a from Mio a") })
 public class Mio {
-
-	private static final long serialVersionUID = 1;
 
 	public final static String PREFIX = "com.drgeb.receiptentry.bo.Mio.";
 	public final static String findAll = PREFIX + "findAll";
