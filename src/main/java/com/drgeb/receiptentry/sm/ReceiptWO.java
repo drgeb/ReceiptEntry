@@ -36,4 +36,5 @@ ReceiptConditions, ReceiptActions{
 	 * @param order the new business object
 	 */
 	void setReceipt(Receipt receipt);
+	
 }

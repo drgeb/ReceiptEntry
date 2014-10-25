@@ -27,9 +27,11 @@ public class Receipt {
 
 	private static final long serialVersionUID = 1;
 
-	public final static String PREFIX = "com.drgeb.receiptentry.bo.Mio.";
+	public final static String PREFIX = "com.drgeb.receiptentry.bo.Receipt.";
 	public final static String findAll = PREFIX + "findAll";
-
+	public final static String find = PREFIX + "find";
+	
+	
 	private StringProperty receiptId;
 	private StringProperty vendorProperty;
 	private StringProperty author;

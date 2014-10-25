@@ -14,7 +14,9 @@ import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
 import com.drgeb.receiptentry.vw.receipttable.ReceipttablePresenter;
 
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -33,10 +35,25 @@ public class EntryPresenter  implements Initializable {
 	
 	@FXML
 	TextField amount;
-	
+
+	@FXML
+	TextField salesTax;
 	@SuppressWarnings("rawtypes")
 	@Inject
 	HashMap injectionContext;
+	
+	@FXML
+	TextField location;
+	
+	@FXML
+	ChoiceBox type;
+	
+	@FXML
+	ChoiceBox currency;
+	
+	@FXML
+	TextArea notes;
+	
 	
 	private Stage stage;
     private Receipt receipt;
@@ -56,6 +73,7 @@ public class EntryPresenter  implements Initializable {
 		vendor.setText(receipt.getVendor());
 		date.setValue(receipt.getPurchaseDate());
 		amount.setText(new Double(receipt.getAmount()).toString());
+		
 	}
 
 	@FXML
@@ -71,5 +89,10 @@ public class EntryPresenter  implements Initializable {
 	@FXML
 	public void closeAction(ActionEvent event) {
 		stage.close();
+	}
+	
+	@FXML
+	public void importPDFAction(ActionEvent event) {
+		//TODO implement
 	}
 }

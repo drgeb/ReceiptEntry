@@ -1,4 +1,6 @@
 /target/
 /receiptentryDB/
 **.log
+**.out
 /mioentryDB/
+**/doc/

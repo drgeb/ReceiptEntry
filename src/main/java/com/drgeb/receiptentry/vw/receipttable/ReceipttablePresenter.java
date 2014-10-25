@@ -37,8 +37,16 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import com.drgeb.receiptentry.action.CloseReceiptAction;
+import com.drgeb.receiptentry.action.CreateReceiptAction;
+import com.drgeb.receiptentry.action.DeleteReceiptAction;
+import com.drgeb.receiptentry.action.EditReceiptAction;
+import com.drgeb.receiptentry.action.ExportReceiptAction;
+import com.drgeb.receiptentry.action.SaveReceiptAction;
+import com.drgeb.receiptentry.action.ViewReceiptAction;
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
+import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWOContext;
 import com.drgeb.receiptentry.vw.entry.EntryView;
 import com.drgeb.receiptentry.sm.ReceiptActions;
@@ -273,10 +281,92 @@ public class ReceipttablePresenter extends Control implements Initializable,
 	}
 
 	@Override
-	public void saveAction() {
+	public void createAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
-	public void closeAction() {
+	public void viewAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void exportAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void saveAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void closeAction(Receipt receipt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateState(Receipt receipt, ReceiptState newState) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setCreateReceiptAction(CreateReceiptAction createReceiptAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setDeleteReceiptAction(DeleteReceiptAction deleteReceiptAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setEditReceiptAction(EditReceiptAction editReceiptAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setSaveReceiptAction(SaveReceiptAction saveReceiptAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setViewReceiptAction(ViewReceiptAction viewReceiptAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setExportReceiptAction(ExportReceiptAction exportReceiptAction) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setCloseReceiptAction(CloseReceiptAction closeReceiptAction) {
+		// TODO Auto-generated method stub
+		
 	}
 }

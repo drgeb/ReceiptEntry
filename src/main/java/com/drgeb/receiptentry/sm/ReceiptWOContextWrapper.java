@@ -43,28 +43,8 @@ public class ReceiptWOContextWrapper implements ReceiptTransitions {
 					+ state);
 		}
 	}
-
-	// TRANSACTIONS
-	public void createTransaction() {
-		receiptContext.createTRN();
-	}
-
-	public void viewTransaction() {
-		receiptContext.viewTRN();
-	}
-
-	public void editTransaction() {
-		receiptContext.editTRN();
-	}
-
-	public void deleteTransaction() {
-		receiptContext.deleteTRN();
-	}
-
-	public void exportTransaction() {
-		receiptContext.exportTRN();
-	}
-
+	
+	//DEFINE TRANSITIONS
 	public void saveReceiptTRN() {
 		receiptContext.saveReceiptTRN();
 	}
@@ -79,6 +59,31 @@ public class ReceiptWOContextWrapper implements ReceiptTransitions {
 
 	public void exportReceiptsTRN() {
 		receiptContext.exportReceiptsTRN();
+	}
+
+	@Override
+	public void createTRN() {
+	    receiptContext.createTRN();
+	}
+
+	@Override
+	public void viewTRN() {
+	    receiptContext.viewTRN();
+	}
+
+	@Override
+	public void editTRN() {
+	    receiptContext.editTRN();
+	}
+
+	@Override
+	public void deleteTRN() {
+	    receiptContext.deleteTRN();
+	}
+
+	@Override
+	public void exportTRN() {
+	    receiptContext.exportTRN();
 	}
 
 }

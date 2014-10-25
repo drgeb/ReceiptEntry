@@ -39,7 +39,16 @@ public class RegistrationService {
 		List<Receipt> resultList = q.getResultList();
 		return resultList;
     }
-
+    
+    public Receipt findWithID(String receiptID) {
+    	List<Receipt> l = em.createQuery(
+    	    "SELECT r FROM Receipt r WHERE r.name LIKE :receiptID")
+    	    .setParameter("receiptID", receiptID)
+    	    .getResultList();
+    	Receipt r = l.get(0);
+    	return r;
+    	}
+    
     public Receipt save(Receipt receipt) {
         et.begin();
         Receipt merged = this.em.merge(receipt);

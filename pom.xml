@@ -275,9 +275,19 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	</build>
 
 	<reporting>
-		<plugins>
+	  <plugins>
+	    <plugin>
+	      <artifactId>maven-javadoc-plugin</artifactId>
+	      <configuration>
+		<show>private</show>
+		<serialwarn>true</serialwarn>
+		<author>true</author>
+		<doctitle>${project.name} ${project.version} API</doctitle>
+		<windowtitle>${project.name} ${project.version} API</windowtitle>
+	      </configuration>
+	    </plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
+			  <groupId>org.codehaus.mojo</groupId>
 				<artifactId>smc-maven-plugin</artifactId>
 				<version>1.0-alpha-1</version>
 				<configuration>
