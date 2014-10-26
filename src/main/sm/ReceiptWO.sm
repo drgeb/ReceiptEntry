@@ -7,33 +7,33 @@
 %%
 // State		Transition		End State	Action(s)
 TABLEVIEW {
-			createTRN		CreateState	{createAction(ctxt.getReceipt());updateState(ctxt.getReceipt(), ReceiptState.CreateState);}
-			viewTRN			ViewState	{viewAction(ctxt.getReceipt());updateState(ctxt.getReceipt(), ReceiptState.ViewState);}
-			editTRN			EditState	{editAction(ctxt.getReceipt());updateState(ctxt.getReceipt(), ReceiptState.EditState);}
-			deleteTRN		DeleteState	{deleteAction(ctxt.getReceipt());updateState(ctxt.getReceipt(), ReceiptState.DeleteState);}
-			exportTRN		ExportState	{exportAction(ctxt.getReceipt());updateState(ctxt.getReceipt(), ReceiptState.ExportState);}
+			createTRN		CreateState	{createAction(ctxt);updateState(ctxt, ReceiptState.CreateState);}
+			viewTRN			ViewState	{viewAction(ctxt);updateState(ctxt, ReceiptState.ViewState);}
+			editTRN			EditState	{editAction(ctxt);updateState(ctxt, ReceiptState.EditState);}
+			deleteTRN		DeleteState	{deleteAction(ctxt);updateState(ctxt, ReceiptState.DeleteState);}
+			exportTRN		ExportState	{exportAction(ctxt);updateState(ctxt, ReceiptState.ExportState);}
 
 }
 
 CreateState {
-			saveReceiptTRN		TABLEVIEW	{saveAction(ctxt.getReceipt());}		
-			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt.getReceipt());}
+			saveReceiptTRN		TABLEVIEW	{saveAction(ctxt);}		
+			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);}
 }
 
 ViewState {
-			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt.getReceipt());}
+			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);}
 }
 
 EditState {
-	   		saveReceiptTRN		TABLEVIEW	{saveAction(ctxt.getReceipt());}	
-			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt.getReceipt());}	
+	   		saveReceiptTRN		TABLEVIEW	{saveAction(ctxt);}	
+			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);}	
 }
 
 DeleteState {
-			deleteReceiptTRN	TABLEVIEW	{deleteAction(ctxt.getReceipt());}
+			deleteReceiptTRN	TABLEVIEW	{deleteAction(ctxt);}
 }
 
 ExportState {
-			exportReceiptsTRN	TABLEVIEW	{exportAction(ctxt.getReceipt());}
+			exportReceiptsTRN	TABLEVIEW	{exportAction(ctxt);}
 }
 %%

@@ -12,7 +12,6 @@ import java.util.ResourceBundle;
 
 import javax.inject.Inject;
 
-import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -31,342 +30,255 @@ import javafx.scene.control.Control;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import com.drgeb.receiptentry.action.CloseReceiptAction;
-import com.drgeb.receiptentry.action.CreateReceiptAction;
-import com.drgeb.receiptentry.action.DeleteReceiptAction;
-import com.drgeb.receiptentry.action.EditReceiptAction;
-import com.drgeb.receiptentry.action.ExportReceiptAction;
-import com.drgeb.receiptentry.action.SaveReceiptAction;
-import com.drgeb.receiptentry.action.ViewReceiptAction;
-import com.drgeb.receiptentry.bo.Receipt;
+import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
+import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
+import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
+import com.drgeb.receiptentry.sm.action.EditReceiptAction;
+import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
+import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
+import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
+//import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
+import com.drgeb.receiptentry.impl.ReceiptWOFactoryImpl;
 import com.drgeb.receiptentry.sm.ReceiptState;
-import com.drgeb.receiptentry.sm.ReceiptWOContext;
+import com.drgeb.receiptentry.sm.ReceiptWO;
+import com.drgeb.receiptentry.sm.ReceiptWOFactory;
 import com.drgeb.receiptentry.vw.entry.EntryView;
 import com.drgeb.receiptentry.sm.ReceiptActions;
 
-public class ReceipttablePresenter extends Control implements Initializable,
-		ReceiptActions {
+public class ReceipttablePresenter extends Control implements Initializable {
+    @FXML
+    Button create;
 
-	@FXML
-	Button create;
+    @FXML
+    Button view;
 
-	@FXML
-	Button view;
+    @FXML
+    Button edit;
 
-	@FXML
-	Button edit;
+    @FXML
+    Button delete;
 
-	@FXML
-	Button delete;
+    @FXML
+    Button export;
 
-	@FXML
-	Button export;
+    @FXML
+    TableView<ReceiptWO> receiptsTable;
 
-	@FXML
-	TableView<Receipt> receiptsTable;
+    @FXML
+    TableColumn<?, ?> receiptIDColumn;
 
-	@FXML
-	TableColumn receiptIDColumn;
+    @FXML
+    TableColumn<?, ?> vendorColumn;
 
-	@FXML
-	TableColumn vendorColumn;
+    @FXML
+    TableColumn<?, ?> dateColumn;
 
-	@FXML
-	TableColumn dateColumn;
+    @FXML
+    TableColumn<?, ?> amountColumn;
 
-	@FXML
-	TableColumn amountColumn;
+    private ObservableList<ReceiptWO> receipts;
+    private ObjectProperty<ReceiptWO> deletedReceipt;
 
-	private ObservableList<Receipt> receipts;
-	private ObjectProperty<Receipt> deletedReceipt;
+    @Inject
+    RegistrationService service;
 
-	@Inject
-	RegistrationService service;
+    private SimpleObjectProperty<Object> selectedReceipt;
 
-	private SimpleObjectProperty<Object> selectedReceipt;
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+	this.selectedReceipt = new SimpleObjectProperty<>();
+	this.receipts = FXCollections.observableArrayList();
+	new SimpleBooleanProperty();
+	this.deletedReceipt = new SimpleObjectProperty<>();
 
-	private ReceiptWOContext _fsm;
+	receiptIDColumn.setCellValueFactory(new ReceiptPropertyValueFactory(
+		"receiptId"));
+	vendorColumn.setCellValueFactory(new ReceiptPropertyValueFactory(
+		"vendor"));
+	dateColumn.setCellValueFactory(new ReceiptPropertyValueFactory(
+		"purchaseDate"));
+	amountColumn.setCellValueFactory(new ReceiptPropertyValueFactory(
+		"amount"));
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-		this.selectedReceipt = new SimpleObjectProperty<>();
-		this.receipts = FXCollections.observableArrayList();
-		new SimpleBooleanProperty();
-		this.deletedReceipt = new SimpleObjectProperty<>();
+	loadFromStore();
+	receiptsTable.setItems(this.receipts);
+	receiptsTable.getSelectionModel()
+		.setSelectionMode(SelectionMode.SINGLE);
+	registerListeners();
+	buttonEnablement();
+    }
 
-		receiptIDColumn.setCellValueFactory(new PropertyValueFactory(
-				"receiptId"));
-		vendorColumn.setCellValueFactory(new PropertyValueFactory("vendor"));
-		dateColumn
-				.setCellValueFactory(new PropertyValueFactory("purchaseDate"));
-		amountColumn.setCellValueFactory(new PropertyValueFactory("amount"));
+    private void buttonEnablement() {
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	if (selectedItem == null) {
+	    create.setDisable(false);
+	    view.setDisable(true);
+	    edit.setDisable(true);
+	    delete.setDisable(true);
+	    export.setDisable(false);
+	} else {
+	    create.setDisable(false);
+	    view.setDisable(false);
+	    edit.setDisable(false);
+	    delete.setDisable(false);
+	    export.setDisable(false);
+	}
+    }
 
-		loadFromStore();
-		receiptsTable.setItems(this.receipts);
-		receiptsTable.getSelectionModel()
-				.setSelectionMode(SelectionMode.SINGLE);
-		registerListeners();
+    private void initiateEntry(ReceiptWO receiptWO) {
+	// create stage which has set stage style transparent
+	Stage stage = new Stage(StageStyle.UTILITY);
+
+	@SuppressWarnings("rawtypes")
+	HashMap<Class, Object> contextMap = new HashMap<Class, Object>();
+	contextMap.put(ReceiptWO.class, receiptWO);
+	contextMap.put(Stage.class, stage);
+	contextMap.put(ReceipttablePresenter.class, this);
+
+	EntryView entryView = new EntryView((f) -> contextMap);
+	Scene scene = new Scene(entryView.getView());
+	stage.setScene(scene);
+	// center stage on screen
+	stage.centerOnScreen();
+	receiptsTable.getSelectionModel().clearSelection();
+	stage.show();
+    }
+
+    @FXML
+    private void createAction(ActionEvent event) {
+	createAction();
+    }
+
+    @FXML
+    private void viewAction(ActionEvent event) {
+	viewAction();
+    }
+
+    @FXML
+    private void editAction(ActionEvent event) {
+	editAction();
+    }
+
+    @FXML
+    private void deleteAction(ActionEvent event) {
+	deleteAction();
+    }
+
+    @FXML
+    private void exportAction(ActionEvent event) {
+	exportAction();
+    }
+
+    public void add(ReceiptWO receipt) {
+	this.receipts.add(receipt);
+    }
+
+    public void loadFromStore() {
+	this.clearAll();
+	List<ReceiptWO> all = service.all();
+	for (ReceiptWO receipt : all) {
+	    add(receipt);
+	}
+    }
+
+    public void clearAll() {
+	this.receiptsTable.getItems().clear();
+    }
+
+    private void registerListeners() {
+	this.receiptsTable.setOnKeyReleased(new EventHandler<KeyEvent>() {
+	    @Override
+	    public void handle(KeyEvent t) {
+		if (t.getCode().equals(KeyCode.BACK_SPACE)) {
+		    ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+			    .getSelectedItem();
+		    if (selectedItem != null) {
+			fireReceiptsDeleted(selectedItem);
+		    }
+		}
+	    }
+	});
+
+	ChangeListener<ReceiptWO> deletionListener = new ChangeListener<ReceiptWO>() {
+	    @Override
+	    public void changed(
+		    ObservableValue<? extends ReceiptWO> observable,
+		    ReceiptWO oldValue, ReceiptWO newValue) {
+		// TODO GET RID OF THIS CODE AND PLACE SOMEWHERE ELSE!
+		if (newValue != null) {
+		    service.remove(newValue.getReceipt());
+		    loadFromStore();
+		}
+	    }
+	};
+
+	ChangeListener<ReceiptWO> selectionListener = new ChangeListener<ReceiptWO>() {
+	    @Override
+	    public void changed(
+		    ObservableValue<? extends ReceiptWO> observable,
+		    ReceiptWO oldValue, ReceiptWO newValue) {
+		selectedReceipt.set(newValue);
 		buttonEnablement();
-		// ReceiptWO owner = new ReceiptWO();
+	    };
+	};
 
-		// _fsm = new ReceiptWOContext(owner);
-		// Uncomment to see debug output.
-		// _fsm.setDebugFlag(true);
-	}
+	this.deletedAttendeeProperty().addListener(deletionListener);
+	this.selectedAttendeeProperty().addListener(selectionListener);
+    }
 
-	private void buttonEnablement() {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		if (selectedItem == null) {
-			create.setDisable(false);
-			view.setDisable(true);
-			edit.setDisable(true);
-			delete.setDisable(true);
-			export.setDisable(false);
-		} else {
-			create.setDisable(false);
-			view.setDisable(false);
-			edit.setDisable(false);
-			delete.setDisable(false);
-			export.setDisable(false);
-		}
-	}
+    public ObjectProperty<ReceiptWO> deletedAttendeeProperty() {
+	return this.deletedReceipt;
+    }
 
-	private void initiateEntry(Receipt receipt) {
-		// create stage which has set stage style transparent
-		Stage stage = new Stage(StageStyle.UTILITY);
+    public ReadOnlyObjectProperty<ReceiptWO> selectedAttendeeProperty() {
+	return this.receiptsTable.getSelectionModel().selectedItemProperty();
+    }
 
-		@SuppressWarnings("rawtypes")
-		HashMap<Class, Object> contextMap = new HashMap<Class, Object>();
-		contextMap.put(Receipt.class, receipt);
-		contextMap.put(Stage.class, stage);
-		contextMap.put(ReceipttablePresenter.class, this);
+    private void fireReceiptsDeleted(ReceiptWO deletedItem) {
+	receiptsTable.getSelectionModel().clearSelection();
+	this.deletedReceipt.set(deletedItem);
+    }
 
-		EntryView entryView = new EntryView((f) -> contextMap);
-		Scene scene = new Scene(entryView.getView());
-		stage.setScene(scene);
-		// center stage on screen
-		stage.centerOnScreen();
-		receiptsTable.getSelectionModel().clearSelection();
-		stage.show();
-	}
+    public void createAction() {
+	// TODO use Factory to create ReceiptWO
+	ReceiptWOFactory receiptWOFactory = new ReceiptWOFactoryImpl();
+	ReceiptWO receiptWO = receiptWOFactory.createReceiptWO((String) null);
+	receiptWO.createTRN();
+	initiateEntry(receiptWO);
+    }
 
-	@FXML
-	private void createAction(ActionEvent event) {
-		createAction();
-	}
+    public void viewAction() {
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	selectedItem.viewTRN();
+	initiateEntry(selectedItem);
+    }
 
-	@FXML
-	private void viewAction(ActionEvent event) {
-		viewAction();
-	}
+    public void editAction() {
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	selectedItem.editTRN();
+	initiateEntry(selectedItem);
+    }
 
-	@FXML
-	private void editAction(ActionEvent event) {
-		editAction();
-	}
+    public void deleteAction() {
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	selectedItem.deleteTRN();
+	fireReceiptsDeleted(selectedItem);
+	receiptsTable.getSelectionModel().clearSelection();
+    }
 
-	@FXML
-	private void deleteAction(ActionEvent event) {
-		deleteAction();
-	}
-
-	@FXML
-	private void exportAction(ActionEvent event) {
-		exportAction();
-	}
-
-	public void add(Receipt receipt) {
-		this.receipts.add(receipt);
-	}
-
-	public void loadFromStore() {
-		this.clearAll();
-		List<Receipt> all = service.all();
-		for (Receipt receipt : all) {
-			add(receipt);
-		}
-	}
-
-	public void clearAll() {
-		this.receiptsTable.getItems().clear();
-	}
-
-	private void registerListeners() {
-		this.receiptsTable.setOnKeyReleased(new EventHandler<KeyEvent>() {
-			@Override
-			public void handle(KeyEvent t) {
-				if (t.getCode().equals(KeyCode.BACK_SPACE)) {
-					Receipt selectedItem = receiptsTable.getSelectionModel()
-							.getSelectedItem();
-					if (selectedItem != null) {
-						fireReceiptsDeleted(selectedItem);
-					}
-				}
-			}
-		});
-
-		ChangeListener<Receipt> deletionListener = new ChangeListener<Receipt>() {
-			@Override
-			public void changed(ObservableValue<? extends Receipt> observable,
-					Receipt oldValue, Receipt newValue) {
-				if (newValue != null) {
-					service.remove(newValue);
-					loadFromStore();
-				}
-			}
-		};
-
-		ChangeListener<Receipt> selectionListener = new ChangeListener<Receipt>() {
-			@Override
-			public void changed(ObservableValue<? extends Receipt> observable,
-					Receipt oldValue, Receipt newValue) {
-				selectedReceipt.set(newValue);
-				buttonEnablement();
-			};
-		};
-
-		this.deletedAttendeeProperty().addListener(deletionListener);
-		this.selectedAttendeeProperty().addListener(selectionListener);
-	}
-
-	public ObjectProperty<Receipt> deletedAttendeeProperty() {
-		return this.deletedReceipt;
-	}
-
-	public ReadOnlyObjectProperty<Receipt> selectedAttendeeProperty() {
-		return this.receiptsTable.getSelectionModel().selectedItemProperty();
-	}
-
-	private void fireReceiptsDeleted(Receipt deletedItem) {
-		receiptsTable.getSelectionModel().clearSelection();
-		this.deletedReceipt.set(deletedItem);
-	}
-
-	public void createAction() {
-		Receipt receipt = new Receipt();
-		initiateEntry(receipt);
-	}
-
-	public void viewAction() {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		initiateEntry(selectedItem);
-	}
-
-	public void editAction() {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		initiateEntry(selectedItem);
-	}
-
-	public void deleteAction() {
-		Receipt selectedItem = receiptsTable.getSelectionModel()
-				.getSelectedItem();
-		fireReceiptsDeleted(selectedItem);
-		receiptsTable.getSelectionModel().clearSelection();
-	}
-
-	public void exportAction() {
-		// TODO Implement export data to CVS
-		// 1. Ask user for file location.
-		// 2. Export the data to an Excel file.
-	}
-
-	@Override
-	public void createAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void viewAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void editAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void deleteAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void exportAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void saveAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void closeAction(Receipt receipt) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void updateState(Receipt receipt, ReceiptState newState) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setCreateReceiptAction(CreateReceiptAction createReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setDeleteReceiptAction(DeleteReceiptAction deleteReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setEditReceiptAction(EditReceiptAction editReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setSaveReceiptAction(SaveReceiptAction saveReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setViewReceiptAction(ViewReceiptAction viewReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setExportReceiptAction(ExportReceiptAction exportReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void setCloseReceiptAction(CloseReceiptAction closeReceiptAction) {
-		// TODO Auto-generated method stub
-		
-	}
+    public void exportAction() {
+	// TODO Implement export data to CVS
+	// 1. Ask user for file location.
+	// 2. Export the data to an Excel file.
+    }
 }

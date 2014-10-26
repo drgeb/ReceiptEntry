@@ -5,14 +5,14 @@ package com.drgeb.receiptentry.impl;
  * @author Dr. Gerald E. Bennett
  * 
  **/
-import com.drgeb.receiptentry.action.CloseReceiptAction;
-import com.drgeb.receiptentry.action.CreateReceiptAction;
-import com.drgeb.receiptentry.action.DeleteReceiptAction;
-import com.drgeb.receiptentry.action.EditReceiptAction;
-import com.drgeb.receiptentry.action.ExportReceiptAction;
-import com.drgeb.receiptentry.action.SaveReceiptAction;
-import com.drgeb.receiptentry.action.SyncStateAction;
-import com.drgeb.receiptentry.action.ViewReceiptAction;
+import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
+import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
+import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
+import com.drgeb.receiptentry.sm.action.EditReceiptAction;
+import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
+import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
+import com.drgeb.receiptentry.sm.action.SyncStateAction;
+import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptActions;
 import com.drgeb.receiptentry.sm.ReceiptConditions;
@@ -55,70 +55,70 @@ public class ReceiptWOImpl implements ReceiptWO {
 		this.receiptTransitions = receiptTransitions;
 	}
 
-	public void createAction(Receipt receipt) {
+	public void createAction(ReceiptWO receipt) {
 		receiptActions.createAction(receipt);
 	}
 
-	public void viewAction(Receipt receipt) {
+	public void viewAction(ReceiptWO receipt) {
 		receiptActions.viewAction(receipt);
 	}
 
-	public void editAction(Receipt receipt) {
+	public void editAction(ReceiptWO receipt) {
 		receiptActions.editAction(receipt);
 	}
 
-	public void deleteAction(Receipt receipt) {
+	public void deleteAction(ReceiptWO receipt) {
 		receiptActions.deleteAction(receipt);
 	}
 
-	public void exportAction(Receipt receipt) {
+	public void exportAction(ReceiptWO receipt) {
 		receiptActions.exportAction(receipt);
 	}
 
-	public void saveAction(Receipt receipt) {
+	public void saveAction(ReceiptWO receipt) {
 		receiptActions.saveAction(receipt);
 	}
 
-	public void closeAction(Receipt receipt) {
+	public void closeAction(ReceiptWO receipt) {
 		receiptActions.closeAction(receipt);
 	}
 
-	@Override
-	public void updateState(Receipt receipt, ReceiptState newState) {
+
+	public void updateState(ReceiptWO receipt, ReceiptState newState) {
 	    receiptActions.updateState(receipt, newState);
 	}
 
-	@Override
+
 	public void setCreateReceiptAction(CreateReceiptAction createReceiptAction) {
 		this.createReceiptAction = createReceiptAction;
 	}
 
-	@Override
+
 	public void setDeleteReceiptAction(DeleteReceiptAction deleteReceiptAction) {
 		this.deleteReceiptAction = deleteReceiptAction;
 	}
 
-	@Override
+
 	public void setEditReceiptAction(EditReceiptAction editReceiptAction) {
 		this.editReceiptAction = editReceiptAction;
 	}
 
-	@Override
+
 	public void setSaveReceiptAction(SaveReceiptAction saveReceiptAction) {
 		this.saveReceiptAction = saveReceiptAction;
 	}
 
-	@Override
+
 	public void setViewReceiptAction(ViewReceiptAction viewReceiptAction) {
 		this.viewReceiptAction = viewReceiptAction;
 	}
 
-	@Override
+
 	public void setExportReceiptAction(ExportReceiptAction exportReceiptAction) {
 		this.exportReceiptAction = exportReceiptAction;
 	}
 
-	@Override
+
 	public void setCloseReceiptAction(CloseReceiptAction closeReceiptAction) {
 		this.closeReceiptAction = closeReceiptAction;
 	}
@@ -139,29 +139,34 @@ public class ReceiptWOImpl implements ReceiptWO {
 	public void exportReceiptsTRN() {
 		receiptTransitions.exportReceiptsTRN();
 	}
-	@Override
+
 	public void createTRN() {
 	    receiptTransitions.createTRN();
 	}
 
-	@Override
+
 	public void viewTRN() {
 	    receiptTransitions.viewTRN();
 	}
 
-	@Override
+
 	public void editTRN() {
 	    receiptTransitions.editTRN();
 	}
 
-	@Override
+
 	public void deleteTRN() {
 	    receiptTransitions.deleteTRN();
 	}
 
-	@Override
+
 	public void exportTRN() {
 	    receiptTransitions.exportTRN();
+	}
+
+
+	public String getVendor() {
+	    return this.receipt.getVendor();
 	}		
 	
 }

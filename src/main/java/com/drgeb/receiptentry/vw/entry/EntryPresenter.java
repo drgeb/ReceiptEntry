@@ -1,9 +1,10 @@
 package com.drgeb.receiptentry.vw.entry;
+
 /**
-*
-* @author Dr. Gerald E. Bennett
-* 
-**/
+ *
+ * @author Dr. Gerald E. Bennett
+ * 
+ **/
 import java.net.URL;
 import java.util.HashMap;
 import java.util.ResourceBundle;
@@ -12,6 +13,7 @@ import javax.inject.Inject;
 
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
+import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.vw.receipttable.ReceipttablePresenter;
 
 import javafx.scene.control.ChoiceBox;
@@ -23,76 +25,84 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class EntryPresenter  implements Initializable {
-	@FXML
-	TextField id;
-	
-	@FXML
-	TextField vendor;
-	
-	@FXML
-	DatePicker date;
-	
-	@FXML
-	TextField amount;
+public class EntryPresenter implements Initializable {
+    @FXML
+    TextField id;
 
-	@FXML
-	TextField salesTax;
-	@SuppressWarnings("rawtypes")
-	@Inject
-	HashMap injectionContext;
-	
-	@FXML
-	TextField location;
-	
-	@FXML
-	ChoiceBox type;
-	
-	@FXML
-	ChoiceBox currency;
-	
-	@FXML
-	TextArea notes;
-	
-	
-	private Stage stage;
-    private Receipt receipt;
+    @FXML
+    TextField vendor;
 
-	private ReceipttablePresenter receipttablePresenter;
+    @FXML
+    DatePicker date;
 
-	@Inject
+    @FXML
+    TextField amount;
+
+    @FXML
+    TextField salesTax;
+    
+    @SuppressWarnings("rawtypes")
+    @Inject
+    HashMap injectionContext;
+
+    @FXML
+    TextField location;
+
+    @FXML
+    ChoiceBox type;
+
+    @FXML
+    ChoiceBox currency;
+
+    @FXML
+    TextArea notes;
+
+    private Stage stage;
+    private ReceiptWO receiptWO;
+
+    private ReceipttablePresenter receipttablePresenter;
+
+    @Inject
     RegistrationService registrationService;
 
     @Override
-	public void initialize(URL location, ResourceBundle resources) {
-    	stage = (Stage) injectionContext.get(Stage.class);
-    	receipt = (Receipt) injectionContext.get(Receipt.class);
-    	receipttablePresenter=(ReceipttablePresenter) injectionContext.get(ReceipttablePresenter.class);
-
-		id.setText(receipt.getReceiptId());
-		vendor.setText(receipt.getVendor());
-		date.setValue(receipt.getPurchaseDate());
-		amount.setText(new Double(receipt.getAmount()).toString());
-		
-	}
-
-	@FXML
-	public void saveAction(ActionEvent event) {
-		receipt.setVendor(vendor.getText());
-		receipt.setPurchaseDate(date.getValue());
-		receipt.setAmount(Double.valueOf(amount.getText()).doubleValue());
-		registrationService.save(receipt);
-		stage.close();
-		receipttablePresenter.loadFromStore();
-	}
+    public void initialize(URL location, ResourceBundle resources) {
+	stage = (Stage) injectionContext.get(Stage.class);
+	receiptWO = (ReceiptWO) injectionContext.get(ReceiptWO.class);
 	
-	@FXML
-	public void closeAction(ActionEvent event) {
-		stage.close();
-	}
+	Receipt receipt = receiptWO.getReceipt();
 	
-	@FXML
-	public void importPDFAction(ActionEvent event) {
-		//TODO implement
-	}
+	receipttablePresenter = (ReceipttablePresenter) injectionContext
+		.get(ReceipttablePresenter.class);
+
+	id.setText(receipt.getReceiptId());
+	vendor.setText(receipt.getVendor());
+	date.setValue(receipt.getPurchaseDate());
+	amount.setText(new Double(receipt.getAmount()).toString());
+    }
+
+    @FXML
+    public void saveAction(ActionEvent event) {
+	Receipt receipt = receiptWO.getReceipt();
+	receipt.setVendor(vendor.getText());
+	receipt.setPurchaseDate(date.getValue());
+	receipt.setAmount(Double.valueOf(amount.getText()).doubleValue());
+
+	//TODO use transition and eliminate the registrationServive from the Presenter!
+	receiptWO.saveReceiptTRN();
+	registrationService.save(receipt);
+	stage.close();
+	receipttablePresenter.loadFromStore();
+    }
+
+    @FXML
+    public void closeAction(ActionEvent event) {
+	receiptWO.closeReceiptTRN();
+	stage.close();
+    }
+
+    @FXML
+    public void importPDFAction(ActionEvent event) {
+	// TODO implement
+    }
 }

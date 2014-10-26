@@ -1,5 +1,7 @@
 package com.drgeb.receiptentry.sm;
 
+import com.drgeb.receiptentry.bo.Receipt;
+
 /**
 *
 * @author Dr. Gerald E. Bennett
@@ -7,4 +9,5 @@ package com.drgeb.receiptentry.sm;
 */
 public interface ReceiptWOFactory {
 	ReceiptWO createReceiptWO(String receiptId);
+	ReceiptWO createReceiptWO(Receipt receipt);
 }

@@ -4,26 +4,20 @@ package com.drgeb.receiptentry;
 * @author Dr. Gerald E. Bennett
 * 
 **/
-import java.util.List;
 
 import com.airhacks.afterburner.injection.Injector;
-import com.drgeb.receiptentry.sm.ReceiptWOContext;
 import com.drgeb.receiptentry.vw.receipttable.Receipttable;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/**
- *
- * @author adam-bien.com
- */
 public class App extends Application {
 
 	@Override
     public void start(Stage stage) throws Exception {
-    	List<String> parameters = this.getParameters().getRaw();
-    	String [] args= (String[]) parameters.toArray(new String[parameters.size()]);
+    	//List<String> parameters = this.getParameters().getRaw();
+    	//String [] args= parameters.toArray(new String[parameters.size()]);
     	
     	Receipttable appView = new Receipttable();
     	

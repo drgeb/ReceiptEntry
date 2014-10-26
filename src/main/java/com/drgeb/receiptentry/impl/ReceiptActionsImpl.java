@@ -1,13 +1,13 @@
 package com.drgeb.receiptentry.impl;
 
-import com.drgeb.receiptentry.action.CloseReceiptAction;
-import com.drgeb.receiptentry.action.CreateReceiptAction;
-import com.drgeb.receiptentry.action.DeleteReceiptAction;
-import com.drgeb.receiptentry.action.EditReceiptAction;
-import com.drgeb.receiptentry.action.ExportReceiptAction;
-import com.drgeb.receiptentry.action.SaveReceiptAction;
-import com.drgeb.receiptentry.action.SyncStateAction;
-import com.drgeb.receiptentry.action.ViewReceiptAction;
+import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
+import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
+import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
+import com.drgeb.receiptentry.sm.action.EditReceiptAction;
+import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
+import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
+import com.drgeb.receiptentry.sm.action.SyncStateAction;
+import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
 import com.drgeb.receiptentry.bo.Receipt;
 /**
  *
@@ -16,6 +16,7 @@ import com.drgeb.receiptentry.bo.Receipt;
  **/
 import com.drgeb.receiptentry.sm.ReceiptActions;
 import com.drgeb.receiptentry.sm.ReceiptState;
+import com.drgeb.receiptentry.sm.ReceiptWO;
 
 public class ReceiptActionsImpl implements ReceiptActions {
     private CreateReceiptAction createReceiptAction;
@@ -27,32 +28,32 @@ public class ReceiptActionsImpl implements ReceiptActions {
     private CloseReceiptAction closeReceiptAction;
     private SyncStateAction syncStateAction;
 
-    public void createAction(Receipt receipt) {
+    public void createAction(ReceiptWO receipt) {
 	this.createReceiptAction.createAction(receipt);
     }
 
-    public void viewAction(Receipt receipt) {
+    public void viewAction(ReceiptWO receipt) {
 	this.viewReceiptAction.viewAction(receipt);
     }
 
-    public void editAction(Receipt receipt) {
+    public void editAction(ReceiptWO receipt) {
 	this.editReceiptAction.editAction(receipt);
     }
 
-    public void deleteAction(Receipt receipt) {
+    public void deleteAction(ReceiptWO receipt) {
 	this.deleteReceiptAction.deleteAction(receipt);
     }
 
-    public void exportAction(Receipt receipt) {
+    public void exportAction(ReceiptWO receipt) {
 	this.exportReceiptAction.exportAction(receipt);
     }
 
-    public void saveAction(Receipt receipt) {
+    public void saveAction(ReceiptWO receipt) {
 	this.saveReceiptAction.saveAction(receipt);
     }
 
     @Override
-    public void closeAction(Receipt receipt) {
+    public void closeAction(ReceiptWO receipt) {
 	this.closeReceiptAction.closeAction(receipt);
     }
 
@@ -92,7 +93,7 @@ public class ReceiptActionsImpl implements ReceiptActions {
     }
 
     @Override
-    public void updateState(Receipt receipt, ReceiptState newState) {
+    public void updateState(ReceiptWO receipt, ReceiptState newState) {
 	this.syncStateAction.updateState(receipt,newState);
     }
 

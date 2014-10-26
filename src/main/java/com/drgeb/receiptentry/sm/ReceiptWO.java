@@ -11,7 +11,7 @@ import com.drgeb.receiptentry.sm.ReceiptTransitions;
 /** 
  * The wrapper object ( or working object) to
  * serve business service requests for the
- * Order object. The business service layer delegates
+ * Receipt object. The business service layer delegates
  * service requests to this object via the transition
  * interface. 
  * 
@@ -23,8 +23,7 @@ import com.drgeb.receiptentry.sm.ReceiptTransitions;
  * @author Jason Zhicheng Li (jason@lizjason.com)
  */
 
-public interface ReceiptWO extends ReceiptTransitions, 
-ReceiptConditions, ReceiptActions{
+public interface ReceiptWO extends ReceiptTransitions,ReceiptConditions, ReceiptActions {
 	/**  
 	 * @return underlying POJO order object.
 	 */
@@ -37,4 +36,5 @@ ReceiptConditions, ReceiptActions{
 	 */
 	void setReceipt(Receipt receipt);
 	
+	public String getVendor();
 }

@@ -1,11 +1,8 @@
 package com.drgeb.receiptentry.sm;
 
-import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.impl.ReceiptWOFactoryImpl;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 /**
  * A test case for the state transitions of the Receipt object.
@@ -20,8 +17,8 @@ public class SMCTestCase extends TestCase {
     public void testStateTransitions() throws Exception {
 
 	ReceiptWOFactory receiptWOFactory = new ReceiptWOFactoryImpl();
-
-	ReceiptWO receiptWO = receiptWOFactory.createReceiptWO(null);
+	String id=null;
+	ReceiptWO receiptWO = receiptWOFactory.createReceiptWO(id);
 	// initial state: created.
 	assertEquals(ReceiptState.TABLEVIEW, receiptWO.getReceipt().getState());
 	

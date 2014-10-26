@@ -1,7 +1,7 @@
-package com.drgeb.receiptentry.action;
+package com.drgeb.receiptentry.sm.action;
 
-import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptState;
+import com.drgeb.receiptentry.sm.ReceiptWO;
 
 /** 
  * Synchronize the Order state with 
@@ -11,5 +11,5 @@ import com.drgeb.receiptentry.sm.ReceiptState;
  */
 
 public interface SyncStateAction {
-    void updateState(Receipt receipt, ReceiptState newState);
+    void updateState(ReceiptWO receipt, ReceiptState newState);
 }
