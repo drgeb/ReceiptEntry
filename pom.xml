@@ -15,59 +15,60 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 	<name>receiptentry</name>
 	<url>http://drgeb.com/receiptentry</url>
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>eclipselink</artifactId>
-			<version>2.5.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.derby</groupId>
-			<artifactId>derby</artifactId>
-			<version>10.9.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.airhacks</groupId>
-			<artifactId>afterburner.fx</artifactId>
-			<version>1.6.2-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>1.9.5</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.sm.statemap</groupId>
-			<artifactId>statemap</artifactId>
-			<version>6.4.0</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.sm.generator</groupId>
-			<artifactId>SmcGenerator</artifactId>
-			<version>6.4.0</version>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.sm.parser</groupId>
-			<artifactId>SmcParser</artifactId>
-			<version>6.4.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.6</version>
-		</dependency>
+	  <dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.11</version>
+	    <scope>test</scope>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.eclipse.persistence</groupId>
+	    <artifactId>eclipselink</artifactId>
+	    <version>2.5.1</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.derby</groupId>
+	    <artifactId>derby</artifactId>
+	    <version>10.9.1.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>com.airhacks</groupId>
+	    <artifactId>afterburner.fx</artifactId>
+	    <version>1.6.2-SNAPSHOT</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.mockito</groupId>
+	    <artifactId>mockito-all</artifactId>
+	    <version>1.9.5</version>
+	    <scope>test</scope>
+	  </dependency>
+	  <dependency>
+	    <groupId>net.sf.sm.statemap</groupId>
+	    <artifactId>statemap</artifactId>
+	    <version>6.4.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>net.sf.sm.generator</groupId>
+	    <artifactId>SmcGenerator</artifactId>
+	    <version>6.4.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>net.sf.sm.parser</groupId>
+	    <artifactId>SmcParser</artifactId>
+	    <version>6.4.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>1.7.6</version>
+	  </dependency>
 	</dependencies>
 	<build>
 	  <plugins>
 	    <plugin>
 	      <groupId>org.apache.maven.plugins</groupId>
 	      <artifactId>maven-jar-plugin</artifactId>
+	      <version>2.5</version>
 	      <configuration>
 		<archive>
 		  <manifest>
@@ -89,7 +90,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
 			</plugin>
 			<plugin>
 			  <artifactId>maven-resources-plugin</artifactId>
-<!--			  <version>2.4.3</version>-->
+			  <version>2.7</version>
 			  <configuration>
 			    <encoding>UTF-8</encoding>
 			  </configuration>

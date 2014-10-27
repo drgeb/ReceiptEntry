@@ -7,22 +7,26 @@ package com.drgeb.receiptentry.vw.receipttable;
 
  */
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javafx.beans.NamedArg;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.util.Callback;
-import sun.util.logging.PlatformLogger;
-import sun.util.logging.PlatformLogger.Level;
 
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptWO;
+import com.drgeb.receiptentry.sm.ReceiptWOContext;
 import com.sun.javafx.property.PropertyReference;
 import com.sun.javafx.scene.control.Logging;
 
 public class ReceiptPropertyValueFactory<S, T> implements
 	Callback<CellDataFeatures<S, T>, ObservableValue<T>> {
 
+    private final static Logger log = LoggerFactory.getLogger(ReceiptWOContext.class);
+    
     private final String property;
 
     private Class<Receipt> columnClass;
@@ -80,12 +84,9 @@ public class ReceiptPropertyValueFactory<S, T> implements
 
 	} catch (IllegalStateException e) {
 	    // log the warning and move on
-	    final PlatformLogger logger = Logging.getControlsLogger();
-	    if (logger.isLoggable(Level.WARNING)) {
-		logger.finest("Can not retrieve property '" + getProperty()
+		log.error("Can not retrieve property '" + getProperty()
 			+ "' in ReceiptPropertyValueFactory: " + this
 			+ " with provided class type: " + rowData.getClass(), e);
-	    }
 	}
 
 	return null;

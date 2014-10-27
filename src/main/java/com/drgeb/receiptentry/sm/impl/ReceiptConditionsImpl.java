@@ -1,4 +1,4 @@
-package com.drgeb.receiptentry.impl;
+package com.drgeb.receiptentry.sm.impl;
 
 import com.drgeb.receiptentry.sm.ReceiptConditions;
 

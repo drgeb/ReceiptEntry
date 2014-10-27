@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_n1j4kF2BEeSzlcwPkXyaVA">
+  <modelElement href="ReceiptEntry_sm.uml#_oNMVc12BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oePCIV2BEeSzlcwPkXyaVA" targetItem="_oePpOF2BEeSzlcwPkXyaVA" sourceItem="_oePCIF2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oePpMF2BEeSzlcwPkXyaVA" target="_oePpOF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRTZYV2BEeSzlcwPkXyaVA"/>
+    <nameVisual xmi:id="_oePpMV2BEeSzlcwPkXyaVA" text=""/>
+    <sourceRole xmi:id="_oePpMl2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="receipt" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oOOQMF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oePpM12BEeSzlcwPkXyaVA" label="~"/>
+      <cardinality xmi:id="_oePpNF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oePpNV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRTZYl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oePpNl2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_oePpN12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oeQ3UV2BEeSzlcwPkXyaVA" targetItem="_oeSFcF2BEeSzlcwPkXyaVA" sourceItem="_oeQ3UF2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oeQ3Ul2BEeSzlcwPkXyaVA" sourceAnchor="71.0,0.0" targetAnchor="211.0,333.0" superClass="_oeSFcF2BEeSzlcwPkXyaVA" subClass="_oePpOF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQYMUl2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKklIF2FEeSzlcwPkXyaVA" sourceY="-30" targetX="-154" targetY="208"/>
+    <bendpoints xmi:id="_XKklIV2FEeSzlcwPkXyaVA" sourceX="154" sourceY="-30" targetY="208"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oeXlAF2BEeSzlcwPkXyaVA" targetItem="_oeYMEF2BEeSzlcwPkXyaVA" sourceItem="_oeW98F2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oeXlAV2BEeSzlcwPkXyaVA" sourceAnchor="142.0,20.0" targetAnchor="64.0,40.0" superClass="_oeYMEF2BEeSzlcwPkXyaVA" subClass="_oePpOF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQYMUV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKklIl2FEeSzlcwPkXyaVA" sourceX="221" targetX="-6" targetY="142"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oeYzIV2BEeSzlcwPkXyaVA" targetItem="_oeZaMF2BEeSzlcwPkXyaVA" sourceItem="_oeYzIF2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oeYzIl2BEeSzlcwPkXyaVA" sourceAnchor="142.0,50.0" targetAnchor="0.0,109.0" superClass="_oeZaMF2BEeSzlcwPkXyaVA" subClass="_oePpOF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQYMUF2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKklI12FEeSzlcwPkXyaVA" sourceX="374" targetX="-283" targetY="398"/>
+    <bendpoints xmi:id="_XKklJF2FEeSzlcwPkXyaVA" sourceX="387" sourceY="-398" targetX="-270"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oebPYV2BEeSzlcwPkXyaVA" targetItem="_oeb2cF2BEeSzlcwPkXyaVA" sourceItem="_oebPYF2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oedEkF2BEeSzlcwPkXyaVA" sourceAnchor="471.0,133.0" targetAnchor="0.0,109.0" dashed="true" superClass="_oeZaMF2BEeSzlcwPkXyaVA" subClass="_oegH6V2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQYzYF2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKklJV2FEeSzlcwPkXyaVA" sourceX="225" targetX="-75" targetY="642"/>
+    <bendpoints xmi:id="_XKklJl2FEeSzlcwPkXyaVA" sourceX="225" sourceY="-588" targetX="-75" targetY="54"/>
+    <bendpoints xmi:id="_XKklJ12FEeSzlcwPkXyaVA" sourceX="30" sourceY="-588" targetX="-270" targetY="54"/>
+    <bendpoints xmi:id="_XKklKF2FEeSzlcwPkXyaVA" sourceX="30" sourceY="-642" targetX="-270"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oedroF2BEeSzlcwPkXyaVA" targetItem="_oegH6V2BEeSzlcwPkXyaVA" sourceItem="_oedEkV2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oegH4F2BEeSzlcwPkXyaVA" source="_oegH6V2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRXq0F2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_oegH4V2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRYR4F2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_oegH4l2BEeSzlcwPkXyaVA" text=""/>
+    <sourceRole xmi:id="_oegH412BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRXq0V2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegH5F2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_oegH5V2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_oegH5l2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="receiptContext" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRAecF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegH512BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_oegH6F2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oes8MV2BEeSzlcwPkXyaVA" targetItem="_oetjQF2BEeSzlcwPkXyaVA" sourceItem="_oes8MF2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oeuKUF2BEeSzlcwPkXyaVA" sourceAnchor="198.0,52.0" targetAnchor="186.0,0.0" dashed="true" superClass="_oetjQF2BEeSzlcwPkXyaVA" subClass="_oeuxYF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQgvM12BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oev_gF2BEeSzlcwPkXyaVA" sourceAnchor="259.0,29.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oeqf8F2BEeSzlcwPkXyaVA" subClass="_oewmkF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQhWQ12BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oex0sF2BEeSzlcwPkXyaVA" sourceAnchor="263.0,24.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oekZUF2BEeSzlcwPkXyaVA" subClass="_oeybwF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQb2sl2BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oezp4F2BEeSzlcwPkXyaVA" sourceAnchor="268.0,27.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oepR0F2BEeSzlcwPkXyaVA" subClass="_oezp4V2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQcdw12BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oe0Q8F2BEeSzlcwPkXyaVA" sourceAnchor="271.0,28.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oem1kF2BEeSzlcwPkXyaVA" subClass="_oe04AF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQe6BV2BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oe1fEF2BEeSzlcwPkXyaVA" sourceAnchor="268.0,26.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oelAYF2BEeSzlcwPkXyaVA" subClass="_oe2GIF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQdr4l2BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oe2tMF2BEeSzlcwPkXyaVA" sourceAnchor="256.0,21.0" targetAnchor="0.0,32.0" dashed="true" superClass="_oemOgF2BEeSzlcwPkXyaVA" subClass="_oe3UQF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQeS812BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oe37UF2BEeSzlcwPkXyaVA" sourceAnchor="259.0,25.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oeoDsF2BEeSzlcwPkXyaVA" subClass="_oe37UV2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQgIIV2BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oe4iYF2BEeSzlcwPkXyaVA" sourceAnchor="64.0,0.0" targetAnchor="64.0,40.0" dashed="true" superClass="_oeYMEF2BEeSzlcwPkXyaVA" subClass="_oe5Jcl2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQrHQF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_LYSKMF2CEeSzlcwPkXyaVA" position="1096.0,315.0"/>
+    <bendpoints xmi:id="_XKlMMF2FEeSzlcwPkXyaVA" sourceY="-127" targetX="114" targetY="92"/>
+    <bendpoints xmi:id="_XKlMMV2FEeSzlcwPkXyaVA" sourceX="-114" sourceY="-127" targetY="92"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oe5JcV2BEeSzlcwPkXyaVA" targetItem="_oe5Jcl2BEeSzlcwPkXyaVA" sourceItem="_oe5JcF2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_oe6XkF2BEeSzlcwPkXyaVA" sourceAnchor="54.0,0.0" targetAnchor="159.0,86.0" dashed="true" superClass="_oeb2cF2BEeSzlcwPkXyaVA" subClass="_oe6-oF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQruUF2BEeSzlcwPkXyaVA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_oe6Xkl2BEeSzlcwPkXyaVA" targetItem="_oe6-oF2BEeSzlcwPkXyaVA" sourceItem="_oe6XkV2BEeSzlcwPkXyaVA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe-B8F2BEeSzlcwPkXyaVA" sourceAnchor="0.0,144.0" targetAnchor="0.0,167.0" target="_oeSFcF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRcjUV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlMMl2FEeSzlcwPkXyaVA" sourceX="-1058" targetX="-935" targetY="1467"/>
+    <bendpoints xmi:id="_XKlMM12FEeSzlcwPkXyaVA" sourceX="-1059" sourceY="-1467" targetX="-936"/>
+    <stereotypes xmi:id="_ofBFQl2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRcjU12BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofAeMl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGMaAF2BEeSzlcwPkXyaVA" position="2.0000000000002274,-81.00000000000034"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBFQF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRcjUl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGLy-V2BEeSzlcwPkXyaVA" position="-112.0,2.0"/>
+      <visibility xmi:id="_ofEIlF2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofEIk12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBFQV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="receiptActions" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oREv4V2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGMaAV2BEeSzlcwPkXyaVA" position="-171.00000000000045,1.0000000000002274"/>
+      <visibility xmi:id="_ofEIll2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofEIlV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe-pAF2BEeSzlcwPkXyaVA" sourceAnchor="424.0,305.0" targetAnchor="130.0,20.0" target="_oeYMEF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRcjVF2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlMNF2FEeSzlcwPkXyaVA" sourceX="28" targetX="154" targetY="1366"/>
+    <bendpoints xmi:id="_XKlMNV2FEeSzlcwPkXyaVA" sourceX="28" sourceY="-1366" targetX="154"/>
+    <stereotypes xmi:id="_ofBFRl2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRdKYF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBFQ12BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGMaA12BEeSzlcwPkXyaVA" position="-41.0,53.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBFRF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRcjVV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGMaAl2BEeSzlcwPkXyaVA" position="11.0,-82.0"/>
+      <visibility xmi:id="_ofEvol2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofEvoV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBFRV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="receiptConditions" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRFW8V2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGMaBF2BEeSzlcwPkXyaVA" position="98.00000000000023,6.0"/>
+      <visibility xmi:id="_ofEvpF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofEvo12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe-pAV2BEeSzlcwPkXyaVA" sourceAnchor="424.0,335.0" targetAnchor="86.0,219.0" target="_oeZaMF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRdKYV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlzQF2FEeSzlcwPkXyaVA" sourceX="324" targetY="1492"/>
+    <stereotypes xmi:id="_ofBFSl2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRdxcF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBFR12BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGNBEV2BEeSzlcwPkXyaVA" position="2.0,-754.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBFSF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRdKYl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGNBEF2BEeSzlcwPkXyaVA" position="20.0,2.0"/>
+      <visibility xmi:id="_ofEvp12BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofEvpl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBFSV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="receiptTransitions" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRFW812BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGNBEl2BEeSzlcwPkXyaVA" position="-115.0,90.99999999999977"/>
+      <visibility xmi:id="_ofEvqV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofEvqF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_QEF2BEeSzlcwPkXyaVA" sourceAnchor="0.0,433.0" targetAnchor="238.0,33.0" target="_oekZUF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRdxcV2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofBFTl2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRdxc12BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBFS12BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGNoIF2BEeSzlcwPkXyaVA" position="-19.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBFTF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRdxcl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGNBE12BEeSzlcwPkXyaVA" position="-32.0,2.0"/>
+      <visibility xmi:id="_ofEvrF2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofEvq12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBFTV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="closeReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRF-AV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGNoIV2BEeSzlcwPkXyaVA" position="60.0,-43.0"/>
+      <visibility xmi:id="_ofEvrl2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofEvrV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_QEV2BEeSzlcwPkXyaVA" sourceAnchor="0.0,547.0" targetAnchor="246.0,33.0" target="_oem1kF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRdxdF2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofBFUl2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oReYgF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBFT12BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGNoI12BEeSzlcwPkXyaVA" position="-36.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBFUF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRdxdV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGNoIl2BEeSzlcwPkXyaVA" position="-32.0,-43.0"/>
+      <visibility xmi:id="_ofEvsV2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofEvsF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBFUV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="exportReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRF-A12BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGNoJF2BEeSzlcwPkXyaVA" position="73.0,-43.00000000000023"/>
+      <visibility xmi:id="_ofEvs12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofEvsl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_QEl2BEeSzlcwPkXyaVA" sourceAnchor="242.0,610.0" targetAnchor="234.0,33.0" target="_oeqf8F2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oReYgV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlzQV2FEeSzlcwPkXyaVA" sourceY="207" targetX="608"/>
+    <stereotypes xmi:id="_ofBsUV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oReYg12BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBFU12BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGOPMV2BEeSzlcwPkXyaVA" position="-323.5,2.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBFVF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oReYgl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGOPMF2BEeSzlcwPkXyaVA" position="2.0,28.416666666666742"/>
+      <visibility xmi:id="_ofFWsl2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofFWsV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBsUF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="viewReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRGlEV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGOPMl2BEeSzlcwPkXyaVA" position="83.16666666666674,-42.5"/>
+      <visibility xmi:id="_ofFWtF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofFWs12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_3IF2BEeSzlcwPkXyaVA" sourceAnchor="0.0,272.0" targetAnchor="234.0,55.0" target="_oeoDsF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oReYhF2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofBsVV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRe_kF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBsUl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGO2QF2BEeSzlcwPkXyaVA" position="-19.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBsU12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oReYhV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGOPM12BEeSzlcwPkXyaVA" position="-32.0,-43.0"/>
+      <visibility xmi:id="_ofFWt12BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofFWtl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBsVF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="saveReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRGlE12BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGO2QV2BEeSzlcwPkXyaVA" position="1.0,-82.0"/>
+      <visibility xmi:id="_ofFWuV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofFWuF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_3IV2BEeSzlcwPkXyaVA" sourceAnchor="212.0,610.0" targetAnchor="231.0,33.0" target="_oemOgF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRe_kV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlzQl2FEeSzlcwPkXyaVA" sourceY="110" targetX="565"/>
+    <stereotypes xmi:id="_ofBsWV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRe_k12BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBsVl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGO2Q12BEeSzlcwPkXyaVA" position="-285.0,-17.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBsV12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRe_kl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGO2Ql2BEeSzlcwPkXyaVA" position="-17.0,28.0"/>
+      <visibility xmi:id="_ofFWvF2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofFWu12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBsWF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="editReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHMIV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGPdUF2BEeSzlcwPkXyaVA" position="76.0,2.0"/>
+      <visibility xmi:id="_ofFWvl2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofFWvV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_3Il2BEeSzlcwPkXyaVA" sourceAnchor="182.0,610.0" targetAnchor="243.0,33.0" target="_oelAYF2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRe_lF2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlzQ12FEeSzlcwPkXyaVA" sourceY="21" targetX="526"/>
+    <stereotypes xmi:id="_ofBsXV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRfmoF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBsWl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGPdUl2BEeSzlcwPkXyaVA" position="-283.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBsW12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRe_lV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGPdUV2BEeSzlcwPkXyaVA" position="-208.0,-22.0"/>
+      <visibility xmi:id="_ofFWwV2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofFWwF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBsXF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="deleteReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHMI12BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGPdU12BEeSzlcwPkXyaVA" position="81.0,2.0"/>
+      <visibility xmi:id="_ofFWw12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofFWwl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_oe_3I12BEeSzlcwPkXyaVA" sourceAnchor="0.0,350.0" targetAnchor="243.0,33.0" target="_oepR0F2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRfmoV2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofBsYV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRgNsF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofBsXl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGQEYV2BEeSzlcwPkXyaVA" position="-19.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofBsX12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRfmol2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGQEYF2BEeSzlcwPkXyaVA" position="-32.0,2.0"/>
+      <visibility xmi:id="_ofF9wl2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofF9wV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofBsYF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="createReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHzMF2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGQEYl2BEeSzlcwPkXyaVA" position="80.0,-43.0"/>
+      <visibility xmi:id="_ofF9xF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofF9w12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ofAeMF2BEeSzlcwPkXyaVA" sourceAnchor="0.0,73.0" targetAnchor="0.0,33.0" dashed="true" superClass="_oePpOF2BEeSzlcwPkXyaVA" subClass="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQuKkV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_XKlzRF2FEeSzlcwPkXyaVA" sourceX="-412" sourceY="6" targetX="-275" targetY="965"/>
+    <bendpoints xmi:id="_XKlzRV2FEeSzlcwPkXyaVA" sourceX="-414" sourceY="-959" targetX="-277"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofAeMV2BEeSzlcwPkXyaVA" target="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRUAcl2BEeSzlcwPkXyaVA"/>
+    <nameVisual xmi:id="_ofEIkF2BEeSzlcwPkXyaVA" text=""/>
+    <sourceRole xmi:id="_ofEIkV2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="receipt" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oREv4F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofGk0V2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofGk0F2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofEIkl2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRUAc12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofGk012BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofGk0l2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofHL4F2BEeSzlcwPkXyaVA" source="_ofHy8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRgNsV2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofHL4V2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRg0wF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofHL4l2BEeSzlcwPkXyaVA" text=""/>
+    <sourceRole xmi:id="_ofHL412BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRgNsl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHL5F2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofHL5V2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofHL5l2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="registrationService" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHzMl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHL512BEeSzlcwPkXyaVA" label="~"/>
+      <cardinality xmi:id="_ofHL6F2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofWccF2BEeSzlcwPkXyaVA" sourceAnchor="449.0,168.0" targetAnchor="122.0,67.0" target="_oepR0F2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRYR4V2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7JY12DEeSzlcwPkXyaVA" sourceX="629" targetY="223"/>
+    <stereotypes xmi:id="_ofZfwV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRY48F2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofY4sl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGQrcF2BEeSzlcwPkXyaVA" position="-499.0,-15.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofY4s12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRYR4l2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGQEY12BEeSzlcwPkXyaVA" position="44.0,-32.0"/>
+      <visibility xmi:id="_ofdKIV2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofdKIF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofZfwF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="createReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRBFgV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGQrcV2BEeSzlcwPkXyaVA" position="-449.0,191.0"/>
+      <visibility xmi:id="_ofdKI12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofdKIl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofXDgF2BEeSzlcwPkXyaVA" sourceAnchor="224.0,337.0" targetAnchor="234.0,3.0" target="_oeqf8F2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRY48V2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7JZF2DEeSzlcwPkXyaVA" sourceY="288" targetX="-1491" targetY="1064"/>
+    <bendpoints xmi:id="_ny7JZV2DEeSzlcwPkXyaVA" sourceX="2050" sourceY="288" targetX="559" targetY="1064"/>
+    <bendpoints xmi:id="_ny7JZl2DEeSzlcwPkXyaVA" sourceX="2050" sourceY="-776" targetX="559"/>
+    <stereotypes xmi:id="_ofZfxV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRZgAF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofZfwl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGQrc12BEeSzlcwPkXyaVA" position="-2063.0,-158.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofZfw12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRY48l2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGQrcl2BEeSzlcwPkXyaVA" position="3.0,33.0"/>
+      <visibility xmi:id="_ofdKJl2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofdKJV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofZfxF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="viewReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRBskV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGQrdF2BEeSzlcwPkXyaVA" position="-1538.0,971.0"/>
+      <visibility xmi:id="_ofdKKF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofdKJ12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofXqkF2BEeSzlcwPkXyaVA" sourceAnchor="197.0,0.0" targetAnchor="85.0,67.0" target="_oemOgF2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRZgAV2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofZfyV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRaHEF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofZfxl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGRSgV2BEeSzlcwPkXyaVA" position="-28.0,-14.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofZfx12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRZgAl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGRSgF2BEeSzlcwPkXyaVA" position="-20.0,-75.0"/>
+      <visibility xmi:id="_ofdKK12BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofdKKl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofZfyF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="editReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRBsk12BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGRSgl2BEeSzlcwPkXyaVA" position="-67.0,25.0"/>
+      <visibility xmi:id="_ofdKLV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofdKLF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofXqkV2BEeSzlcwPkXyaVA" sourceAnchor="67.0,0.0" targetAnchor="0.0,33.0" target="_oelAYF2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRaHEV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7JZ12DEeSzlcwPkXyaVA" sourceY="-909" targetX="-274"/>
+    <stereotypes xmi:id="_ofZfzV2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRauIF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofZfyl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGR5kF2BEeSzlcwPkXyaVA" position="-28.0,694.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofZfy12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRaHEl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGRSg12BEeSzlcwPkXyaVA" position="-21.0,-75.0"/>
+      <visibility xmi:id="_ofdxMl2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofdxMV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofZfzF2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="deleteReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRCToV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGR5kV2BEeSzlcwPkXyaVA" position="-347.0,534.0"/>
+      <visibility xmi:id="_ofdxNF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofdxM12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofYRoF2BEeSzlcwPkXyaVA" sourceAnchor="15.0,0.0" targetAnchor="213.0,67.0" target="_oem1kF2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRauIV2BEeSzlcwPkXyaVA"/>
+    <stereotypes xmi:id="_ofaG0F2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRbVMF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofZfzl2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGR5k12BEeSzlcwPkXyaVA" position="-28.0,11.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofZfz12BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRauIl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGR5kl2BEeSzlcwPkXyaVA" position="-20.0,-74.0"/>
+      <visibility xmi:id="_ofdxN12BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofdxNl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofZf0F2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="exportReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRC6sF2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGR5lF2BEeSzlcwPkXyaVA" position="-75.0,77.0"/>
+      <visibility xmi:id="_ofdxOV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofdxOF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofYRoV2BEeSzlcwPkXyaVA" sourceAnchor="431.0,0.0" targetAnchor="117.0,67.0" target="_oeoDsF2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRbVMV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7JaF2DEeSzlcwPkXyaVA" sourceY="-143" targetX="-755" targetY="72"/>
+    <bendpoints xmi:id="_ny7JaV2DEeSzlcwPkXyaVA" sourceX="755" sourceY="-143" targetY="72"/>
+    <stereotypes xmi:id="_ofaG1F2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRb8QF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofaG0V2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGSgoV2BEeSzlcwPkXyaVA" position="-404.00000000000006,-31.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofaG0l2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRbVMl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGSgoF2BEeSzlcwPkXyaVA" position="-20.0,-75.0"/>
+      <visibility xmi:id="_ofdxPF2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofdxO12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofaG012BEeSzlcwPkXyaVA" aggregationKind="NONE" name="saveReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRC6sl2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGSgol2BEeSzlcwPkXyaVA" position="-823.0,-78.0"/>
+      <visibility xmi:id="_ofeYQF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofdxPV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofYRol2BEeSzlcwPkXyaVA" sourceAnchor="97.0,0.0" targetAnchor="18.0,67.0" target="_oekZUF2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRb8QV2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7wcF2DEeSzlcwPkXyaVA" sourceY="-530" targetX="-561" targetY="345"/>
+    <bendpoints xmi:id="_ny7wcV2DEeSzlcwPkXyaVA" sourceX="561" sourceY="-530" targetY="345"/>
+    <stereotypes xmi:id="_ofaG2F2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRb8Q12BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofaG1V2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGTHsF2BEeSzlcwPkXyaVA" position="-308.0,302.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofaG1l2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRb8Ql2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGSgo12BEeSzlcwPkXyaVA" position="-20.0,-75.0"/>
+      <visibility xmi:id="_ofeYQ12BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofeYQl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofaG112BEeSzlcwPkXyaVA" aggregationKind="NONE" name="closeReceiptAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRDhwV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGTHsV2BEeSzlcwPkXyaVA" position="-631.0000000000001,472.0"/>
+      <visibility xmi:id="_ofeYRV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofeYRF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_ofY4sF2BEeSzlcwPkXyaVA" sourceAnchor="0.0,305.0" targetAnchor="89.0,67.0" target="_oetjQF2BEeSzlcwPkXyaVA" source="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRb8RF2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7wcl2DEeSzlcwPkXyaVA" sourceX="-545" targetY="1177"/>
+    <stereotypes xmi:id="_ofaG3F2BEeSzlcwPkXyaVA" name="Reference">
+      <modelElement href="ReceiptEntry_sm.uml#_oRcjUF2BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_ofaG2V2BEeSzlcwPkXyaVA" text="">
+      <visualProperties xmi:id="_pGTHs12BEeSzlcwPkXyaVA" position="412.0,0.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_ofaG2l2BEeSzlcwPkXyaVA" aggregationKind="NONE" name="">
+      <modelElement href="ReceiptEntry_sm.uml#_oRb8RV2BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGTHsl2BEeSzlcwPkXyaVA" position="-62.0,-10.0"/>
+      <visibility xmi:id="_ofeYSF2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofeYR12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_ofaG212BEeSzlcwPkXyaVA" aggregationKind="NONE" name="syncStateAction" navigable="true">
+      <modelElement href="ReceiptEntry_sm.uml#_oRDhw12BEeSzlcwPkXyaVA"/>
+      <visualProperties xmi:id="_pGTHtF2BEeSzlcwPkXyaVA" position="326.0,1167.0"/>
+      <visibility xmi:id="_ofeYSl2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofeYSV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_ofY4sV2BEeSzlcwPkXyaVA" sourceAnchor="257.0,0.0" targetAnchor="212.0,333.0" dashed="true" superClass="_oeSFcF2BEeSzlcwPkXyaVA" subClass="_ofgNcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oQikYl2BEeSzlcwPkXyaVA"/>
+    <bendpoints xmi:id="_ny7wc12DEeSzlcwPkXyaVA" sourceY="-305" targetX="-1649" targetY="878"/>
+    <bendpoints xmi:id="_ny7wdF2DEeSzlcwPkXyaVA" sourceX="940" sourceY="-305" targetX="-709" targetY="878"/>
+    <bendpoints xmi:id="_ny7wdV2DEeSzlcwPkXyaVA" sourceX="940" sourceY="-975" targetX="-709" targetY="208"/>
+    <bendpoints xmi:id="_ny7wdl2DEeSzlcwPkXyaVA" sourceX="1649" sourceY="-975" targetY="208"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oePCIF2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oePCIV2BEeSzlcwPkXyaVA" text="The wrapper object ( or working object) to&#xA;serve business service requests for the&#xA;Receipt object. The business service layer delegates&#xA;service requests to this object via the transition&#xA;interface. &#xA;&#xA;Note that the condition and action interfaces should not&#xA;be exposured to the outside, but, for simplicity, in this example,&#xA;working object also implements both the &lt;code>&#xA;OrderConditions&lt;/code> and &lt;code>OrderActions&lt;/code>&#xA;interfaces.&#xA;@author Jason Zhicheng Li (jason@lizjason.com)" item="_oePpOF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRTZYF2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oeQ3UF2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oeQ3UV2BEeSzlcwPkXyaVA" text="All the actions for the order object state machine&#xA; *&#xA;@author Dr. Gerald E. Bennett Following architectural pattern of Jason&#xA;        Zhicheng Li (jason@lizjason.com)" item="_oeSFcF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRSyUF2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oeW98F2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oeXlAF2BEeSzlcwPkXyaVA" text="*&#xA;* @author Dr. Gerald E. Bennett&#xA;* Following architectural pattern of Jason Zhicheng Li (jason@lizjason.com)" item="_oeYMEF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRSyUV2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oeYzIF2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oeYzIV2BEeSzlcwPkXyaVA" text="*&#xA;@author Dr. Gerald E. Bennett Following architectural pattern of Jason&#xA;        Zhicheng Li (jason@lizjason.com)" item="_oeZaMF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRSyUl2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oebPYF2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oebPYV2BEeSzlcwPkXyaVA" text="*&#xA;* @author Dr. Gerald E. Bennett&#xA;* Following architectural pattern of Jason Zhicheng Li (jason@lizjason.com)" item="_oeb2cF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRTZZF2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oedEkV2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oedroF2BEeSzlcwPkXyaVA" text="The state machine wrapper. This class can be generated using, for example,&#xA;XDoclet, based on the generated &lt;code>ReceiptWOContext&lt;/code>.&#xA;&#xA;This main purpose of this class is to synchronize the state machine internal&#xA;state to the state of the business object&#xA; *&#xA;@author Jason Zhicheng Li (jason@lizjason.com)" item="_oegH6V2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRTZY12BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oes8MF2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oes8MV2BEeSzlcwPkXyaVA" text="Synchronize the Order state with &#xA;the current state in the  &#xA;state machine. This action is not &#xA;a business action." item="_oetjQF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRTZZV2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oe5JcF2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oe5JcV2BEeSzlcwPkXyaVA" text="A transition condition implementation for the &#xA;state machine of the receipt object. &#xA;  &#xA;@author Jason Zhicheng Li (jason@lizjason.com)" item="_oe5Jcl2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRUAcF2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_oe6XkV2BEeSzlcwPkXyaVA" sourceConnectionVisual="_oe6Xkl2BEeSzlcwPkXyaVA" text="Factory class for the &lt;code>ReceiptWO&lt;/code> classes. It hides the details&#xA;that how the ReceiptWO instances are created.&#xA;&#xA;@author Jason Zhicheng Li (jason@lizjason.com)" item="_oe6-oF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oRUAcV2BEeSzlcwPkXyaVA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oePpOF2BEeSzlcwPkXyaVA" comments="_oePCIF2BEeSzlcwPkXyaVA" targetConnectionVisual="_oePCIV2BEeSzlcwPkXyaVA" name="ReceiptWO" associationsIn="_oePpMF2BEeSzlcwPkXyaVA" generalizations="_oeQ3Ul2BEeSzlcwPkXyaVA _oeXlAV2BEeSzlcwPkXyaVA _oeYzIl2BEeSzlcwPkXyaVA" subclassedBy="_ofAeMF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oePpOV2BEeSzlcwPkXyaVA" position="889.0,198.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oePpOl2BEeSzlcwPkXyaVA" label="+"/>
+    <attributes xmi:id="_oePpO12BEeSzlcwPkXyaVA" name="receipt">
+      <modelElement href="ReceiptEntry_sm.uml#_oOOQMF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oePpPF2BEeSzlcwPkXyaVA" label="~"/>
+      <cardinality xmi:id="_oePpPV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_oePpPl2BEeSzlcwPkXyaVA" name="Receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQUh8F2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oeSFcF2BEeSzlcwPkXyaVA" comments="_oeQ3UF2BEeSzlcwPkXyaVA" targetConnectionVisual="_oeQ3UV2BEeSzlcwPkXyaVA" name="ReceiptActions" associationsIn="_oe-B8F2BEeSzlcwPkXyaVA" subclassedBy="_oeQ3Ul2BEeSzlcwPkXyaVA _ofY4sV2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOCqAF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeSFcV2BEeSzlcwPkXyaVA" position="903.0,-373.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeSFcl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeSFc12BEeSzlcwPkXyaVA" name="createAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQVJAF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFdF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFdV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQVJAV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFdl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFd12BEeSzlcwPkXyaVA" name="viewAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQVJAl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFeF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFeV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQVJA12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFel2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFe12BEeSzlcwPkXyaVA" name="editAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQVwEF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFfF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFfV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQVwEV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFfl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFf12BEeSzlcwPkXyaVA" name="deleteAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQVwEl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFgF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFgV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQVwE12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFgl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFg12BEeSzlcwPkXyaVA" name="exportAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQVwFF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFhF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFhV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQWXIF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFhl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFh12BEeSzlcwPkXyaVA" name="saveAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQWXIV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFiF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFiV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQWXIl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFil2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFi12BEeSzlcwPkXyaVA" name="closeAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQWXI12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFjF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFjV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQWXJF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFjl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFj12BEeSzlcwPkXyaVA" name="updateState">
+      <modelElement href="ReceiptEntry_sm.uml#_oQWXJV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFkF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFkV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQWXJl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFkl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oeSFk12BEeSzlcwPkXyaVA" name="newState">
+        <modelElement href="ReceiptEntry_sm.uml#_oQWXJ12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFlF2BEeSzlcwPkXyaVA" name="ReceiptState">
+          <modelElement href="ReceiptEntry_sm.uml#_oOJXs12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFlV2BEeSzlcwPkXyaVA" name="setCreateReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQW-MF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFll2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFl12BEeSzlcwPkXyaVA" name="createReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQW-MV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFmF2BEeSzlcwPkXyaVA" name="CreateReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOXaIF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFmV2BEeSzlcwPkXyaVA" name="setDeleteReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQW-Ml2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFml2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFm12BEeSzlcwPkXyaVA" name="deleteReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQW-M12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFnF2BEeSzlcwPkXyaVA" name="DeleteReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOYoQF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFnV2BEeSzlcwPkXyaVA" name="setEditReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQW-NF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFnl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFn12BEeSzlcwPkXyaVA" name="editReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQW-NV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFoF2BEeSzlcwPkXyaVA" name="EditReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOZPUF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFoV2BEeSzlcwPkXyaVA" name="setSaveReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQXlQF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFol2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFo12BEeSzlcwPkXyaVA" name="saveReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQXlQV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFpF2BEeSzlcwPkXyaVA" name="SaveReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOadc12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFpV2BEeSzlcwPkXyaVA" name="setViewReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQXlQl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFpl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFp12BEeSzlcwPkXyaVA" name="viewReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQXlQ12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFqF2BEeSzlcwPkXyaVA" name="ViewReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOcSoF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFqV2BEeSzlcwPkXyaVA" name="setExportReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQXlRF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFql2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFq12BEeSzlcwPkXyaVA" name="exportReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQXlRV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFrF2BEeSzlcwPkXyaVA" name="ExportReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOZ2YF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeSFrV2BEeSzlcwPkXyaVA" name="setCloseReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQXlRl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeSFrl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeSFr12BEeSzlcwPkXyaVA" name="closeReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQXlR12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeSFsF2BEeSzlcwPkXyaVA" name="CloseReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOWzEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oeZaMF2BEeSzlcwPkXyaVA" comments="_oeYzIF2BEeSzlcwPkXyaVA" targetConnectionVisual="_oeYzIV2BEeSzlcwPkXyaVA" name="ReceiptTransitions" associationsIn="_oe-pAV2BEeSzlcwPkXyaVA" subclassedBy="_oeYzIl2BEeSzlcwPkXyaVA _oedEkF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOLM4F2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeZaMV2BEeSzlcwPkXyaVA" position="1688.0,-259.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeZaMl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeZaM12BEeSzlcwPkXyaVA" name="createTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOLz8F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaNF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaNV2BEeSzlcwPkXyaVA" name="viewTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOLz8V2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaNl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaN12BEeSzlcwPkXyaVA" name="editTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOLz8l2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaOF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaOV2BEeSzlcwPkXyaVA" name="deleteTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOLz812BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaOl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaO12BEeSzlcwPkXyaVA" name="exportTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOLz9F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaPF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaPV2BEeSzlcwPkXyaVA" name="saveReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOMbAF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaPl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaP12BEeSzlcwPkXyaVA" name="closeReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOMbAV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaQF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaQV2BEeSzlcwPkXyaVA" name="deleteReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOMbAl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaQl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oeZaQ12BEeSzlcwPkXyaVA" name="exportReceiptsTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOMbA12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeZaRF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oegH6V2BEeSzlcwPkXyaVA" comments="_oedEkV2BEeSzlcwPkXyaVA" targetConnectionVisual="_oedroF2BEeSzlcwPkXyaVA" name="ReceiptWOContextWrapper" associationsOut="_oegH4F2BEeSzlcwPkXyaVA" generalizations="_oedEkF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOO3QF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oegH6l2BEeSzlcwPkXyaVA" position="917.0,359.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oegH612BEeSzlcwPkXyaVA" label="+"/>
+    <attributes xmi:id="_oegH7F2BEeSzlcwPkXyaVA" name="receiptContext">
+      <modelElement href="ReceiptEntry_sm.uml#_oRAecF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oegH7V2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRBFgF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oegH7l2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRBFgF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oegH712BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_oegH8F2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_oegH8V2BEeSzlcwPkXyaVA" name="ReceiptWOContext">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ5wwF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_oegH8l2BEeSzlcwPkXyaVA" name="saveReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOQscF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegH812BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegH9F2BEeSzlcwPkXyaVA" name="closeReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOQscV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegH9V2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegH9l2BEeSzlcwPkXyaVA" name="deleteReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOQscl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegH912BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegH-F2BEeSzlcwPkXyaVA" name="exportReceiptsTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOQsc12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegH-V2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegH-l2BEeSzlcwPkXyaVA" name="createTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oORTgF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oegH-12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oORTgV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oegH_F2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oOR6kF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oegH_V2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegH_l2BEeSzlcwPkXyaVA" name="viewTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOR6kl2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oegH_12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oOR6k12BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oegIAF2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oOShoF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oegIAV2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegIAl2BEeSzlcwPkXyaVA" name="editTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOShol2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oegIA12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oOSho12BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oegIBF2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oOShpF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oegIBV2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegIBl2BEeSzlcwPkXyaVA" name="deleteTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOTIsF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oegIB12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oOTIsV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oegICF2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oOTIsl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oegICV2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegICl2BEeSzlcwPkXyaVA" name="exportTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oOTItF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oegIC12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oOTvwF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oegIDF2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oOTvwV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oegIDV2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_oegIDl2BEeSzlcwPkXyaVA" name="ReceiptWOContextWrapper">
+      <modelElement href="ReceiptEntry_sm.uml#_oQYzYV2BEeSzlcwPkXyaVA"/>
+      <keywords xmi:id="_oegID12BEeSzlcwPkXyaVA" keyword="create"/>
+      <visibility xmi:id="_oegIEF2BEeSzlcwPkXyaVA" label="+"/>
+      <outParameters xmi:id="_oegIEV2BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQZacV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oegIEl2BEeSzlcwPkXyaVA" name="ReceiptWOContextWrapper">
+          <modelElement href="ReceiptEntry_sm.uml#_oOO3QF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oegIE12BEeSzlcwPkXyaVA" name="owner">
+        <modelElement href="ReceiptEntry_sm.uml#_oQYzYl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oegIFF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oegIFV2BEeSzlcwPkXyaVA" name="synchronizeState">
+      <modelElement href="ReceiptEntry_sm.uml#_oQZacl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oegIFl2BEeSzlcwPkXyaVA" label="-"/>
+      <parameters xmi:id="_oegIF12BEeSzlcwPkXyaVA" name="owner">
+        <modelElement href="ReceiptEntry_sm.uml#_oQZac12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oegIGF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oeYMEF2BEeSzlcwPkXyaVA" comments="_oeW98F2BEeSzlcwPkXyaVA" targetConnectionVisual="_oeXlAF2BEeSzlcwPkXyaVA" name="ReceiptConditions" associationsIn="_oe-pAF2BEeSzlcwPkXyaVA" subclassedBy="_oeXlAV2BEeSzlcwPkXyaVA _oe4iYF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOIwoF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeYMEV2BEeSzlcwPkXyaVA" position="1194.0,36.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeYMEl2BEeSzlcwPkXyaVA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oe5Jcl2BEeSzlcwPkXyaVA" comments="_oe5JcF2BEeSzlcwPkXyaVA" targetConnectionVisual="_oe5JcV2BEeSzlcwPkXyaVA" name="ReceiptConditionsImpl" generalizations="_oe4iYF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOumgF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oe5Jc12BEeSzlcwPkXyaVA" position="1308.0,295.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oe5JdF2BEeSzlcwPkXyaVA" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ofgNcF2BEeSzlcwPkXyaVA" name="ReceiptActionsImpl" associationsOut="_ofWccF2BEeSzlcwPkXyaVA _ofXDgF2BEeSzlcwPkXyaVA _ofXqkF2BEeSzlcwPkXyaVA _ofXqkV2BEeSzlcwPkXyaVA _ofYRoF2BEeSzlcwPkXyaVA _ofYRoV2BEeSzlcwPkXyaVA _ofYRol2BEeSzlcwPkXyaVA _ofY4sF2BEeSzlcwPkXyaVA" generalizations="_ofY4sV2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOmqsF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_ofgNcV2BEeSzlcwPkXyaVA" position="-791.0,1143.0" size="-1.0,-1.0" visible="false"/>
+    <visibility xmi:id="_ofgNcl2BEeSzlcwPkXyaVA" label="+"/>
+    <attributes xmi:id="_ofgNc12BEeSzlcwPkXyaVA" name="createReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRBFgV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNdF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRBskF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofdKJF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRBskF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNdV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNdl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNd12BEeSzlcwPkXyaVA" name="CreateReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOXaIF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNeF2BEeSzlcwPkXyaVA" name="viewReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRBskV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNeV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRBskl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofdKKV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRBskl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNel2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNe12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNfF2BEeSzlcwPkXyaVA" name="ViewReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOcSoF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNfV2BEeSzlcwPkXyaVA" name="editReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRBsk12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNfl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRCToF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofdxMF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRCToF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNf12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNgF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNgV2BEeSzlcwPkXyaVA" name="EditReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOZPUF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNgl2BEeSzlcwPkXyaVA" name="deleteReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRCToV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNg12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRCTol2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofdxNV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRCTol2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNhF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNhV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNhl2BEeSzlcwPkXyaVA" name="DeleteReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOYoQF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNh12BEeSzlcwPkXyaVA" name="exportReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRC6sF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNiF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRC6sV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofdxOl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRC6sV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNiV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNil2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNi12BEeSzlcwPkXyaVA" name="ExportReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOZ2YF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNjF2BEeSzlcwPkXyaVA" name="saveReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRC6sl2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNjV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRDhwF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofeYQV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRDhwF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNjl2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNj12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNkF2BEeSzlcwPkXyaVA" name="SaveReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOadc12BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNkV2BEeSzlcwPkXyaVA" name="closeReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRDhwV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNkl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRDhwl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofeYRl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRDhwl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNk12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNlF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNlV2BEeSzlcwPkXyaVA" name="CloseReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOWzEF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofgNll2BEeSzlcwPkXyaVA" name="syncStateAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRDhw12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNl12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oREI0F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofeYS12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oREI0F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNmF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofgNmV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofgNml2BEeSzlcwPkXyaVA" name="SyncStateAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oObrkF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ofgNm12BEeSzlcwPkXyaVA" name="createAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQjLcF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgNnF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNnV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQjLcV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNnl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNn12BEeSzlcwPkXyaVA" name="viewAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQjLcl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgNoF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNoV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQjLc12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNol2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNo12BEeSzlcwPkXyaVA" name="editAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQjygF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgNpF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNpV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQjygV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNpl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNp12BEeSzlcwPkXyaVA" name="deleteAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQjygl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgNqF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNqV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQjyg12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNql2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNq12BEeSzlcwPkXyaVA" name="exportAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQjyhF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgNrF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNrV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQkZkF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNrl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNr12BEeSzlcwPkXyaVA" name="saveAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQkZkV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgNsF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNsV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQkZkl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNsl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNs12BEeSzlcwPkXyaVA" name="closeAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQkZk12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNtF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQlAoF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgNtV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQlAoV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNtl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNt12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQkZlF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNuF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNuV2BEeSzlcwPkXyaVA" name="setCreateReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQlAo12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNul2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQlnsF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgNu12BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQlnsV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNvF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNvV2BEeSzlcwPkXyaVA" name="createReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQlApF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNvl2BEeSzlcwPkXyaVA" name="CreateReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOXaIF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNv12BEeSzlcwPkXyaVA" name="setViewReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQlns12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNwF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQmOwF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgNwV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQmOwV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNwl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNw12BEeSzlcwPkXyaVA" name="viewReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQlntF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNxF2BEeSzlcwPkXyaVA" name="ViewReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOcSoF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNxV2BEeSzlcwPkXyaVA" name="setEditReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQmOw12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNxl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQm10F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgNx12BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQm10V2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNyF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNyV2BEeSzlcwPkXyaVA" name="editReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQmOxF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgNyl2BEeSzlcwPkXyaVA" name="EditReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOZPUF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgNy12BEeSzlcwPkXyaVA" name="setDeleteReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQm1012BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgNzF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQm11V2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgNzV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQm11l2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgNzl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgNz12BEeSzlcwPkXyaVA" name="deleteReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQm11F2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN0F2BEeSzlcwPkXyaVA" name="DeleteReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOYoQF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgN0V2BEeSzlcwPkXyaVA" name="setExportReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQnc4F2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgN0l2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQnc4l2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgN012BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQnc412BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgN1F2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgN1V2BEeSzlcwPkXyaVA" name="exportReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQnc4V2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN1l2BEeSzlcwPkXyaVA" name="ExportReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOZ2YF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgN112BEeSzlcwPkXyaVA" name="setSaveReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQnc5V2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgN2F2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQoD8F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgN2V2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQoD8V2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgN2l2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgN212BEeSzlcwPkXyaVA" name="saveReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQnc5l2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN3F2BEeSzlcwPkXyaVA" name="SaveReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOadc12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgN3V2BEeSzlcwPkXyaVA" name="setCloseReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQoD812BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgN3l2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQoD9V2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgN312BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQorAF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgN4F2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgN4V2BEeSzlcwPkXyaVA" name="closeReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQoD9F2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN4l2BEeSzlcwPkXyaVA" name="CloseReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOWzEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgN412BEeSzlcwPkXyaVA" name="updateState">
+      <modelElement href="ReceiptEntry_sm.uml#_oQorAl2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofgN5F2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQpSEF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofgN5V2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQpSEV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofgN5l2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgN512BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQorA12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN6F2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ofgN6V2BEeSzlcwPkXyaVA" name="newState">
+        <modelElement href="ReceiptEntry_sm.uml#_oQorBF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN6l2BEeSzlcwPkXyaVA" name="ReceiptState">
+          <modelElement href="ReceiptEntry_sm.uml#_oOJXs12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofgN612BEeSzlcwPkXyaVA" name="setSyncStateAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQp5IF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofgN7F2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofgN7V2BEeSzlcwPkXyaVA" name="syncStateAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQp5IV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofgN7l2BEeSzlcwPkXyaVA" name="SyncStateAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oObrkF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oelAYF2BEeSzlcwPkXyaVA" name="DeleteReceiptAction" associationsIn="_oe_3Il2BEeSzlcwPkXyaVA _ofXqkV2BEeSzlcwPkXyaVA" subclassedBy="_oe1fEF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOYoQF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oelAYV2BEeSzlcwPkXyaVA" position="439.0,1715.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oelAYl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oelAY12BEeSzlcwPkXyaVA" name="deleteAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQaokV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oelAZF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oelAZV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQaokl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oelAZl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oe2GIF2BEeSzlcwPkXyaVA" name="DeleteReceiptActionImpl" generalizations="_oe1fEF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOf9AF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oe2GIV2BEeSzlcwPkXyaVA" position="122.0,1722.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oe2GIl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oe2GI12BEeSzlcwPkXyaVA" name="deleteAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQdr412BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oe2GJF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQeS8F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oe2GJV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQeS8V2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oe2GJl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oe2GJ12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQdr5F2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe2GKF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oe04AF2BEeSzlcwPkXyaVA" name="ExportReceiptActionImpl" generalizations="_oe0Q8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOhyMF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oe04AV2BEeSzlcwPkXyaVA" position="112.0,1636.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oe04Al2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oe04A12BEeSzlcwPkXyaVA" name="exportAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQfhEF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oe04BF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQfhEl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oe04BV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQfhE12BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oe04Bl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oe04B12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQfhEV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe04CF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oem1kF2BEeSzlcwPkXyaVA" name="ExportReceiptAction" associationsIn="_oe_QEV2BEeSzlcwPkXyaVA _ofYRoF2BEeSzlcwPkXyaVA" subclassedBy="_oe0Q8F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOZ2YF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oem1kV2BEeSzlcwPkXyaVA" position="435.0,1631.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oem1kl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oem1k12BEeSzlcwPkXyaVA" name="exportAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQbPoF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oem1lF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oem1lV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQbPoV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oem1ll2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oe3UQF2BEeSzlcwPkXyaVA" name="EditReceiptActionImpl" generalizations="_oe2tMF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOhLIF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oe3UQV2BEeSzlcwPkXyaVA" position="125.0,1815.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oe3UQl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oe3UQ12BEeSzlcwPkXyaVA" name="editAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQe6AF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oe3URF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQe6Al2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oe3URV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQe6A12BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oe3URl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oe3UR12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQe6AV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe3USF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oemOgF2BEeSzlcwPkXyaVA" name="EditReceiptAction" associationsIn="_oe_3IV2BEeSzlcwPkXyaVA _ofXqkF2BEeSzlcwPkXyaVA" subclassedBy="_oe2tMF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOZPUF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oemOgV2BEeSzlcwPkXyaVA" position="442.0,1804.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oemOgl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oemOg12BEeSzlcwPkXyaVA" name="editAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQaok12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oemOhF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oemOhV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQaolF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oemOhl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oeuxYF2BEeSzlcwPkXyaVA" name="SyncStateActionImpl" generalizations="_oeuKUF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOkOcF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeuxYV2BEeSzlcwPkXyaVA" position="-706.0,494.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeuxYl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeuxY12BEeSzlcwPkXyaVA" name="updateState">
+      <modelElement href="ReceiptEntry_sm.uml#_oQgvNF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oeuxZF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQhWQF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oeuxZV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQhWQV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oeuxZl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeuxZ12BEeSzlcwPkXyaVA" name="receiptWO">
+        <modelElement href="ReceiptEntry_sm.uml#_oQgvNV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeuxaF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oeuxaV2BEeSzlcwPkXyaVA" name="newState">
+        <modelElement href="ReceiptEntry_sm.uml#_oQgvNl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeuxal2BEeSzlcwPkXyaVA" name="ReceiptState">
+          <modelElement href="ReceiptEntry_sm.uml#_oOJXs12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oetjQF2BEeSzlcwPkXyaVA" comments="_oes8MF2BEeSzlcwPkXyaVA" targetConnectionVisual="_oes8MV2BEeSzlcwPkXyaVA" name="SyncStateAction" associationsIn="_ofY4sF2BEeSzlcwPkXyaVA" subclassedBy="_oeuKUF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oObrkF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oetjQV2BEeSzlcwPkXyaVA" position="-694.0,602.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oetjQl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oetjQ12BEeSzlcwPkXyaVA" name="updateState">
+      <modelElement href="ReceiptEntry_sm.uml#_oQbPpF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oetjRF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oetjRV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQbPpV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oetjRl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_oetjR12BEeSzlcwPkXyaVA" name="newState">
+        <modelElement href="ReceiptEntry_sm.uml#_oQbPpl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oetjSF2BEeSzlcwPkXyaVA" name="ReceiptState">
+          <modelElement href="ReceiptEntry_sm.uml#_oOJXs12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_oeNM8F2BEeSzlcwPkXyaVA" name="ReceiptState">
+    <modelElement href="ReceiptEntry_sm.uml#_oOJXs12BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeNM8V2BEeSzlcwPkXyaVA" position="30.0,23.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_oeNM8l2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+      <modelElement href="ReceiptEntry_sm.uml#_oOJ-w12BEeSzlcwPkXyaVA"/>
+    </stereotypes>
+    <visibility xmi:id="_oeNM812BEeSzlcwPkXyaVA" label="+"/>
+    <literals xmi:id="_oeNM9F2BEeSzlcwPkXyaVA" name="CreateState">
+      <modelElement href="ReceiptEntry_sm.uml#_oOKl0F2BEeSzlcwPkXyaVA"/>
+    </literals>
+    <literals xmi:id="_oeNM9V2BEeSzlcwPkXyaVA" name="ViewState">
+      <modelElement href="ReceiptEntry_sm.uml#_oOKl0V2BEeSzlcwPkXyaVA"/>
+    </literals>
+    <literals xmi:id="_oeNM9l2BEeSzlcwPkXyaVA" name="EditState">
+      <modelElement href="ReceiptEntry_sm.uml#_oOKl0l2BEeSzlcwPkXyaVA"/>
+    </literals>
+    <literals xmi:id="_oeNM912BEeSzlcwPkXyaVA" name="DeleteState">
+      <modelElement href="ReceiptEntry_sm.uml#_oOKl012BEeSzlcwPkXyaVA"/>
+    </literals>
+    <literals xmi:id="_oeNM-F2BEeSzlcwPkXyaVA" name="ExportState">
+      <modelElement href="ReceiptEntry_sm.uml#_oOKl1F2BEeSzlcwPkXyaVA"/>
+    </literals>
+    <literals xmi:id="_oeNM-V2BEeSzlcwPkXyaVA" name="TABLEVIEW">
+      <modelElement href="ReceiptEntry_sm.uml#_oOKl1V2BEeSzlcwPkXyaVA"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oeybwF2BEeSzlcwPkXyaVA" name="CloseReceiptActionImpl" generalizations="_oex0sF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOdgwF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeybwV2BEeSzlcwPkXyaVA" position="131.0,1526.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeybwl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeybw12BEeSzlcwPkXyaVA" name="closeAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQb2s12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oeybxF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQcdwF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oeybxV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQcdwV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oeybxl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeybx12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQb2tF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeybyF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oekZUF2BEeSzlcwPkXyaVA" name="CloseReceiptAction" associationsIn="_oe_QEF2BEeSzlcwPkXyaVA _ofYRol2BEeSzlcwPkXyaVA" subclassedBy="_oex0sF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOWzEF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oekZUV2BEeSzlcwPkXyaVA" position="433.0,1517.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oekZUl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oekZU12BEeSzlcwPkXyaVA" name="closeAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQaBgV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oekZVF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oekZVV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQaBgl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oekZVl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oepR0F2BEeSzlcwPkXyaVA" name="CreateReceiptAction" associationsIn="_oe_3I12BEeSzlcwPkXyaVA _ofWccF2BEeSzlcwPkXyaVA" subclassedBy="_oezp4F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOXaIF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oepR0V2BEeSzlcwPkXyaVA" position="422.0,1434.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oepR0l2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oepR012BEeSzlcwPkXyaVA" name="createAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQaBg12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oepR1F2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oepR1V2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQaokF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oepR1l2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oezp4V2BEeSzlcwPkXyaVA" name="CreateReceiptActionImpl" generalizations="_oezp4F2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOeu4F2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oezp4l2BEeSzlcwPkXyaVA" position="111.0,1440.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oezp412BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oezp5F2BEeSzlcwPkXyaVA" name="createAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQdE0F2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oezp5V2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQdE0l2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oezp5l2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQdr4F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oezp512BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oezp6F2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQdE0V2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oezp6V2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ofHy8F2BEeSzlcwPkXyaVA" name="ReceiptWOImpl" associationsIn="_ofAeMV2BEeSzlcwPkXyaVA" associationsOut="_oe-B8F2BEeSzlcwPkXyaVA _oe-pAF2BEeSzlcwPkXyaVA _oe-pAV2BEeSzlcwPkXyaVA _oe_QEF2BEeSzlcwPkXyaVA _oe_QEV2BEeSzlcwPkXyaVA _oe_QEl2BEeSzlcwPkXyaVA _oe_3IF2BEeSzlcwPkXyaVA _oe_3IV2BEeSzlcwPkXyaVA _oe_3Il2BEeSzlcwPkXyaVA _oe_3I12BEeSzlcwPkXyaVA _ofHL4F2BEeSzlcwPkXyaVA" generalizations="_ofAeMF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOy38F2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_ofHy8V2BEeSzlcwPkXyaVA" position="1026.0,1117.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ofHy8l2BEeSzlcwPkXyaVA" label="+"/>
+    <attributes xmi:id="_ofHy812BEeSzlcwPkXyaVA" name="receipt">
+      <modelElement href="ReceiptEntry_sm.uml#_oREv4F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHy9F2BEeSzlcwPkXyaVA" label="+"/>
+      <cardinality xmi:id="_ofHy9V2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHy9l2BEeSzlcwPkXyaVA" name="Receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQUh8F2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHy912BEeSzlcwPkXyaVA" name="receiptActions">
+      <modelElement href="ReceiptEntry_sm.uml#_oREv4V2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHy-F2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRFW8F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofEvoF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRFW8F2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHy-V2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHy-l2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHy-12BEeSzlcwPkXyaVA" name="ReceiptActions">
+        <modelElement href="ReceiptEntry_sm.uml#_oOCqAF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHy_F2BEeSzlcwPkXyaVA" name="receiptConditions">
+      <modelElement href="ReceiptEntry_sm.uml#_oRFW8V2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHy_V2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRFW8l2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofEvpV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRFW8l2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHy_l2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHy_12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzAF2BEeSzlcwPkXyaVA" name="ReceiptConditions">
+        <modelElement href="ReceiptEntry_sm.uml#_oOIwoF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzAV2BEeSzlcwPkXyaVA" name="receiptTransitions">
+      <modelElement href="ReceiptEntry_sm.uml#_oRFW812BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzAl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRF-AF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofEvql2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRF-AF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzA12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzBF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzBV2BEeSzlcwPkXyaVA" name="ReceiptTransitions">
+        <modelElement href="ReceiptEntry_sm.uml#_oOLM4F2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzBl2BEeSzlcwPkXyaVA" name="closeReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRF-AV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzB12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRF-Al2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofEvr12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRF-Al2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzCF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzCV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzCl2BEeSzlcwPkXyaVA" name="CloseReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOWzEF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzC12BEeSzlcwPkXyaVA" name="exportReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRF-A12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzDF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRGlEF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofFWsF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRGlEF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzDV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzDl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzD12BEeSzlcwPkXyaVA" name="ExportReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOZ2YF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzEF2BEeSzlcwPkXyaVA" name="viewReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRGlEV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzEV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRGlEl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofFWtV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRGlEl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzEl2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzE12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzFF2BEeSzlcwPkXyaVA" name="ViewReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOcSoF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzFV2BEeSzlcwPkXyaVA" name="saveReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRGlE12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzFl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHMIF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofFWul2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHMIF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzF12BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzGF2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzGV2BEeSzlcwPkXyaVA" name="SaveReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOadc12BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzGl2BEeSzlcwPkXyaVA" name="editReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHMIV2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzG12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHMIl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofFWv12BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHMIl2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzHF2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzHV2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzHl2BEeSzlcwPkXyaVA" name="EditReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOZPUF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzH12BEeSzlcwPkXyaVA" name="deleteReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHMI12BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzIF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHMJF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofF9wF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHMJF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzIV2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzIl2BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzI12BEeSzlcwPkXyaVA" name="DeleteReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOYoQF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzJF2BEeSzlcwPkXyaVA" name="createReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHzMF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzJV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHzMV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofF9xV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHzMV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzJl2BEeSzlcwPkXyaVA" label="-"/>
+      <cardinality xmi:id="_ofHzJ12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzKF2BEeSzlcwPkXyaVA" name="CreateReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oOXaIF2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ofHzKV2BEeSzlcwPkXyaVA" name="registrationService">
+      <modelElement href="ReceiptEntry_sm.uml#_oRHzMl2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_ofHzKl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHzM12BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofHzK12BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oRIaQF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofHzLF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oRHzM12BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_ofHzLV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oRIaQF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_ofHzLl2BEeSzlcwPkXyaVA" label="~"/>
+      <cardinality xmi:id="_ofHzL12BEeSzlcwPkXyaVA" label="1" max="1" min="1"/>
+      <type xmi:id="_ofHzMF2BEeSzlcwPkXyaVA" name="RegistrationService">
+        <modelElement href="ReceiptEntry_sm.uml#_oQtjgV2BEeSzlcwPkXyaVA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ofHzMV2BEeSzlcwPkXyaVA" name="saveReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO17QF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzMl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzM12BEeSzlcwPkXyaVA" name="closeReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO17QV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzNF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzNV2BEeSzlcwPkXyaVA" name="deleteReceiptTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO17Ql2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzNl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzN12BEeSzlcwPkXyaVA" name="exportReceiptsTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO2iUF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzOF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzOV2BEeSzlcwPkXyaVA" name="createTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO2iUV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzOl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzO12BEeSzlcwPkXyaVA" name="viewTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO2iUl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzPF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzPV2BEeSzlcwPkXyaVA" name="editTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO2iU12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzPl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzP12BEeSzlcwPkXyaVA" name="deleteTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO2iVF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzQF2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzQV2BEeSzlcwPkXyaVA" name="exportTRN">
+      <modelElement href="ReceiptEntry_sm.uml#_oO3JYF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzQl2BEeSzlcwPkXyaVA" label="+"/>
+    </operations>
+    <operations xmi:id="_ofHzQ12BEeSzlcwPkXyaVA" name="getVendor">
+      <modelElement href="ReceiptEntry_sm.uml#_oO3JYV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzRF2BEeSzlcwPkXyaVA" label="+"/>
+      <outParameters xmi:id="_ofHzRV2BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oO3JYl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzRl2BEeSzlcwPkXyaVA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ofHzR12BEeSzlcwPkXyaVA" name="setReceiptActions">
+      <modelElement href="ReceiptEntry_sm.uml#_oQvYsF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzSF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzSV2BEeSzlcwPkXyaVA" name="receiptActions">
+        <modelElement href="ReceiptEntry_sm.uml#_oQvYsV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzSl2BEeSzlcwPkXyaVA" name="ReceiptActions">
+          <modelElement href="ReceiptEntry_sm.uml#_oOCqAF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzS12BEeSzlcwPkXyaVA" name="setReceiptConditions">
+      <modelElement href="ReceiptEntry_sm.uml#_oQvYsl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzTF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzTV2BEeSzlcwPkXyaVA" name="receiptConditions">
+        <modelElement href="ReceiptEntry_sm.uml#_oQvYs12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzTl2BEeSzlcwPkXyaVA" name="ReceiptConditions">
+          <modelElement href="ReceiptEntry_sm.uml#_oOIwoF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzT12BEeSzlcwPkXyaVA" name="setReceiptTransitions">
+      <modelElement href="ReceiptEntry_sm.uml#_oQv_wF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzUF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzUV2BEeSzlcwPkXyaVA" name="receiptTransitions">
+        <modelElement href="ReceiptEntry_sm.uml#_oQv_wV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzUl2BEeSzlcwPkXyaVA" name="ReceiptTransitions">
+          <modelElement href="ReceiptEntry_sm.uml#_oOLM4F2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzU12BEeSzlcwPkXyaVA" name="createAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQv_wl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzVF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzVV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQv_w12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzVl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzV12BEeSzlcwPkXyaVA" name="viewAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQwm0F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzWF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzWV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQwm0V2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzWl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzW12BEeSzlcwPkXyaVA" name="editAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQwm0l2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzXF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzXV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQwm012BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzXl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzX12BEeSzlcwPkXyaVA" name="deleteAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQxN4F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzYF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzYV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQxN4V2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzYl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzY12BEeSzlcwPkXyaVA" name="exportAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQxN4l2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzZF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzZV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQxN412BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzZl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzZ12BEeSzlcwPkXyaVA" name="saveAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQx08F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzaF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzaV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQx08V2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzal2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHza12BEeSzlcwPkXyaVA" name="closeAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQx08l2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzbF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzbV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQx0812BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzbl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzb12BEeSzlcwPkXyaVA" name="updateState">
+      <modelElement href="ReceiptEntry_sm.uml#_oQycAF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzcF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzcV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQycAV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzcl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_ofHzc12BEeSzlcwPkXyaVA" name="newState">
+        <modelElement href="ReceiptEntry_sm.uml#_oQycAl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzdF2BEeSzlcwPkXyaVA" name="ReceiptState">
+          <modelElement href="ReceiptEntry_sm.uml#_oOJXs12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzdV2BEeSzlcwPkXyaVA" name="setCreateReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQycA12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzdl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzd12BEeSzlcwPkXyaVA" name="createReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQycBF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzeF2BEeSzlcwPkXyaVA" name="CreateReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOXaIF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzeV2BEeSzlcwPkXyaVA" name="setDeleteReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQzDEF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzel2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHze12BEeSzlcwPkXyaVA" name="deleteReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQzDEV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzfF2BEeSzlcwPkXyaVA" name="DeleteReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOYoQF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzfV2BEeSzlcwPkXyaVA" name="setEditReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQzDEl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzfl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzf12BEeSzlcwPkXyaVA" name="editReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQzDE12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzgF2BEeSzlcwPkXyaVA" name="EditReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOZPUF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzgV2BEeSzlcwPkXyaVA" name="setSaveReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQzqIF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzgl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzg12BEeSzlcwPkXyaVA" name="saveReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQzqIV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzhF2BEeSzlcwPkXyaVA" name="SaveReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOadc12BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzhV2BEeSzlcwPkXyaVA" name="setViewReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQzqIl2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzhl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzh12BEeSzlcwPkXyaVA" name="viewReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQzqI12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHziF2BEeSzlcwPkXyaVA" name="ViewReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOcSoF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHziV2BEeSzlcwPkXyaVA" name="setExportReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQzqJF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzil2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzi12BEeSzlcwPkXyaVA" name="exportReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ0RMF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzjF2BEeSzlcwPkXyaVA" name="ExportReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOZ2YF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_ofHzjV2BEeSzlcwPkXyaVA" name="setCloseReceiptAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQ0RMV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_ofHzjl2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_ofHzj12BEeSzlcwPkXyaVA" name="closeReceiptAction">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ0RMl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_ofHzkF2BEeSzlcwPkXyaVA" name="CloseReceiptAction">
+          <modelElement href="ReceiptEntry_sm.uml#_oOWzEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oeoDsF2BEeSzlcwPkXyaVA" name="SaveReceiptAction" associationsIn="_oe_3IF2BEeSzlcwPkXyaVA _ofYRoV2BEeSzlcwPkXyaVA" subclassedBy="_oe37UF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOadc12BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeoDsV2BEeSzlcwPkXyaVA" position="421.0,1334.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeoDsl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeoDs12BEeSzlcwPkXyaVA" name="saveAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQbPol2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeoDtF2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeoDtV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQbPo12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeoDtl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oe37UV2BEeSzlcwPkXyaVA" name="SaveReceiptActionImpl" generalizations="_oe37UF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOjAUF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oe37Ul2BEeSzlcwPkXyaVA" position="125.0,1342.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oe37U12BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oe37VF2BEeSzlcwPkXyaVA" name="saveAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQgIIl2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oe37VV2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQgvMF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oe37Vl2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQgvMV2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oe37V12BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oe37WF2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQgII12BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe37WV2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oewmkF2BEeSzlcwPkXyaVA" name="ViewReceiptActionImpl" generalizations="_oev_gF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOlckF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oewmkV2BEeSzlcwPkXyaVA" position="130.0,1905.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oewmkl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oewmk12BEeSzlcwPkXyaVA" name="viewAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQh9UF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oewmlF2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQh9Ul2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oewmlV2BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQikYF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oewmll2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oewml12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQh9UV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oewmmF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oeqf8F2BEeSzlcwPkXyaVA" name="ViewReceiptAction" associationsIn="_oe_QEl2BEeSzlcwPkXyaVA _ofXDgF2BEeSzlcwPkXyaVA" subclassedBy="_oev_gF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOcSoF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeqf8V2BEeSzlcwPkXyaVA" position="426.0,1901.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeqf8l2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeqf812BEeSzlcwPkXyaVA" name="viewAction">
+      <modelElement href="ReceiptEntry_sm.uml#_oQb2sF2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeqf9F2BEeSzlcwPkXyaVA" label="+"/>
+      <parameters xmi:id="_oeqf9V2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQb2sV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeqf9l2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_oe6-oF2BEeSzlcwPkXyaVA" comments="_oe6XkV2BEeSzlcwPkXyaVA" targetConnectionVisual="_oe6Xkl2BEeSzlcwPkXyaVA" name="ReceiptWOFactoryImpl" generalizations="_oe6XkF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOv0oF2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oe6-oV2BEeSzlcwPkXyaVA" position="884.0,816.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oe6-ol2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oe6-o12BEeSzlcwPkXyaVA" name="createReceiptWO">
+      <modelElement href="ReceiptEntry_sm.uml#_oOwbs12BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oe6-pF2BEeSzlcwPkXyaVA" label="+"/>
+      <outParameters xmi:id="_oe6-pV2BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQruUV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe6-pl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oe6-p12BEeSzlcwPkXyaVA" name="receiptId">
+        <modelElement href="ReceiptEntry_sm.uml#_oOxCwF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe6-qF2BEeSzlcwPkXyaVA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oe6-qV2BEeSzlcwPkXyaVA" name="createReceiptActions">
+      <modelElement href="ReceiptEntry_sm.uml#_oOxCwV2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oe6-ql2BEeSzlcwPkXyaVA" label="-"/>
+      <outParameters xmi:id="_oe6-q12BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQruUl2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe6-rF2BEeSzlcwPkXyaVA" name="ReceiptActions">
+          <modelElement href="ReceiptEntry_sm.uml#_oOCqAF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oe6-rV2BEeSzlcwPkXyaVA" name="createReceiptConditions">
+      <modelElement href="ReceiptEntry_sm.uml#_oOxp0F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oe6-rl2BEeSzlcwPkXyaVA" label="-"/>
+      <outParameters xmi:id="_oe6-r12BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQsVYF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe6-sF2BEeSzlcwPkXyaVA" name="ReceiptConditions">
+          <modelElement href="ReceiptEntry_sm.uml#_oOIwoF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_oe6-sV2BEeSzlcwPkXyaVA" name="createReceiptWO">
+      <modelElement href="ReceiptEntry_sm.uml#_oQ8NAF2BEeSzlcwPkXyaVA"/>
+      <stereotypes xmi:id="_oe6-sl2BEeSzlcwPkXyaVA" name="LegacyStyledElement">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ80El2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_oe6-s12BEeSzlcwPkXyaVA" name="Annotations">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ9bIF2BEeSzlcwPkXyaVA"/>
+      </stereotypes>
+      <visibility xmi:id="_oe6-tF2BEeSzlcwPkXyaVA" label="+"/>
+      <outParameters xmi:id="_oe6-tV2BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ80EV2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe6-tl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oe6-t12BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ80EF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oe6-uF2BEeSzlcwPkXyaVA" name="Receipt">
+          <modelElement href="ReceiptEntry_sm.uml#_oQUh8F2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_oeb2cF2BEeSzlcwPkXyaVA" comments="_oebPYF2BEeSzlcwPkXyaVA" targetConnectionVisual="_oebPYV2BEeSzlcwPkXyaVA" name="ReceiptWOFactory" subclassedBy="_oe6XkF2BEeSzlcwPkXyaVA">
+    <modelElement href="ReceiptEntry_sm.uml#_oOU94F2BEeSzlcwPkXyaVA"/>
+    <visualProperties xmi:id="_oeb2cV2BEeSzlcwPkXyaVA" position="779.0,696.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_oeb2cl2BEeSzlcwPkXyaVA" label="+"/>
+    <operations xmi:id="_oeb2c12BEeSzlcwPkXyaVA" name="createReceiptWO">
+      <modelElement href="ReceiptEntry_sm.uml#_oOVk812BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeb2dF2BEeSzlcwPkXyaVA" label="+"/>
+      <outParameters xmi:id="_oeb2dV2BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQaBgF2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeb2dl2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oeb2d12BEeSzlcwPkXyaVA" name="receiptId">
+        <modelElement href="ReceiptEntry_sm.uml#_oOVk9F2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeb2eF2BEeSzlcwPkXyaVA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_oeb2eV2BEeSzlcwPkXyaVA" name="createReceiptWO">
+      <modelElement href="ReceiptEntry_sm.uml#_oQ6-4F2BEeSzlcwPkXyaVA"/>
+      <visibility xmi:id="_oeb2el2BEeSzlcwPkXyaVA" label="+"/>
+      <outParameters xmi:id="_oeb2e12BEeSzlcwPkXyaVA">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ7l8F2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeb2fF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+          <modelElement href="ReceiptEntry_sm.uml#_oONCEF2BEeSzlcwPkXyaVA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_oeb2fV2BEeSzlcwPkXyaVA" name="receipt">
+        <modelElement href="ReceiptEntry_sm.uml#_oQ6-4V2BEeSzlcwPkXyaVA"/>
+        <type xmi:id="_oeb2fl2BEeSzlcwPkXyaVA" name="Receipt">
+          <modelElement href="ReceiptEntry_sm.uml#_oQUh8F2BEeSzlcwPkXyaVA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

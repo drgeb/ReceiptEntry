@@ -22,11 +22,13 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Control;
+import javafx.scene.control.Label;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -34,22 +36,14 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.stage.WindowEvent;
 
-import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
-import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
-import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
-import com.drgeb.receiptentry.sm.action.EditReceiptAction;
-import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
-import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
-import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
+import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
 //import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
-import com.drgeb.receiptentry.impl.ReceiptWOFactoryImpl;
-import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOFactory;
 import com.drgeb.receiptentry.vw.entry.EntryView;
-import com.drgeb.receiptentry.sm.ReceiptActions;
 
 public class ReceipttablePresenter extends Control implements Initializable {
     @FXML
@@ -81,6 +75,9 @@ public class ReceipttablePresenter extends Control implements Initializable {
 
     @FXML
     TableColumn<?, ?> amountColumn;
+
+    @FXML
+    Label recordLabel;
 
     private ObservableList<ReceiptWO> receipts;
     private ObjectProperty<ReceiptWO> deletedReceipt;
@@ -148,32 +145,53 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	// center stage on screen
 	stage.centerOnScreen();
 	receiptsTable.getSelectionModel().clearSelection();
+
+	EventType<WindowEvent> eventType = WindowEvent.WINDOW_CLOSE_REQUEST;
+	stage.addEventHandler(eventType, (WindowEvent t) -> {
+	    receiptWO.closeReceiptTRN();
+	});
 	stage.show();
     }
 
     @FXML
     private void createAction(ActionEvent event) {
-	createAction();
+	// TODO use Factory to create ReceiptWO
+	ReceiptWOFactory receiptWOFactory = new ReceiptWOFactoryImpl();
+	ReceiptWO receiptWO = receiptWOFactory.createReceiptWO((String) null);
+	receiptWO.createTRN();
+	initiateEntry(receiptWO);
     }
 
     @FXML
     private void viewAction(ActionEvent event) {
-	viewAction();
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	selectedItem.viewTRN();
+	initiateEntry(selectedItem);
     }
 
     @FXML
     private void editAction(ActionEvent event) {
-	editAction();
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	selectedItem.editTRN();
+	initiateEntry(selectedItem);
     }
 
     @FXML
     private void deleteAction(ActionEvent event) {
-	deleteAction();
+	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
+		.getSelectedItem();
+	selectedItem.deleteTRN();
+	fireReceiptsDeleted(selectedItem);
+	receiptsTable.getSelectionModel().clearSelection();
     }
 
     @FXML
     private void exportAction(ActionEvent event) {
-	exportAction();
+	// TODO Implement export data to CVS
+	// 1. Ask user for file location.
+	// 2. Export the data to an Excel file.
     }
 
     public void add(ReceiptWO receipt) {
@@ -183,6 +201,7 @@ public class ReceipttablePresenter extends Control implements Initializable {
     public void loadFromStore() {
 	this.clearAll();
 	List<ReceiptWO> all = service.all();
+	if(recordLabel!=null)recordLabel.setText("#: " + all.size());
 	for (ReceiptWO receipt : all) {
 	    add(receipt);
 	}
@@ -244,41 +263,5 @@ public class ReceipttablePresenter extends Control implements Initializable {
     private void fireReceiptsDeleted(ReceiptWO deletedItem) {
 	receiptsTable.getSelectionModel().clearSelection();
 	this.deletedReceipt.set(deletedItem);
-    }
-
-    public void createAction() {
-	// TODO use Factory to create ReceiptWO
-	ReceiptWOFactory receiptWOFactory = new ReceiptWOFactoryImpl();
-	ReceiptWO receiptWO = receiptWOFactory.createReceiptWO((String) null);
-	receiptWO.createTRN();
-	initiateEntry(receiptWO);
-    }
-
-    public void viewAction() {
-	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
-		.getSelectedItem();
-	selectedItem.viewTRN();
-	initiateEntry(selectedItem);
-    }
-
-    public void editAction() {
-	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
-		.getSelectedItem();
-	selectedItem.editTRN();
-	initiateEntry(selectedItem);
-    }
-
-    public void deleteAction() {
-	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
-		.getSelectedItem();
-	selectedItem.deleteTRN();
-	fireReceiptsDeleted(selectedItem);
-	receiptsTable.getSelectionModel().clearSelection();
-    }
-
-    public void exportAction() {
-	// TODO Implement export data to CVS
-	// 1. Ask user for file location.
-	// 2. Export the data to an Excel file.
     }
 }

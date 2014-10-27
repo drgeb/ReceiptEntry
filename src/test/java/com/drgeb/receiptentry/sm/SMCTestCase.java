@@ -1,6 +1,6 @@
 package com.drgeb.receiptentry.sm;
 
-import com.drgeb.receiptentry.impl.ReceiptWOFactoryImpl;
+import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
 
 import junit.framework.TestCase;
 

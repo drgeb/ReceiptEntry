@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_nq7V4F2BEeSzlcwPkXyaVA" name="ReceiptEntry_sm">
+    <eAnnotations xmi:id="_n-iOYF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_n-iOYV2BEeSzlcwPkXyaVA" source="codegen">
+        <details xmi:id="_n-iOYl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/test/java"/>
+        <details xmi:id="_oavCMF2BEeSzlcwPkXyaVA" key="AssociatedSourceCode" value="/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptActions.java;1890257777/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptConditions.java;2785217429/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptState.java;109986450/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptTransitions.java;4098942173/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptWO.java;1170598033/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptWOContextWrapper.java;1765105880/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/ReceiptWOFactory.java;43524690/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/CloseReceiptAction.java;3728530434/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/CreateReceiptAction.java;3006203247/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/DeleteReceiptAction.java;523478853/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/EditReceiptAction.java;1546818592/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/ExportReceiptAction.java;2982147052/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/SaveReceiptAction.java;4273131531/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/SyncStateAction.java;1159989661/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/ViewReceiptAction.java;3388135345/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/CloseReceiptActionImpl.java;3073048456/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/CreateReceiptActionImpl.java;2038445552/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/DeleteReceiptActionImpl.java;2224132796/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/EditReceiptActionImpl.java;4136796739/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/ExportReceiptActionImpl.java;604719287/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/SaveReceiptActionImpl.java;3112324283/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/SyncStateActionImpl.java;4088428221/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/action/impl/ViewReceiptActionImpl.java;249218051/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/impl/ReceiptActionsImpl.java;393406003/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/impl/ReceiptConditionsImpl.java;1206891205/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/impl/ReceiptWOFactoryImpl.java;1976759333/1;/ReceiptEntry/src/main/java/com/drgeb/receiptentry/sm/impl/ReceiptWOImpl.java;623099530/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_oOD4IF2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfMF2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfMV2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfMl2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfM12BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfNF2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfNV2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfNl2BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_oOEfN12BEeSzlcwPkXyaVA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oNMVcF2BEeSzlcwPkXyaVA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_oNMVcV2BEeSzlcwPkXyaVA" name="drgeb">
+        <packagedElement xmi:type="uml:Package" xmi:id="_oNMVcl2BEeSzlcwPkXyaVA" name="receiptentry">
+          <packagedElement xmi:type="uml:Package" xmi:id="_oNMVc12BEeSzlcwPkXyaVA" name="sm">
+            <packagedElement xmi:type="uml:Package" xmi:id="_oNM8gF2BEeSzlcwPkXyaVA" name="action">
+              <packagedElement xmi:type="uml:Package" xmi:id="_oNZw0F2BEeSzlcwPkXyaVA" name="impl">
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOdgwF2BEeSzlcwPkXyaVA" name="CloseReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOdgwV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOdgwl2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOdgw12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQb2sl2BEeSzlcwPkXyaVA" client="_oOdgwF2BEeSzlcwPkXyaVA" supplier="_oOWzEF2BEeSzlcwPkXyaVA" contract="_oOWzEF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRLdkF2BEeSzlcwPkXyaVA" name="closeAction" specification="_oQb2s12BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRLdkV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;closeAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQb2s12BEeSzlcwPkXyaVA" name="closeAction" method="_oRLdkF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQb2tF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOeu4F2BEeSzlcwPkXyaVA" name="CreateReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOeu4V2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOeu4l2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOeu412BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQcdw12BEeSzlcwPkXyaVA" client="_oOeu4F2BEeSzlcwPkXyaVA" supplier="_oOXaIF2BEeSzlcwPkXyaVA" contract="_oOXaIF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRLdkl2BEeSzlcwPkXyaVA" name="createAction" specification="_oQdE0F2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRLdk12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;createAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQdE0F2BEeSzlcwPkXyaVA" name="createAction" method="_oRLdkl2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQdE0V2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOf9AF2BEeSzlcwPkXyaVA" name="DeleteReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOf9AV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOf9Al2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOf9A12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQdr4l2BEeSzlcwPkXyaVA" client="_oOf9AF2BEeSzlcwPkXyaVA" supplier="_oOYoQF2BEeSzlcwPkXyaVA" contract="_oOYoQF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRLdlF2BEeSzlcwPkXyaVA" name="deleteAction" specification="_oQdr412BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRLdlV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;deleteAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQdr412BEeSzlcwPkXyaVA" name="deleteAction" method="_oRLdlF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQdr5F2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOhLIF2BEeSzlcwPkXyaVA" name="EditReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOhLIV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOhLIl2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOhLI12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQeS812BEeSzlcwPkXyaVA" client="_oOhLIF2BEeSzlcwPkXyaVA" supplier="_oOZPUF2BEeSzlcwPkXyaVA" contract="_oOZPUF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRLdll2BEeSzlcwPkXyaVA" name="editAction" specification="_oQe6AF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRLdl12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;editAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQe6AF2BEeSzlcwPkXyaVA" name="editAction" method="_oRLdll2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQe6AV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOhyMF2BEeSzlcwPkXyaVA" name="ExportReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOiZQF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOiZQV2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOiZQl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQe6BV2BEeSzlcwPkXyaVA" client="_oOhyMF2BEeSzlcwPkXyaVA" supplier="_oOZ2YF2BEeSzlcwPkXyaVA" contract="_oOZ2YF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMEoF2BEeSzlcwPkXyaVA" name="exportAction" specification="_oQfhEF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRMEoV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;exportAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQfhEF2BEeSzlcwPkXyaVA" name="exportAction" method="_oRMEoF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQfhEV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOjAUF2BEeSzlcwPkXyaVA" name="SaveReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOjnYF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOjnYV2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOjnYl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQgIIV2BEeSzlcwPkXyaVA" client="_oOjAUF2BEeSzlcwPkXyaVA" supplier="_oOadc12BEeSzlcwPkXyaVA" contract="_oOadc12BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMEol2BEeSzlcwPkXyaVA" name="saveAction" specification="_oQgIIl2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRMEo12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;saveAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQgIIl2BEeSzlcwPkXyaVA" name="saveAction" method="_oRMEol2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQgII12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOkOcF2BEeSzlcwPkXyaVA" name="SyncStateActionImpl">
+                  <eAnnotations xmi:id="_oOkOcV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOkOcl2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOkOc12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQgvM12BEeSzlcwPkXyaVA" client="_oOkOcF2BEeSzlcwPkXyaVA" supplier="_oObrkF2BEeSzlcwPkXyaVA" contract="_oObrkF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMEpF2BEeSzlcwPkXyaVA" name="updateState" specification="_oQgvNF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRMEpV2BEeSzlcwPkXyaVA" name="receiptWO" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <ownedParameter xmi:id="_oRMEpl2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>receiptWO.getReceipt().setState(newState);
+ </body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQgvNF2BEeSzlcwPkXyaVA" name="updateState" method="_oRMEpF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQgvNV2BEeSzlcwPkXyaVA" name="receiptWO" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <ownedParameter xmi:id="_oQgvNl2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+                <packagedElement xmi:type="uml:Class" xmi:id="_oOlckF2BEeSzlcwPkXyaVA" name="ViewReceiptActionImpl">
+                  <eAnnotations xmi:id="_oOmDoF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                    <contents xmi:type="ecore:EAnnotation" xmi:id="_oOmDoV2BEeSzlcwPkXyaVA" source="codegen">
+                      <details xmi:id="_oOmDol2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                    </contents>
+                  </eAnnotations>
+                  <interfaceRealization xmi:id="_oQhWQ12BEeSzlcwPkXyaVA" client="_oOlckF2BEeSzlcwPkXyaVA" supplier="_oOcSoF2BEeSzlcwPkXyaVA" contract="_oOcSoF2BEeSzlcwPkXyaVA"/>
+                  <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMEp12BEeSzlcwPkXyaVA" name="viewAction" specification="_oQh9UF2BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oRMEqF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                    <language>java</language>
+                    <body>System.out.println(&quot;viewAction&quot;);
+	</body>
+                  </ownedBehavior>
+                  <ownedOperation xmi:id="_oQh9UF2BEeSzlcwPkXyaVA" name="viewAction" method="_oRMEp12BEeSzlcwPkXyaVA">
+                    <ownedParameter xmi:id="_oQh9UV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  </ownedOperation>
+                </packagedElement>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOWzEF2BEeSzlcwPkXyaVA" name="CloseReceiptAction">
+                <eAnnotations xmi:id="_oOWzEV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOWzEl2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOWzE12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQaBgV2BEeSzlcwPkXyaVA" name="closeAction">
+                  <ownedParameter xmi:id="_oQaBgl2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOXaIF2BEeSzlcwPkXyaVA" name="CreateReceiptAction">
+                <eAnnotations xmi:id="_oOYBMF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOYBMV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOYBMl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQaBg12BEeSzlcwPkXyaVA" name="createAction">
+                  <ownedParameter xmi:id="_oQaokF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOYoQF2BEeSzlcwPkXyaVA" name="DeleteReceiptAction">
+                <eAnnotations xmi:id="_oOYoQV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOYoQl2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOYoQ12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQaokV2BEeSzlcwPkXyaVA" name="deleteAction">
+                  <ownedParameter xmi:id="_oQaokl2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOZPUF2BEeSzlcwPkXyaVA" name="EditReceiptAction">
+                <eAnnotations xmi:id="_oOZPUV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOZPUl2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOZPU12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQaok12BEeSzlcwPkXyaVA" name="editAction">
+                  <ownedParameter xmi:id="_oQaolF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOZ2YF2BEeSzlcwPkXyaVA" name="ExportReceiptAction">
+                <eAnnotations xmi:id="_oOadcF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOadcV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOadcl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQbPoF2BEeSzlcwPkXyaVA" name="exportAction">
+                  <ownedParameter xmi:id="_oQbPoV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOadc12BEeSzlcwPkXyaVA" name="SaveReceiptAction">
+                <eAnnotations xmi:id="_oObEgF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oObEgV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oObEgl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQbPol2BEeSzlcwPkXyaVA" name="saveAction">
+                  <ownedParameter xmi:id="_oQbPo12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oObrkF2BEeSzlcwPkXyaVA" name="SyncStateAction">
+                <eAnnotations xmi:id="_oObrkV2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oObrkl2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oObrk12BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedComment xmi:id="_oRTZZV2BEeSzlcwPkXyaVA">
+                  <body>Synchronize the Order state with 
+the current state in the  
+state machine. This action is not 
+a business action.</body>
+                </ownedComment>
+                <ownedOperation xmi:id="_oQbPpF2BEeSzlcwPkXyaVA" name="updateState">
+                  <ownedParameter xmi:id="_oQbPpV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oQbPpl2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Interface" xmi:id="_oOcSoF2BEeSzlcwPkXyaVA" name="ViewReceiptAction">
+                <eAnnotations xmi:id="_oOc5sF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOc5sV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOc5sl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedOperation xmi:id="_oQb2sF2BEeSzlcwPkXyaVA" name="viewAction">
+                  <ownedParameter xmi:id="_oQb2sV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_oNgegF2BEeSzlcwPkXyaVA" name="impl">
+              <packagedElement xmi:type="uml:Class" xmi:id="_oOmqsF2BEeSzlcwPkXyaVA" name="ReceiptActionsImpl">
+                <eAnnotations xmi:id="_oOnRwF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOnRwV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOnRwl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_oRBFgV2BEeSzlcwPkXyaVA" name="createReceiptAction" visibility="private" type="_oOXaIF2BEeSzlcwPkXyaVA" association="_oRYR4V2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRBskV2BEeSzlcwPkXyaVA" name="viewReceiptAction" visibility="private" type="_oOcSoF2BEeSzlcwPkXyaVA" association="_oRY48V2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRBsk12BEeSzlcwPkXyaVA" name="editReceiptAction" visibility="private" type="_oOZPUF2BEeSzlcwPkXyaVA" association="_oRZgAV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRCToV2BEeSzlcwPkXyaVA" name="deleteReceiptAction" visibility="private" type="_oOYoQF2BEeSzlcwPkXyaVA" association="_oRaHEV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRC6sF2BEeSzlcwPkXyaVA" name="exportReceiptAction" visibility="private" type="_oOZ2YF2BEeSzlcwPkXyaVA" association="_oRauIV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRC6sl2BEeSzlcwPkXyaVA" name="saveReceiptAction" visibility="private" type="_oOadc12BEeSzlcwPkXyaVA" association="_oRbVMV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRDhwV2BEeSzlcwPkXyaVA" name="closeReceiptAction" visibility="private" type="_oOWzEF2BEeSzlcwPkXyaVA" association="_oRb8QV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRDhw12BEeSzlcwPkXyaVA" name="syncStateAction" visibility="private" type="_oObrkF2BEeSzlcwPkXyaVA" association="_oRb8RF2BEeSzlcwPkXyaVA"/>
+                <interfaceRealization xmi:id="_oQikYl2BEeSzlcwPkXyaVA" client="_oOmqsF2BEeSzlcwPkXyaVA" supplier="_oOCqAF2BEeSzlcwPkXyaVA" contract="_oOCqAF2BEeSzlcwPkXyaVA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMrsF2BEeSzlcwPkXyaVA" name="createAction" specification="_oQjLcF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRMrsV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.createReceiptAction.createAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMrsl2BEeSzlcwPkXyaVA" name="viewAction" specification="_oQjLcl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRMrs12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.viewReceiptAction.viewAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMrtF2BEeSzlcwPkXyaVA" name="editAction" specification="_oQjygF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRMrtV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.editReceiptAction.editAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRMrtl2BEeSzlcwPkXyaVA" name="deleteAction" specification="_oQjygl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRMrt12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.deleteReceiptAction.deleteAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRNSwF2BEeSzlcwPkXyaVA" name="exportAction" specification="_oQjyhF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRNSwV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.exportReceiptAction.exportAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRNSwl2BEeSzlcwPkXyaVA" name="saveAction" specification="_oQkZkV2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRNSw12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.saveReceiptAction.saveAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRNSxF2BEeSzlcwPkXyaVA" name="closeAction" specification="_oQkZk12BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRNSxV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.closeReceiptAction.closeAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRNSxl2BEeSzlcwPkXyaVA" name="setCreateReceiptAction" specification="_oQlAo12BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRNSx12BEeSzlcwPkXyaVA" name="createReceiptAction" type="_oOXaIF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.createReceiptAction = createReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRNSyF2BEeSzlcwPkXyaVA" name="setViewReceiptAction" specification="_oQlns12BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRNSyV2BEeSzlcwPkXyaVA" name="viewReceiptAction" type="_oOcSoF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.viewReceiptAction = viewReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRN50F2BEeSzlcwPkXyaVA" name="setEditReceiptAction" specification="_oQmOw12BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRN50V2BEeSzlcwPkXyaVA" name="editReceiptAction" type="_oOZPUF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.editReceiptAction = editReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRN50l2BEeSzlcwPkXyaVA" name="setDeleteReceiptAction" specification="_oQm1012BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRN5012BEeSzlcwPkXyaVA" name="deleteReceiptAction" type="_oOYoQF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.deleteReceiptAction = deleteReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRN51F2BEeSzlcwPkXyaVA" name="setExportReceiptAction" specification="_oQnc4F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRN51V2BEeSzlcwPkXyaVA" name="exportReceiptAction" type="_oOZ2YF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.exportReceiptAction = exportReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRN51l2BEeSzlcwPkXyaVA" name="setSaveReceiptAction" specification="_oQnc5V2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRN5112BEeSzlcwPkXyaVA" name="saveReceiptAction" type="_oOadc12BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.saveReceiptAction = saveReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRN52F2BEeSzlcwPkXyaVA" name="setCloseReceiptAction" specification="_oQoD812BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRN52V2BEeSzlcwPkXyaVA" name="closeReceiptAction" type="_oOWzEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.closeReceiptAction = closeReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oROg4F2BEeSzlcwPkXyaVA" name="updateState" specification="_oQorAl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oROg4V2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oROg4l2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.syncStateAction.updateState(receipt,newState);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oROg412BEeSzlcwPkXyaVA" name="setSyncStateAction" specification="_oQp5IF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oROg5F2BEeSzlcwPkXyaVA" name="syncStateAction" type="_oObrkF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.syncStateAction = syncStateAction;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_oQjLcF2BEeSzlcwPkXyaVA" name="createAction" method="_oRMrsF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQjLcV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQjLcl2BEeSzlcwPkXyaVA" name="viewAction" method="_oRMrsl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQjLc12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQjygF2BEeSzlcwPkXyaVA" name="editAction" method="_oRMrtF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQjygV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQjygl2BEeSzlcwPkXyaVA" name="deleteAction" method="_oRMrtl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQjyg12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQjyhF2BEeSzlcwPkXyaVA" name="exportAction" method="_oRNSwF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQkZkF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQkZkV2BEeSzlcwPkXyaVA" name="saveAction" method="_oRNSwl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQkZkl2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQkZk12BEeSzlcwPkXyaVA" name="closeAction" method="_oRNSxF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQkZlF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQlAo12BEeSzlcwPkXyaVA" name="setCreateReceiptAction" method="_oRNSxl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQlApF2BEeSzlcwPkXyaVA" name="createReceiptAction" type="_oOXaIF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQlns12BEeSzlcwPkXyaVA" name="setViewReceiptAction" method="_oRNSyF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQlntF2BEeSzlcwPkXyaVA" name="viewReceiptAction" type="_oOcSoF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQmOw12BEeSzlcwPkXyaVA" name="setEditReceiptAction" method="_oRN50F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQmOxF2BEeSzlcwPkXyaVA" name="editReceiptAction" type="_oOZPUF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQm1012BEeSzlcwPkXyaVA" name="setDeleteReceiptAction" method="_oRN50l2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQm11F2BEeSzlcwPkXyaVA" name="deleteReceiptAction" type="_oOYoQF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQnc4F2BEeSzlcwPkXyaVA" name="setExportReceiptAction" method="_oRN51F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQnc4V2BEeSzlcwPkXyaVA" name="exportReceiptAction" type="_oOZ2YF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQnc5V2BEeSzlcwPkXyaVA" name="setSaveReceiptAction" method="_oRN51l2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQnc5l2BEeSzlcwPkXyaVA" name="saveReceiptAction" type="_oOadc12BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQoD812BEeSzlcwPkXyaVA" name="setCloseReceiptAction" method="_oRN52F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQoD9F2BEeSzlcwPkXyaVA" name="closeReceiptAction" type="_oOWzEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQorAl2BEeSzlcwPkXyaVA" name="updateState" method="_oROg4F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQorA12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oQorBF2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQp5IF2BEeSzlcwPkXyaVA" name="setSyncStateAction" method="_oROg412BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQp5IV2BEeSzlcwPkXyaVA" name="syncStateAction" type="_oObrkF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_oOumgF2BEeSzlcwPkXyaVA" name="ReceiptConditionsImpl">
+                <eAnnotations xmi:id="_oOvNkF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOvNkV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOvNkl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedComment xmi:id="_oRUAcF2BEeSzlcwPkXyaVA">
+                  <body>A transition condition implementation for the 
+state machine of the receipt object. 
+  
+@author Jason Zhicheng Li (jason@lizjason.com)</body>
+                </ownedComment>
+                <interfaceRealization xmi:id="_oQrHQF2BEeSzlcwPkXyaVA" client="_oOumgF2BEeSzlcwPkXyaVA" supplier="_oOIwoF2BEeSzlcwPkXyaVA" contract="_oOIwoF2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_oOv0oF2BEeSzlcwPkXyaVA" name="ReceiptWOFactoryImpl">
+                <eAnnotations xmi:id="_oOwbsF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOwbsV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOwbsl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedComment xmi:id="_oRUAcV2BEeSzlcwPkXyaVA">
+                  <body>Factory class for the &lt;code>ReceiptWO&lt;/code> classes. It hides the details
+that how the ReceiptWO instances are created.
+
+@author Jason Zhicheng Li (jason@lizjason.com)</body>
+                </ownedComment>
+                <interfaceRealization xmi:id="_oQruUF2BEeSzlcwPkXyaVA" client="_oOv0oF2BEeSzlcwPkXyaVA" supplier="_oOU94F2BEeSzlcwPkXyaVA" contract="_oOU94F2BEeSzlcwPkXyaVA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPH8F2BEeSzlcwPkXyaVA" name="createReceiptWO" specification="_oOwbs12BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPH8V2BEeSzlcwPkXyaVA" name="receiptId">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oRPH8l2BEeSzlcwPkXyaVA" type="_oONCEF2BEeSzlcwPkXyaVA" direction="return"/>
+                  <language>java</language>
+                  <body>// the receipt object should be retrieved from database
+	// or create a new one if the receipt id is null.
+	// create a dummy receipt object here.
+	Receipt receipt = null;
+	if (receiptId == null) {
+	    receipt = new Receipt();
+	    receipt.setState(ReceiptState.TABLEVIEW);
+	} else {
+	    receipt.setReceiptId(receiptId);
+	}
+	return createReceiptWO(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPH812BEeSzlcwPkXyaVA" name="createReceiptActions" specification="_oOxCwV2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPH9F2BEeSzlcwPkXyaVA" type="_oOCqAF2BEeSzlcwPkXyaVA" direction="return"/>
+                  <language>java</language>
+                  <body>// Note receiptActions is assigned to ReceiptActionsImpl class so we can
+	// set the
+	// syncStateAction method, cause this method is not part
+	// of ReceiptActions interface.
+	ReceiptActionsImpl receiptActions = new ReceiptActionsImpl();
+
+	CloseReceiptAction closeReceiptAction = new CloseReceiptActionImpl();
+	CreateReceiptAction createReceiptAction = new CreateReceiptActionImpl();
+	DeleteReceiptAction deleteReceiptAction = new DeleteReceiptActionImpl();
+	EditReceiptAction editReceiptAction = new EditReceiptActionImpl();
+	ExportReceiptAction exportReceiptAction = new ExportReceiptActionImpl();
+	SaveReceiptAction saveReceiptAction = new SaveReceiptActionImpl();
+	ViewReceiptAction viewReceiptAction = new ViewReceiptActionImpl();
+	SyncStateAction syncStateAction = new SyncStateActionImpl();
+
+	receiptActions.setCreateReceiptAction(createReceiptAction);
+	receiptActions.setDeleteReceiptAction(deleteReceiptAction);
+	receiptActions.setEditReceiptAction(editReceiptAction);
+	receiptActions.setExportReceiptAction(exportReceiptAction);
+	receiptActions.setSaveReceiptAction(saveReceiptAction);
+	receiptActions.setViewReceiptAction(viewReceiptAction);
+	receiptActions.setCloseReceiptAction(closeReceiptAction);
+	receiptActions.setSyncStateAction(syncStateAction);
+	return receiptActions;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPH9V2BEeSzlcwPkXyaVA" name="createReceiptConditions" specification="_oOxp0F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPH9l2BEeSzlcwPkXyaVA" type="_oOIwoF2BEeSzlcwPkXyaVA" direction="return"/>
+                  <language>java</language>
+                  <body>ReceiptConditionsImpl receiptConditions = new ReceiptConditionsImpl();
+	// TODO ADD method implementations
+	return receiptConditions;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPH912BEeSzlcwPkXyaVA" name="createReceiptWO" specification="_oQ8NAF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPH-F2BEeSzlcwPkXyaVA" name="receipt" type="_oQUh8F2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oRPH-V2BEeSzlcwPkXyaVA" type="_oONCEF2BEeSzlcwPkXyaVA" direction="return"/>
+                  <language>java</language>
+                  <body>receipt.setState(ReceiptState.TABLEVIEW);
+	if (receipt == null) {
+	    receipt = new Receipt();
+	    receipt.setState(ReceiptState.TABLEVIEW);
+	}
+	
+	if (receipt.getState()==null){
+	    receipt.setState(ReceiptState.TABLEVIEW);
+	}
+	// the worker object
+	ReceiptWOImpl receiptWO = new ReceiptWOImpl();
+	receiptWO.setReceipt(receipt);
+
+	// set up actions. Typically it is wired up via dependency injection
+	ReceiptActions receiptActions = this.createReceiptActions();
+	receiptWO.setReceiptActions(receiptActions);
+
+	// conditions
+	ReceiptConditions receiptConditions = createReceiptConditions();
+	receiptWO.setReceiptConditions(receiptConditions);
+
+	// the state machine and its wrapper
+	// note that the state machine internal state
+	// will be sync with the state of the receipt object.
+	ReceiptTransitions receiptTransitions = new ReceiptWOContextWrapper(
+		receiptWO);
+	receiptWO.setReceiptTransitions(receiptTransitions);
+
+	return receiptWO;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_oOwbs12BEeSzlcwPkXyaVA" name="createReceiptWO" method="_oRPH8F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oOxCwF2BEeSzlcwPkXyaVA" name="receiptId">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_oQruUV2BEeSzlcwPkXyaVA" type="_oONCEF2BEeSzlcwPkXyaVA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oOxCwV2BEeSzlcwPkXyaVA" name="createReceiptActions" visibility="private" method="_oRPH812BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQruUl2BEeSzlcwPkXyaVA" type="_oOCqAF2BEeSzlcwPkXyaVA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oOxp0F2BEeSzlcwPkXyaVA" name="createReceiptConditions" visibility="private" method="_oRPH9V2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQsVYF2BEeSzlcwPkXyaVA" type="_oOIwoF2BEeSzlcwPkXyaVA" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQ8NAF2BEeSzlcwPkXyaVA" name="createReceiptWO" method="_oRPH912BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQ80EF2BEeSzlcwPkXyaVA" name="receipt" type="_oQUh8F2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oQ80EV2BEeSzlcwPkXyaVA" type="_oONCEF2BEeSzlcwPkXyaVA" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_oOy38F2BEeSzlcwPkXyaVA" name="ReceiptWOImpl">
+                <eAnnotations xmi:id="_oOzfAF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                  <contents xmi:type="ecore:EAnnotation" xmi:id="_oOzfAV2BEeSzlcwPkXyaVA" source="codegen">
+                    <details xmi:id="_oOzfAl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                  </contents>
+                </eAnnotations>
+                <ownedAttribute xmi:id="_oREv4F2BEeSzlcwPkXyaVA" name="receipt" type="_oQUh8F2BEeSzlcwPkXyaVA" association="_oRUAcl2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oREv4V2BEeSzlcwPkXyaVA" name="receiptActions" visibility="private" type="_oOCqAF2BEeSzlcwPkXyaVA" association="_oRcjUV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRFW8V2BEeSzlcwPkXyaVA" name="receiptConditions" visibility="private" type="_oOIwoF2BEeSzlcwPkXyaVA" association="_oRcjVF2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRFW812BEeSzlcwPkXyaVA" name="receiptTransitions" visibility="private" type="_oOLM4F2BEeSzlcwPkXyaVA" association="_oRdKYV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRF-AV2BEeSzlcwPkXyaVA" name="closeReceiptAction" visibility="private" type="_oOWzEF2BEeSzlcwPkXyaVA" association="_oRdxcV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRF-A12BEeSzlcwPkXyaVA" name="exportReceiptAction" visibility="private" type="_oOZ2YF2BEeSzlcwPkXyaVA" association="_oRdxdF2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRGlEV2BEeSzlcwPkXyaVA" name="viewReceiptAction" visibility="private" type="_oOcSoF2BEeSzlcwPkXyaVA" association="_oReYgV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRGlE12BEeSzlcwPkXyaVA" name="saveReceiptAction" visibility="private" type="_oOadc12BEeSzlcwPkXyaVA" association="_oReYhF2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRHMIV2BEeSzlcwPkXyaVA" name="editReceiptAction" visibility="private" type="_oOZPUF2BEeSzlcwPkXyaVA" association="_oRe_kV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRHMI12BEeSzlcwPkXyaVA" name="deleteReceiptAction" visibility="private" type="_oOYoQF2BEeSzlcwPkXyaVA" association="_oRe_lF2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRHzMF2BEeSzlcwPkXyaVA" name="createReceiptAction" visibility="private" type="_oOXaIF2BEeSzlcwPkXyaVA" association="_oRfmoV2BEeSzlcwPkXyaVA"/>
+                <ownedAttribute xmi:id="_oRHzMl2BEeSzlcwPkXyaVA" name="registrationService" visibility="package" type="_oQtjgV2BEeSzlcwPkXyaVA" association="_oRgNsV2BEeSzlcwPkXyaVA"/>
+                <interfaceRealization xmi:id="_oQuKkV2BEeSzlcwPkXyaVA" client="_oOy38F2BEeSzlcwPkXyaVA" supplier="_oONCEF2BEeSzlcwPkXyaVA" contract="_oONCEF2BEeSzlcwPkXyaVA"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPvAF2BEeSzlcwPkXyaVA" name="setReceiptActions" specification="_oQvYsF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPvAV2BEeSzlcwPkXyaVA" name="receiptActions" type="_oOCqAF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.receiptActions = receiptActions;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPvAl2BEeSzlcwPkXyaVA" name="setReceiptConditions" specification="_oQvYsl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPvA12BEeSzlcwPkXyaVA" name="receiptConditions" type="_oOIwoF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.receiptConditions = receiptConditions;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPvBF2BEeSzlcwPkXyaVA" name="setReceiptTransitions" specification="_oQv_wF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPvBV2BEeSzlcwPkXyaVA" name="receiptTransitions" type="_oOLM4F2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.receiptTransitions = receiptTransitions;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRPvBl2BEeSzlcwPkXyaVA" name="createAction" specification="_oQv_wl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRPvB12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.createAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWEF2BEeSzlcwPkXyaVA" name="viewAction" specification="_oQwm0F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWEV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.viewAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWEl2BEeSzlcwPkXyaVA" name="editAction" specification="_oQwm0l2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWE12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.editAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWFF2BEeSzlcwPkXyaVA" name="deleteAction" specification="_oQxN4F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWFV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.deleteAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWFl2BEeSzlcwPkXyaVA" name="exportAction" specification="_oQxN4l2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWF12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.exportAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWGF2BEeSzlcwPkXyaVA" name="saveAction" specification="_oQx08F2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWGV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.saveAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWGl2BEeSzlcwPkXyaVA" name="closeAction" specification="_oQx08l2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWG12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.closeAction(receipt);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQWHF2BEeSzlcwPkXyaVA" name="updateState" specification="_oQycAF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQWHV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oRQWHl2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>receiptActions.updateState(receipt, newState);
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9IF2BEeSzlcwPkXyaVA" name="setCreateReceiptAction" specification="_oQycA12BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9IV2BEeSzlcwPkXyaVA" name="createReceiptAction" type="_oOXaIF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.createReceiptAction = createReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9Il2BEeSzlcwPkXyaVA" name="setDeleteReceiptAction" specification="_oQzDEF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9I12BEeSzlcwPkXyaVA" name="deleteReceiptAction" type="_oOYoQF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.deleteReceiptAction = deleteReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9JF2BEeSzlcwPkXyaVA" name="setEditReceiptAction" specification="_oQzDEl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9JV2BEeSzlcwPkXyaVA" name="editReceiptAction" type="_oOZPUF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.editReceiptAction = editReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9Jl2BEeSzlcwPkXyaVA" name="setSaveReceiptAction" specification="_oQzqIF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9J12BEeSzlcwPkXyaVA" name="saveReceiptAction" type="_oOadc12BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.saveReceiptAction = saveReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9KF2BEeSzlcwPkXyaVA" name="setViewReceiptAction" specification="_oQzqIl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9KV2BEeSzlcwPkXyaVA" name="viewReceiptAction" type="_oOcSoF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.viewReceiptAction = viewReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9Kl2BEeSzlcwPkXyaVA" name="setExportReceiptAction" specification="_oQzqJF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9K12BEeSzlcwPkXyaVA" name="exportReceiptAction" type="_oOZ2YF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.exportReceiptAction = exportReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRQ9LF2BEeSzlcwPkXyaVA" name="setCloseReceiptAction" specification="_oQ0RMV2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRQ9LV2BEeSzlcwPkXyaVA" name="closeReceiptAction" type="_oOWzEF2BEeSzlcwPkXyaVA"/>
+                  <language>java</language>
+                  <body>this.closeReceiptAction = closeReceiptAction;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkMF2BEeSzlcwPkXyaVA" name="saveReceiptTRN" specification="_oO17QF2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>//TODO Figure out Injecion and move this code to SaveReceiptActionImpl
+	//BLOCK
+	if(registrationService==null){
+	    registrationService=new RegistrationService();
+	    registrationService.init();
+	}
+	registrationService.save(receipt);
+	//BLOCK
+	receiptTransitions.saveReceiptTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkMV2BEeSzlcwPkXyaVA" name="closeReceiptTRN" specification="_oO17QV2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.closeReceiptTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkMl2BEeSzlcwPkXyaVA" name="deleteReceiptTRN" specification="_oO17Ql2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.deleteReceiptTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkM12BEeSzlcwPkXyaVA" name="exportReceiptsTRN" specification="_oO2iUF2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.exportReceiptsTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkNF2BEeSzlcwPkXyaVA" name="createTRN" specification="_oO2iUV2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.createTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkNV2BEeSzlcwPkXyaVA" name="viewTRN" specification="_oO2iUl2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.viewTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkNl2BEeSzlcwPkXyaVA" name="editTRN" specification="_oO2iU12BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.editTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkN12BEeSzlcwPkXyaVA" name="deleteTRN" specification="_oO2iVF2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.deleteTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkOF2BEeSzlcwPkXyaVA" name="exportTRN" specification="_oO3JYF2BEeSzlcwPkXyaVA">
+                  <language>java</language>
+                  <body>receiptTransitions.exportTRN();
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRRkOV2BEeSzlcwPkXyaVA" name="getVendor" specification="_oO3JYV2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oRRkOl2BEeSzlcwPkXyaVA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return this.receipt.getVendor();
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_oO17QF2BEeSzlcwPkXyaVA" name="saveReceiptTRN" method="_oRRkMF2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO17QV2BEeSzlcwPkXyaVA" name="closeReceiptTRN" method="_oRRkMV2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO17Ql2BEeSzlcwPkXyaVA" name="deleteReceiptTRN" method="_oRRkMl2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO2iUF2BEeSzlcwPkXyaVA" name="exportReceiptsTRN" method="_oRRkM12BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO2iUV2BEeSzlcwPkXyaVA" name="createTRN" method="_oRRkNF2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO2iUl2BEeSzlcwPkXyaVA" name="viewTRN" method="_oRRkNV2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO2iU12BEeSzlcwPkXyaVA" name="editTRN" method="_oRRkNl2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO2iVF2BEeSzlcwPkXyaVA" name="deleteTRN" method="_oRRkN12BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO3JYF2BEeSzlcwPkXyaVA" name="exportTRN" method="_oRRkOF2BEeSzlcwPkXyaVA"/>
+                <ownedOperation xmi:id="_oO3JYV2BEeSzlcwPkXyaVA" name="getVendor" method="_oRRkOV2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oO3JYl2BEeSzlcwPkXyaVA" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQvYsF2BEeSzlcwPkXyaVA" name="setReceiptActions" method="_oRPvAF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQvYsV2BEeSzlcwPkXyaVA" name="receiptActions" type="_oOCqAF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQvYsl2BEeSzlcwPkXyaVA" name="setReceiptConditions" method="_oRPvAl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQvYs12BEeSzlcwPkXyaVA" name="receiptConditions" type="_oOIwoF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQv_wF2BEeSzlcwPkXyaVA" name="setReceiptTransitions" method="_oRPvBF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQv_wV2BEeSzlcwPkXyaVA" name="receiptTransitions" type="_oOLM4F2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQv_wl2BEeSzlcwPkXyaVA" name="createAction" method="_oRPvBl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQv_w12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQwm0F2BEeSzlcwPkXyaVA" name="viewAction" method="_oRQWEF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQwm0V2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQwm0l2BEeSzlcwPkXyaVA" name="editAction" method="_oRQWEl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQwm012BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQxN4F2BEeSzlcwPkXyaVA" name="deleteAction" method="_oRQWFF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQxN4V2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQxN4l2BEeSzlcwPkXyaVA" name="exportAction" method="_oRQWFl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQxN412BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQx08F2BEeSzlcwPkXyaVA" name="saveAction" method="_oRQWGF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQx08V2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQx08l2BEeSzlcwPkXyaVA" name="closeAction" method="_oRQWGl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQx0812BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQycAF2BEeSzlcwPkXyaVA" name="updateState" method="_oRQWHF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQycAV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                  <ownedParameter xmi:id="_oQycAl2BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQycA12BEeSzlcwPkXyaVA" name="setCreateReceiptAction" method="_oRQ9IF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQycBF2BEeSzlcwPkXyaVA" name="createReceiptAction" type="_oOXaIF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQzDEF2BEeSzlcwPkXyaVA" name="setDeleteReceiptAction" method="_oRQ9Il2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQzDEV2BEeSzlcwPkXyaVA" name="deleteReceiptAction" type="_oOYoQF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQzDEl2BEeSzlcwPkXyaVA" name="setEditReceiptAction" method="_oRQ9JF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQzDE12BEeSzlcwPkXyaVA" name="editReceiptAction" type="_oOZPUF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQzqIF2BEeSzlcwPkXyaVA" name="setSaveReceiptAction" method="_oRQ9Jl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQzqIV2BEeSzlcwPkXyaVA" name="saveReceiptAction" type="_oOadc12BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQzqIl2BEeSzlcwPkXyaVA" name="setViewReceiptAction" method="_oRQ9KF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQzqI12BEeSzlcwPkXyaVA" name="viewReceiptAction" type="_oOcSoF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQzqJF2BEeSzlcwPkXyaVA" name="setExportReceiptAction" method="_oRQ9Kl2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQ0RMF2BEeSzlcwPkXyaVA" name="exportReceiptAction" type="_oOZ2YF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_oQ0RMV2BEeSzlcwPkXyaVA" name="setCloseReceiptAction" method="_oRQ9LF2BEeSzlcwPkXyaVA">
+                  <ownedParameter xmi:id="_oQ0RMl2BEeSzlcwPkXyaVA" name="closeReceiptAction" type="_oOWzEF2BEeSzlcwPkXyaVA"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRUAcl2BEeSzlcwPkXyaVA" name="" memberEnd="_oREv4F2BEeSzlcwPkXyaVA _oRUAc12BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRUAc12BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRUAcl2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRYR4V2BEeSzlcwPkXyaVA" name="" memberEnd="_oRYR4l2BEeSzlcwPkXyaVA _oRBFgV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRYR4l2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRYR4V2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRY48V2BEeSzlcwPkXyaVA" name="" memberEnd="_oRY48l2BEeSzlcwPkXyaVA _oRBskV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRY48l2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRY48V2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRZgAV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRZgAl2BEeSzlcwPkXyaVA _oRBsk12BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRZgAl2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRZgAV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRaHEV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRaHEl2BEeSzlcwPkXyaVA _oRCToV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRaHEl2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRaHEV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRauIV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRauIl2BEeSzlcwPkXyaVA _oRC6sF2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRauIl2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRauIV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRbVMV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRbVMl2BEeSzlcwPkXyaVA _oRC6sl2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRbVMl2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRbVMV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRb8QV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRb8Ql2BEeSzlcwPkXyaVA _oRDhwV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRb8Ql2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRb8QV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRb8RF2BEeSzlcwPkXyaVA" name="" memberEnd="_oRb8RV2BEeSzlcwPkXyaVA _oRDhw12BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRb8RV2BEeSzlcwPkXyaVA" name="" type="_oOmqsF2BEeSzlcwPkXyaVA" association="_oRb8RF2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRcjUV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRcjUl2BEeSzlcwPkXyaVA _oREv4V2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRcjUl2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRcjUV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRcjVF2BEeSzlcwPkXyaVA" name="" memberEnd="_oRcjVV2BEeSzlcwPkXyaVA _oRFW8V2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRcjVV2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRcjVF2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRdKYV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRdKYl2BEeSzlcwPkXyaVA _oRFW812BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRdKYl2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRdKYV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRdxcV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRdxcl2BEeSzlcwPkXyaVA _oRF-AV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRdxcl2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRdxcV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRdxdF2BEeSzlcwPkXyaVA" name="" memberEnd="_oRdxdV2BEeSzlcwPkXyaVA _oRF-A12BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRdxdV2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRdxdF2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oReYgV2BEeSzlcwPkXyaVA" name="" memberEnd="_oReYgl2BEeSzlcwPkXyaVA _oRGlEV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oReYgl2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oReYgV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oReYhF2BEeSzlcwPkXyaVA" name="" memberEnd="_oReYhV2BEeSzlcwPkXyaVA _oRGlE12BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oReYhV2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oReYhF2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRe_kV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRe_kl2BEeSzlcwPkXyaVA _oRHMIV2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRe_kl2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRe_kV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRe_lF2BEeSzlcwPkXyaVA" name="" memberEnd="_oRe_lV2BEeSzlcwPkXyaVA _oRHMI12BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRe_lV2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRe_lF2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRfmoV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRfmol2BEeSzlcwPkXyaVA _oRHzMF2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRfmol2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRfmoV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_oRgNsV2BEeSzlcwPkXyaVA" name="" memberEnd="_oRgNsl2BEeSzlcwPkXyaVA _oRHzMl2BEeSzlcwPkXyaVA">
+                <ownedEnd xmi:id="_oRgNsl2BEeSzlcwPkXyaVA" name="" type="_oOy38F2BEeSzlcwPkXyaVA" association="_oRgNsV2BEeSzlcwPkXyaVA"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_oOCqAF2BEeSzlcwPkXyaVA" name="ReceiptActions">
+              <eAnnotations xmi:id="_oODREF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oODREV2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oODREl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedComment xmi:id="_oRSyUF2BEeSzlcwPkXyaVA">
+                <body>All the actions for the order object state machine
+ *
+@author Dr. Gerald E. Bennett Following architectural pattern of Jason
+        Zhicheng Li (jason@lizjason.com)</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_oQVJAF2BEeSzlcwPkXyaVA" name="createAction">
+                <ownedParameter xmi:id="_oQVJAV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQVJAl2BEeSzlcwPkXyaVA" name="viewAction">
+                <ownedParameter xmi:id="_oQVJA12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQVwEF2BEeSzlcwPkXyaVA" name="editAction">
+                <ownedParameter xmi:id="_oQVwEV2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQVwEl2BEeSzlcwPkXyaVA" name="deleteAction">
+                <ownedParameter xmi:id="_oQVwE12BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQVwFF2BEeSzlcwPkXyaVA" name="exportAction">
+                <ownedParameter xmi:id="_oQWXIF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQWXIV2BEeSzlcwPkXyaVA" name="saveAction">
+                <ownedParameter xmi:id="_oQWXIl2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQWXI12BEeSzlcwPkXyaVA" name="closeAction">
+                <ownedParameter xmi:id="_oQWXJF2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQWXJV2BEeSzlcwPkXyaVA" name="updateState">
+                <ownedParameter xmi:id="_oQWXJl2BEeSzlcwPkXyaVA" name="receipt" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                <ownedParameter xmi:id="_oQWXJ12BEeSzlcwPkXyaVA" name="newState" type="_oOJXs12BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQW-MF2BEeSzlcwPkXyaVA" name="setCreateReceiptAction">
+                <ownedParameter xmi:id="_oQW-MV2BEeSzlcwPkXyaVA" name="createReceiptAction" type="_oOXaIF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQW-Ml2BEeSzlcwPkXyaVA" name="setDeleteReceiptAction">
+                <ownedParameter xmi:id="_oQW-M12BEeSzlcwPkXyaVA" name="deleteReceiptAction" type="_oOYoQF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQW-NF2BEeSzlcwPkXyaVA" name="setEditReceiptAction">
+                <ownedParameter xmi:id="_oQW-NV2BEeSzlcwPkXyaVA" name="editReceiptAction" type="_oOZPUF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQXlQF2BEeSzlcwPkXyaVA" name="setSaveReceiptAction">
+                <ownedParameter xmi:id="_oQXlQV2BEeSzlcwPkXyaVA" name="saveReceiptAction" type="_oOadc12BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQXlQl2BEeSzlcwPkXyaVA" name="setViewReceiptAction">
+                <ownedParameter xmi:id="_oQXlQ12BEeSzlcwPkXyaVA" name="viewReceiptAction" type="_oOcSoF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQXlRF2BEeSzlcwPkXyaVA" name="setExportReceiptAction">
+                <ownedParameter xmi:id="_oQXlRV2BEeSzlcwPkXyaVA" name="exportReceiptAction" type="_oOZ2YF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQXlRl2BEeSzlcwPkXyaVA" name="setCloseReceiptAction">
+                <ownedParameter xmi:id="_oQXlR12BEeSzlcwPkXyaVA" name="closeReceiptAction" type="_oOWzEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_oOIwoF2BEeSzlcwPkXyaVA" name="ReceiptConditions">
+              <eAnnotations xmi:id="_oOJXsF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oOJXsV2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oOJXsl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedComment xmi:id="_oRSyUV2BEeSzlcwPkXyaVA">
+                <body>*
+* @author Dr. Gerald E. Bennett
+* Following architectural pattern of Jason Zhicheng Li (jason@lizjason.com)</body>
+              </ownedComment>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Enumeration" xmi:id="_oOJXs12BEeSzlcwPkXyaVA" name="ReceiptState">
+              <eAnnotations xmi:id="_oOJ-wF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oOJ-wV2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oOJ-wl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedLiteral xmi:id="_oOKl0F2BEeSzlcwPkXyaVA" name="CreateState"/>
+              <ownedLiteral xmi:id="_oOKl0V2BEeSzlcwPkXyaVA" name="ViewState"/>
+              <ownedLiteral xmi:id="_oOKl0l2BEeSzlcwPkXyaVA" name="EditState"/>
+              <ownedLiteral xmi:id="_oOKl012BEeSzlcwPkXyaVA" name="DeleteState"/>
+              <ownedLiteral xmi:id="_oOKl1F2BEeSzlcwPkXyaVA" name="ExportState"/>
+              <ownedLiteral xmi:id="_oOKl1V2BEeSzlcwPkXyaVA" name="TABLEVIEW"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_oOLM4F2BEeSzlcwPkXyaVA" name="ReceiptTransitions">
+              <eAnnotations xmi:id="_oOLM4V2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oOLM4l2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oOLM412BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedComment xmi:id="_oRSyUl2BEeSzlcwPkXyaVA">
+                <body>*
+@author Dr. Gerald E. Bennett Following architectural pattern of Jason
+        Zhicheng Li (jason@lizjason.com)</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_oOLz8F2BEeSzlcwPkXyaVA" name="createTRN"/>
+              <ownedOperation xmi:id="_oOLz8V2BEeSzlcwPkXyaVA" name="viewTRN"/>
+              <ownedOperation xmi:id="_oOLz8l2BEeSzlcwPkXyaVA" name="editTRN"/>
+              <ownedOperation xmi:id="_oOLz812BEeSzlcwPkXyaVA" name="deleteTRN"/>
+              <ownedOperation xmi:id="_oOLz9F2BEeSzlcwPkXyaVA" name="exportTRN"/>
+              <ownedOperation xmi:id="_oOMbAF2BEeSzlcwPkXyaVA" name="saveReceiptTRN"/>
+              <ownedOperation xmi:id="_oOMbAV2BEeSzlcwPkXyaVA" name="closeReceiptTRN"/>
+              <ownedOperation xmi:id="_oOMbAl2BEeSzlcwPkXyaVA" name="deleteReceiptTRN"/>
+              <ownedOperation xmi:id="_oOMbA12BEeSzlcwPkXyaVA" name="exportReceiptsTRN"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_oONCEF2BEeSzlcwPkXyaVA" name="ReceiptWO">
+              <eAnnotations xmi:id="_oONpIF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oONpIV2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oONpIl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedComment xmi:id="_oRTZYF2BEeSzlcwPkXyaVA">
+                <body>The wrapper object ( or working object) to
+serve business service requests for the
+Receipt object. The business service layer delegates
+service requests to this object via the transition
+interface. 
+
+Note that the condition and action interfaces should not
+be exposured to the outside, but, for simplicity, in this example,
+working object also implements both the &lt;code>
+OrderConditions&lt;/code> and &lt;code>OrderActions&lt;/code>
+interfaces.
+@author Jason Zhicheng Li (jason@lizjason.com)</body>
+              </ownedComment>
+              <generalization xmi:id="_oQYMUF2BEeSzlcwPkXyaVA" general="_oOLM4F2BEeSzlcwPkXyaVA"/>
+              <generalization xmi:id="_oQYMUV2BEeSzlcwPkXyaVA" general="_oOIwoF2BEeSzlcwPkXyaVA"/>
+              <generalization xmi:id="_oQYMUl2BEeSzlcwPkXyaVA" general="_oOCqAF2BEeSzlcwPkXyaVA"/>
+              <ownedAttribute xmi:id="_oOOQMF2BEeSzlcwPkXyaVA" name="receipt" visibility="package" type="_oQUh8F2BEeSzlcwPkXyaVA" association="_oRTZYV2BEeSzlcwPkXyaVA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_oOO3QF2BEeSzlcwPkXyaVA" name="ReceiptWOContextWrapper">
+              <eAnnotations xmi:id="_oOPeUF2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oOPeUV2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oOPeUl2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedComment xmi:id="_oRTZY12BEeSzlcwPkXyaVA">
+                <body>The state machine wrapper. This class can be generated using, for example,
+XDoclet, based on the generated &lt;code>ReceiptWOContext&lt;/code>.
+
+This main purpose of this class is to synchronize the state machine internal
+state to the state of the business object
+ *
+@author Jason Zhicheng Li (jason@lizjason.com)</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_oRAecF2BEeSzlcwPkXyaVA" name="receiptContext" visibility="private" type="_oQ5wwF2BEeSzlcwPkXyaVA" association="_oRXq0F2BEeSzlcwPkXyaVA"/>
+              <interfaceRealization xmi:id="_oQYzYF2BEeSzlcwPkXyaVA" client="_oOO3QF2BEeSzlcwPkXyaVA" supplier="_oOLM4F2BEeSzlcwPkXyaVA" contract="_oOLM4F2BEeSzlcwPkXyaVA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPcF2BEeSzlcwPkXyaVA" name="ReceiptWOContextWrapper" specification="_oQYzYV2BEeSzlcwPkXyaVA">
+                <ownedParameter xmi:id="_oRKPcV2BEeSzlcwPkXyaVA" name="owner" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                <ownedParameter xmi:id="_oRKPcl2BEeSzlcwPkXyaVA" type="_oOO3QF2BEeSzlcwPkXyaVA" direction="return"/>
+                <language>java</language>
+                <body>receiptContext = new ReceiptWOContext(owner);
+	receiptContext.setDebugFlag(true);
+	synchronizeState(owner);
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPc12BEeSzlcwPkXyaVA" name="synchronizeState" specification="_oQZacl2BEeSzlcwPkXyaVA">
+                <ownedParameter xmi:id="_oRKPdF2BEeSzlcwPkXyaVA" name="owner" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                <language>java</language>
+                <body>ReceiptState state = owner.getReceipt().getState();
+	switch (state) {
+	case TABLEVIEW:
+	    receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.TABLEVIEW);
+	    break;
+	case CreateState:
+	    receiptContext
+		    .setState(ReceiptWOContext.ReceiptEntryMap.CreateState);
+	    break;
+	case ViewState:
+	    receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.ViewState);
+	    break;
+	case EditState:
+	    receiptContext.setState(ReceiptWOContext.ReceiptEntryMap.EditState);
+	    break;
+	case DeleteState:
+	    receiptContext
+		    .setState(ReceiptWOContext.ReceiptEntryMap.DeleteState);
+	    break;
+	case ExportState:
+	    receiptContext
+		    .setState(ReceiptWOContext.ReceiptEntryMap.ExportState);
+	    break;
+	default:
+	    throw new IllegalArgumentException(&quot;Unsupported receipt state:&quot;
+		    + state);
+	}
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPdV2BEeSzlcwPkXyaVA" name="saveReceiptTRN" specification="_oOQscF2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.saveReceiptTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPdl2BEeSzlcwPkXyaVA" name="closeReceiptTRN" specification="_oOQscV2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.closeReceiptTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPd12BEeSzlcwPkXyaVA" name="deleteReceiptTRN" specification="_oOQscl2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.deleteReceiptTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPeF2BEeSzlcwPkXyaVA" name="exportReceiptsTRN" specification="_oOQsc12BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.exportReceiptsTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRKPeV2BEeSzlcwPkXyaVA" name="createTRN" specification="_oORTgF2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.createTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRK2gF2BEeSzlcwPkXyaVA" name="viewTRN" specification="_oOR6kl2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.viewTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRK2gV2BEeSzlcwPkXyaVA" name="editTRN" specification="_oOShol2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.editTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRK2gl2BEeSzlcwPkXyaVA" name="deleteTRN" specification="_oOTIsF2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.deleteTRN();
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_oRK2g12BEeSzlcwPkXyaVA" name="exportTRN" specification="_oOTItF2BEeSzlcwPkXyaVA">
+                <language>java</language>
+                <body>receiptContext.exportTRN();
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_oOQscF2BEeSzlcwPkXyaVA" name="saveReceiptTRN" method="_oRKPdV2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOQscV2BEeSzlcwPkXyaVA" name="closeReceiptTRN" method="_oRKPdl2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOQscl2BEeSzlcwPkXyaVA" name="deleteReceiptTRN" method="_oRKPd12BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOQsc12BEeSzlcwPkXyaVA" name="exportReceiptsTRN" method="_oRKPeF2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oORTgF2BEeSzlcwPkXyaVA" name="createTRN" method="_oRKPeV2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOR6kl2BEeSzlcwPkXyaVA" name="viewTRN" method="_oRK2gF2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOShol2BEeSzlcwPkXyaVA" name="editTRN" method="_oRK2gV2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOTIsF2BEeSzlcwPkXyaVA" name="deleteTRN" method="_oRK2gl2BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oOTItF2BEeSzlcwPkXyaVA" name="exportTRN" method="_oRK2g12BEeSzlcwPkXyaVA"/>
+              <ownedOperation xmi:id="_oQYzYV2BEeSzlcwPkXyaVA" name="ReceiptWOContextWrapper" method="_oRKPcF2BEeSzlcwPkXyaVA">
+                <eAnnotations xmi:id="_oQYzY12BEeSzlcwPkXyaVA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_oQZacF2BEeSzlcwPkXyaVA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_oQYzYl2BEeSzlcwPkXyaVA" name="owner" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+                <ownedParameter xmi:id="_oQZacV2BEeSzlcwPkXyaVA" type="_oOO3QF2BEeSzlcwPkXyaVA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQZacl2BEeSzlcwPkXyaVA" name="synchronizeState" visibility="private" method="_oRKPc12BEeSzlcwPkXyaVA">
+                <ownedParameter xmi:id="_oQZac12BEeSzlcwPkXyaVA" name="owner" type="_oONCEF2BEeSzlcwPkXyaVA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_oOU94F2BEeSzlcwPkXyaVA" name="ReceiptWOFactory">
+              <eAnnotations xmi:id="_oOVk8F2BEeSzlcwPkXyaVA" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_oOVk8V2BEeSzlcwPkXyaVA" source="codegen">
+                  <details xmi:id="_oOVk8l2BEeSzlcwPkXyaVA" key="codegenDirectory" value="/ReceiptEntry/src/main/java"/>
+                </contents>
+              </eAnnotations>
+              <ownedComment xmi:id="_oRTZZF2BEeSzlcwPkXyaVA">
+                <body>*
+* @author Dr. Gerald E. Bennett
+* Following architectural pattern of Jason Zhicheng Li (jason@lizjason.com)</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_oOVk812BEeSzlcwPkXyaVA" name="createReceiptWO">
+                <ownedParameter xmi:id="_oOVk9F2BEeSzlcwPkXyaVA" name="receiptId">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_oQaBgF2BEeSzlcwPkXyaVA" type="_oONCEF2BEeSzlcwPkXyaVA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_oQ6-4F2BEeSzlcwPkXyaVA" name="createReceiptWO">
+                <ownedParameter xmi:id="_oQ6-4V2BEeSzlcwPkXyaVA" name="receipt" type="_oQUh8F2BEeSzlcwPkXyaVA"/>
+                <ownedParameter xmi:id="_oQ7l8F2BEeSzlcwPkXyaVA" type="_oONCEF2BEeSzlcwPkXyaVA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_oQ5wwF2BEeSzlcwPkXyaVA" name="ReceiptWOContext"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_oRTZYV2BEeSzlcwPkXyaVA" name="" memberEnd="_oOOQMF2BEeSzlcwPkXyaVA _oRTZYl2BEeSzlcwPkXyaVA">
+              <ownedEnd xmi:id="_oRTZYl2BEeSzlcwPkXyaVA" name="" type="_oONCEF2BEeSzlcwPkXyaVA" association="_oRTZYV2BEeSzlcwPkXyaVA"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_oRXq0F2BEeSzlcwPkXyaVA" name="" memberEnd="_oRXq0V2BEeSzlcwPkXyaVA _oRAecF2BEeSzlcwPkXyaVA">
+              <ownedEnd xmi:id="_oRXq0V2BEeSzlcwPkXyaVA" name="" type="_oOO3QF2BEeSzlcwPkXyaVA" association="_oRXq0F2BEeSzlcwPkXyaVA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_oNM8gV2BEeSzlcwPkXyaVA" name="bo">
+            <packagedElement xmi:type="uml:Package" xmi:id="_oNl-EF2BEeSzlcwPkXyaVA" name="registrations">
+              <packagedElement xmi:type="uml:Package" xmi:id="_oNl-EV2BEeSzlcwPkXyaVA" name="boundary">
+                <packagedElement xmi:type="uml:Class" xmi:id="_oQtjgV2BEeSzlcwPkXyaVA" name="RegistrationService"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_oQUh8F2BEeSzlcwPkXyaVA" name="Receipt"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oNlXAF2BEeSzlcwPkXyaVA" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_oNlXAV2BEeSzlcwPkXyaVA" name="inject">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_oQs8cF2BEeSzlcwPkXyaVA" name="Inject"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_n-i1cF2BEeSzlcwPkXyaVA">
+      <eAnnotations xmi:id="_n-i1cV2BEeSzlcwPkXyaVA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_n-jcgF2BEeSzlcwPkXyaVA" base_Package="_nq7V4F2BEeSzlcwPkXyaVA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oOJ-w12BEeSzlcwPkXyaVA" base_Element="_oOJXs12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oORTgV2BEeSzlcwPkXyaVA" base_Element="_oORTgF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oOR6kF2BEeSzlcwPkXyaVA" base_Element="_oORTgF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oOR6kV2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oOR6k12BEeSzlcwPkXyaVA" base_Element="_oOR6kl2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oOShoF2BEeSzlcwPkXyaVA" base_Element="_oOR6kl2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oOShoV2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oOSho12BEeSzlcwPkXyaVA" base_Element="_oOShol2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oOShpF2BEeSzlcwPkXyaVA" base_Element="_oOShol2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oOShpV2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oOTIsV2BEeSzlcwPkXyaVA" base_Element="_oOTIsF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oOTIsl2BEeSzlcwPkXyaVA" base_Element="_oOTIsF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oOTIs12BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oOTvwF2BEeSzlcwPkXyaVA" base_Element="_oOTItF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oOTvwV2BEeSzlcwPkXyaVA" base_Element="_oOTItF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oOTvwl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_oQUh8V2BEeSzlcwPkXyaVA" base_Element="_oQUh8F2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQcdwF2BEeSzlcwPkXyaVA" base_Element="_oQb2s12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQcdwV2BEeSzlcwPkXyaVA" base_Element="_oQb2s12BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQcdwl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQdE0l2BEeSzlcwPkXyaVA" base_Element="_oQdE0F2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQdr4F2BEeSzlcwPkXyaVA" base_Element="_oQdE0F2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQdr4V2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQeS8F2BEeSzlcwPkXyaVA" base_Element="_oQdr412BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQeS8V2BEeSzlcwPkXyaVA" base_Element="_oQdr412BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQeS8l2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQe6Al2BEeSzlcwPkXyaVA" base_Element="_oQe6AF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQe6A12BEeSzlcwPkXyaVA" base_Element="_oQe6AF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQe6BF2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQfhEl2BEeSzlcwPkXyaVA" base_Element="_oQfhEF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQfhE12BEeSzlcwPkXyaVA" base_Element="_oQfhEF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQgIIF2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQgvMF2BEeSzlcwPkXyaVA" base_Element="_oQgIIl2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQgvMV2BEeSzlcwPkXyaVA" base_Element="_oQgIIl2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQgvMl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQhWQF2BEeSzlcwPkXyaVA" base_Element="_oQgvNF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQhWQV2BEeSzlcwPkXyaVA" base_Element="_oQgvNF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQhWQl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQh9Ul2BEeSzlcwPkXyaVA" base_Element="_oQh9UF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQikYF2BEeSzlcwPkXyaVA" base_Element="_oQh9UF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQikYV2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQlAoF2BEeSzlcwPkXyaVA" base_Element="_oQkZk12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQlAoV2BEeSzlcwPkXyaVA" base_Element="_oQkZk12BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQlAol2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQlnsF2BEeSzlcwPkXyaVA" base_Element="_oQlAo12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQlnsV2BEeSzlcwPkXyaVA" base_Element="_oQlAo12BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQlnsl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQmOwF2BEeSzlcwPkXyaVA" base_Element="_oQlns12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQmOwV2BEeSzlcwPkXyaVA" base_Element="_oQlns12BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQmOwl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQm10F2BEeSzlcwPkXyaVA" base_Element="_oQmOw12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQm10V2BEeSzlcwPkXyaVA" base_Element="_oQmOw12BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQm10l2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQm11V2BEeSzlcwPkXyaVA" base_Element="_oQm1012BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQm11l2BEeSzlcwPkXyaVA" base_Element="_oQm1012BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQm1112BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQnc4l2BEeSzlcwPkXyaVA" base_Element="_oQnc4F2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQnc412BEeSzlcwPkXyaVA" base_Element="_oQnc4F2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQnc5F2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQoD8F2BEeSzlcwPkXyaVA" base_Element="_oQnc5V2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQoD8V2BEeSzlcwPkXyaVA" base_Element="_oQnc5V2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQoD8l2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQoD9V2BEeSzlcwPkXyaVA" base_Element="_oQoD812BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQorAF2BEeSzlcwPkXyaVA" base_Element="_oQoD812BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQorAV2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQpSEF2BEeSzlcwPkXyaVA" base_Element="_oQorAl2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQpSEV2BEeSzlcwPkXyaVA" base_Element="_oQorAl2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQpSEl2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_oQtjgF2BEeSzlcwPkXyaVA" base_Element="_oQs8cF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oQuKkF2BEeSzlcwPkXyaVA" base_Element="_oQtjgV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oQ6X0F2BEeSzlcwPkXyaVA" base_Element="_oQ5wwF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oQ80El2BEeSzlcwPkXyaVA" base_Element="_oQ8NAF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oQ9bIF2BEeSzlcwPkXyaVA" base_Element="_oQ8NAF2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oQ9bIV2BEeSzlcwPkXyaVA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRBFgF2BEeSzlcwPkXyaVA" base_Element="_oRAecF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRBskF2BEeSzlcwPkXyaVA" base_Element="_oRBFgV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRBskl2BEeSzlcwPkXyaVA" base_Element="_oRBskV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRCToF2BEeSzlcwPkXyaVA" base_Element="_oRBsk12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRCTol2BEeSzlcwPkXyaVA" base_Element="_oRCToV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRC6sV2BEeSzlcwPkXyaVA" base_Element="_oRC6sF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRDhwF2BEeSzlcwPkXyaVA" base_Element="_oRC6sl2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRDhwl2BEeSzlcwPkXyaVA" base_Element="_oRDhwV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oREI0F2BEeSzlcwPkXyaVA" base_Element="_oRDhw12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRFW8F2BEeSzlcwPkXyaVA" base_Element="_oREv4V2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRFW8l2BEeSzlcwPkXyaVA" base_Element="_oRFW8V2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRF-AF2BEeSzlcwPkXyaVA" base_Element="_oRFW812BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRF-Al2BEeSzlcwPkXyaVA" base_Element="_oRF-AV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRGlEF2BEeSzlcwPkXyaVA" base_Element="_oRF-A12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRGlEl2BEeSzlcwPkXyaVA" base_Element="_oRGlEV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRHMIF2BEeSzlcwPkXyaVA" base_Element="_oRGlE12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRHMIl2BEeSzlcwPkXyaVA" base_Element="_oRHMIV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRHMJF2BEeSzlcwPkXyaVA" base_Element="_oRHMI12BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRHzMV2BEeSzlcwPkXyaVA" base_Element="_oRHzMF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_oRHzM12BEeSzlcwPkXyaVA" base_Element="_oRHzMl2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Annotations xmi:id="_oRIaQF2BEeSzlcwPkXyaVA" base_Element="_oRHzMl2BEeSzlcwPkXyaVA">
+    <annotations xmi:id="_oRIaQV2BEeSzlcwPkXyaVA" name="Inject"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_oRYR4F2BEeSzlcwPkXyaVA" base_Element="_oRXq0F2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRY48F2BEeSzlcwPkXyaVA" base_Element="_oRYR4V2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRZgAF2BEeSzlcwPkXyaVA" base_Element="_oRY48V2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRaHEF2BEeSzlcwPkXyaVA" base_Element="_oRZgAV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRauIF2BEeSzlcwPkXyaVA" base_Element="_oRaHEV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRbVMF2BEeSzlcwPkXyaVA" base_Element="_oRauIV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRb8QF2BEeSzlcwPkXyaVA" base_Element="_oRbVMV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRb8Q12BEeSzlcwPkXyaVA" base_Element="_oRb8QV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRcjUF2BEeSzlcwPkXyaVA" base_Element="_oRb8RF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRcjU12BEeSzlcwPkXyaVA" base_Element="_oRcjUV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRdKYF2BEeSzlcwPkXyaVA" base_Element="_oRcjVF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRdxcF2BEeSzlcwPkXyaVA" base_Element="_oRdKYV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRdxc12BEeSzlcwPkXyaVA" base_Element="_oRdxcV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oReYgF2BEeSzlcwPkXyaVA" base_Element="_oRdxdF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oReYg12BEeSzlcwPkXyaVA" base_Element="_oReYgV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRe_kF2BEeSzlcwPkXyaVA" base_Element="_oReYhF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRe_k12BEeSzlcwPkXyaVA" base_Element="_oRe_kV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRfmoF2BEeSzlcwPkXyaVA" base_Element="_oRe_lF2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRgNsF2BEeSzlcwPkXyaVA" base_Element="_oRfmoV2BEeSzlcwPkXyaVA"/>
+  <UMLLabProfile:Reference xmi:id="_oRg0wF2BEeSzlcwPkXyaVA" base_Element="_oRgNsV2BEeSzlcwPkXyaVA"/>
+</xmi:XMI>

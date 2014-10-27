@@ -16,9 +16,9 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 import com.drgeb.receiptentry.bo.Receipt;
-import com.drgeb.receiptentry.impl.ReceiptWOFactoryImpl;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOFactory;
+import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
 
 /**
  *

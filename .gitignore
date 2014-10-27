@@ -1,6 +1,7 @@
+/doc/
 /target/
 /receiptentryDB/
+/mioentryDB/
 **.log
 **.out
-/mioentryDB/
-/doc/
+doc/ReceiptWO_sm.html

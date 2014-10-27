@@ -23,7 +23,7 @@ import com.drgeb.receiptentry.sm.ReceiptTransitions;
  * @author Jason Zhicheng Li (jason@lizjason.com)
  */
 
-public interface ReceiptWO extends ReceiptTransitions,ReceiptConditions, ReceiptActions {
+public interface ReceiptWO extends ReceiptTransitions,ReceiptConditions,ReceiptActions {
 	/**  
 	 * @return underlying POJO order object.
 	 */
@@ -35,6 +35,5 @@ public interface ReceiptWO extends ReceiptTransitions,ReceiptConditions, Receipt
 	 * @param order the new business object
 	 */
 	void setReceipt(Receipt receipt);
-	
-	public String getVendor();
+
 }

@@ -16,24 +16,24 @@ TABLEVIEW {
 }
 
 CreateState {
-			saveReceiptTRN		TABLEVIEW	{saveAction(ctxt);}		
-			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);}
+			saveReceiptTRN		TABLEVIEW	{saveAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}		
+			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}
 }
 
 ViewState {
-			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);}
+			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}
 }
 
 EditState {
-	   		saveReceiptTRN		TABLEVIEW	{saveAction(ctxt);}	
-			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);}	
+	   		saveReceiptTRN		TABLEVIEW	{saveAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}	
+			closeReceiptTRN		TABLEVIEW	{closeAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}	
 }
 
 DeleteState {
-			deleteReceiptTRN	TABLEVIEW	{deleteAction(ctxt);}
+			deleteReceiptTRN	TABLEVIEW	{deleteAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}
 }
 
 ExportState {
-			exportReceiptsTRN	TABLEVIEW	{exportAction(ctxt);}
+			exportReceiptsTRN	TABLEVIEW	{exportAction(ctxt);updateState(ctxt, ReceiptState.TABLEVIEW);}
 }
 %%

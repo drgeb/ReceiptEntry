@@ -6,19 +6,29 @@ package com.drgeb.receiptentry.vw.entry;
  * 
  **/
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
 import javax.inject.Inject;
 
 import com.drgeb.receiptentry.bo.Receipt;
-import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
+import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.vw.receipttable.ReceipttablePresenter;
 
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextArea;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -35,6 +45,9 @@ public class EntryPresenter implements Initializable {
     @FXML
     DatePicker date;
 
+    @FXML
+    TextField updateDate;
+    
     @FXML
     TextField amount;
 
@@ -57,13 +70,26 @@ public class EntryPresenter implements Initializable {
     @FXML
     TextArea notes;
 
+    @FXML
+    Button saveButton;
+    
+    @FXML
+    CheckBox paid;
+    
+    @FXML
+    CheckBox reimbursable;
+    
+    @FXML
+    CheckBox reconciled;
+   
+    @FXML
+    Button importPDFButton;
+    
+    
     private Stage stage;
     private ReceiptWO receiptWO;
 
     private ReceipttablePresenter receipttablePresenter;
-
-    @Inject
-    RegistrationService registrationService;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -75,22 +101,70 @@ public class EntryPresenter implements Initializable {
 	receipttablePresenter = (ReceipttablePresenter) injectionContext
 		.get(ReceipttablePresenter.class);
 
-	id.setText(receipt.getReceiptId());
-	vendor.setText(receipt.getVendor());
-	date.setValue(receipt.getPurchaseDate());
-	amount.setText(new Double(receipt.getAmount()).toString());
+	this.id.setText(receipt.getReceiptId());
+	this.vendor.setText(receipt.getVendor());
+	this.date.setValue(receipt.getPurchaseDate());
+	this.updateDate.setText(receipt.getUpdateDate().toString());
+	this.amount.setText(new Double(receipt.getAmount()).toString());
+	this.salesTax.setText(new Double(receipt.getSalesTax()).toString());
+	//TODO implement currency
+	String currency=receipt.getCurrency();
+	//TODO implement paymentTypeText
+	String paymentTypeText=receipt.getPaymentType();
+	this.location.setText(receipt.getLocation());
+	this.reimbursable.setSelected(receipt.getReimbursable());
+	this.paid.setSelected(receipt.getPaid());
+	this.reconciled.setSelected(receipt.getReconciled());
+	this.notes.setText(receipt.getNotes());
+
+	if(receiptWO.getReceipt().getState()==ReceiptState.ViewState){
+	    saveButton.setVisible(false); 
+	    importPDFButton.setVisible(false);
+	    
+	    //Make everything uneditable
+	    this.vendor.setEditable(false);
+	    this.date.setEditable(false);
+	    this.amount.setEditable(false);
+	    this.salesTax.setEditable(false);
+	    //TODO this.currency
+	    //TODO this.paymentType
+	    this.location.setEditable(false);
+	    this.reimbursable.setDisable(true);
+	    this.paid.setDisable(true);
+	    this.reconciled.setDisable(true);
+	    this.notes.setEditable(false);
+	} else
+	{
+	    //Make everythign editable
+	    
+	    saveButton.setVisible(true);
+	}
     }
 
     @FXML
     public void saveAction(ActionEvent event) {
 	Receipt receipt = receiptWO.getReceipt();
 	receipt.setVendor(vendor.getText());
+	//TODO Need to implement setting Author part of General Settings
+	String author="Gerald E. Bennett";
+	receipt.setAuthor(author);
 	receipt.setPurchaseDate(date.getValue());
+	receipt.setUpdateDate(LocalDateTime.now());
 	receipt.setAmount(Double.valueOf(amount.getText()).doubleValue());
-
-	//TODO use transition and eliminate the registrationServive from the Presenter!
+	receipt.setSalesTax(Double.valueOf(salesTax.getText()).doubleValue());
+	//TODO implement getting currencyText from currency ChoiceBox
+	String currencyText="";
+	receipt.setCurrency(currencyText);
+	//TODO implement getting paymentTypeText from currency ChoiceBox
+	String paymentTypeText="";	
+	receipt.setPaymentType(paymentTypeText);
+	receipt.setLocation(location.getText());
+	receipt.setReimbursable(reimbursable.selectedProperty().get());
+	receipt.setPaid(paid.selectedProperty().get());
+	receipt.setReconciled(reconciled.selectedProperty().get());
+	receipt.setNotes(notes.getText());
+	
 	receiptWO.saveReceiptTRN();
-	registrationService.save(receipt);
 	stage.close();
 	receipttablePresenter.loadFromStore();
     }
