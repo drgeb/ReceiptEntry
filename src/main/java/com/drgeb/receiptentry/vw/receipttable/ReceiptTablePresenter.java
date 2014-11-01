@@ -5,6 +5,7 @@ package com.drgeb.receiptentry.vw.receipttable;
  * @author Dr. Gerald E. Bennett
  * 
  **/
+
 import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
@@ -25,6 +26,7 @@ import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Control;
@@ -37,7 +39,10 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.stage.WindowEvent;
+import javafx.scene.control.CheckMenuItem;
 
+import com.drgeb.receiptentry.roles.Role;
+import com.drgeb.receiptentry.roles.RoleManager;
 import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
 //import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
@@ -45,7 +50,7 @@ import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOFactory;
 import com.drgeb.receiptentry.vw.entry.EntryView;
 
-public class ReceipttablePresenter extends Control implements Initializable {
+public class ReceiptTablePresenter extends Control implements Initializable {
     @FXML
     Button create;
 
@@ -79,6 +84,21 @@ public class ReceipttablePresenter extends Control implements Initializable {
     @FXML
     Label recordLabel;
 
+    @FXML
+    Node root;
+
+    @FXML
+    // fx:id="editor"
+    private CheckMenuItem editor; // Value injected by FXMLLoader
+
+    @FXML
+    // fx:id="viewer"
+    private CheckMenuItem viewer; // Value injected by FXMLLoader
+
+    @FXML
+    // fx:id="administrator"
+    private CheckMenuItem administrator; // Value injected by FXMLLoader
+
     private ObservableList<ReceiptWO> receipts;
     private ObjectProperty<ReceiptWO> deletedReceipt;
 
@@ -86,6 +106,9 @@ public class ReceipttablePresenter extends Control implements Initializable {
     RegistrationService service;
 
     private SimpleObjectProperty<Object> selectedReceipt;
+
+    @Inject
+    private RoleManager roleManager;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -109,9 +132,32 @@ public class ReceipttablePresenter extends Control implements Initializable {
 		.setSelectionMode(SelectionMode.SINGLE);
 	registerListeners();
 	buttonEnablement();
+
+	// From The FXML assign the Nodes to the Tree
+	roleManager.assignRolesToNodeTree(root);
+	// Show only what is allowed
+	roleManager.showActiveNodes();
+	// Initializee ChoiceBoxex
+	ObservableList<Role> activeRoles = roleManager.getActiveRoles();
+	for (Role role : activeRoles) {
+	    switch (role) {
+	    case Administrator:
+		administrator.setSelected(true);
+		break;
+	    case Editor:
+		editor.setSelected(true);
+		break;
+	    case Viewer:
+		viewer.setSelected(true);
+		break;
+	    }
+
+	}
     }
 
     private void buttonEnablement() {
+	// TODO Think more on integration with Roles and Buttons that only need
+	// to be enabled when a row has been selected!
 	ReceiptWO selectedItem = receiptsTable.getSelectionModel()
 		.getSelectedItem();
 	if (selectedItem == null) {
@@ -127,6 +173,8 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	    delete.setDisable(false);
 	    export.setDisable(false);
 	}
+	// Show only what is allowed
+	roleManager.showActiveNodes();
     }
 
     private void initiateEntry(ReceiptWO receiptWO) {
@@ -134,10 +182,11 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	Stage stage = new Stage(StageStyle.UTILITY);
 
 	@SuppressWarnings("rawtypes")
+	// Map to inject
 	HashMap<Class, Object> contextMap = new HashMap<Class, Object>();
 	contextMap.put(ReceiptWO.class, receiptWO);
 	contextMap.put(Stage.class, stage);
-	contextMap.put(ReceipttablePresenter.class, this);
+	contextMap.put(ReceiptTablePresenter.class, this);
 
 	EntryView entryView = new EntryView((f) -> contextMap);
 	Scene scene = new Scene(entryView.getView());
@@ -201,7 +250,8 @@ public class ReceipttablePresenter extends Control implements Initializable {
     public void loadFromStore() {
 	this.clearAll();
 	List<ReceiptWO> all = service.all();
-	if(recordLabel!=null)recordLabel.setText("#: " + all.size());
+	if (recordLabel != null)
+	    recordLabel.setText("#: " + all.size());
 	for (ReceiptWO receipt : all) {
 	    add(receipt);
 	}
@@ -264,4 +314,32 @@ public class ReceipttablePresenter extends Control implements Initializable {
 	receiptsTable.getSelectionModel().clearSelection();
 	this.deletedReceipt.set(deletedItem);
     }
+
+    @FXML
+    void updateAdministratorRoleAction(ActionEvent event) {
+	if (administrator.isSelected()) {
+	    roleManager.add(Role.Administrator);
+	} else {
+	    roleManager.remove(Role.Administrator);
+	}
+    }
+
+    @FXML
+    void updateEditorRoleAction(ActionEvent event) {
+	if (editor.isSelected()) {
+	    roleManager.add(Role.Editor);
+	} else {
+	    roleManager.remove(Role.Editor);
+	}
+    }
+
+    @FXML
+    void updateViewerRoleAction(ActionEvent event) {
+	if (viewer.isSelected()) {
+	    roleManager.add(Role.Viewer);
+	} else {
+	    roleManager.remove(Role.Viewer);
+	}
+    }
+
 }

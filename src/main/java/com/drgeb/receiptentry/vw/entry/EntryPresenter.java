@@ -9,6 +9,7 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.Properties;
 import java.util.ResourceBundle;
 
 import javax.inject.Inject;
@@ -16,7 +17,7 @@ import javax.inject.Inject;
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWO;
-import com.drgeb.receiptentry.vw.receipttable.ReceipttablePresenter;
+import com.drgeb.receiptentry.vw.receipttable.ReceiptTablePresenter;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
@@ -89,7 +90,7 @@ public class EntryPresenter implements Initializable {
     private Stage stage;
     private ReceiptWO receiptWO;
 
-    private ReceipttablePresenter receipttablePresenter;
+    private ReceiptTablePresenter receipttablePresenter;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -98,8 +99,8 @@ public class EntryPresenter implements Initializable {
 	
 	Receipt receipt = receiptWO.getReceipt();
 	
-	receipttablePresenter = (ReceipttablePresenter) injectionContext
-		.get(ReceipttablePresenter.class);
+	receipttablePresenter = (ReceiptTablePresenter) injectionContext
+		.get(ReceiptTablePresenter.class);
 
 	this.id.setText(receipt.getReceiptId());
 	this.vendor.setText(receipt.getVendor());
@@ -139,6 +140,11 @@ public class EntryPresenter implements Initializable {
 	    
 	    saveButton.setVisible(true);
 	}
+	//setup currecy list
+	//Properties currency = new Properties();
+	//for (Property p in currency) {
+	    
+	//}
     }
 
     @FXML

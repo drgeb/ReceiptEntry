@@ -2,6 +2,7 @@ package com.drgeb.receiptentry.roles;
 
 import javafx.collections.*;
 import javafx.scene.*;
+
 import java.util.*;
 
 public class RoleManager {
@@ -22,10 +23,15 @@ public class RoleManager {
 	this.activeRoles = activeRoles;
 	this.activeRoles.addListener(ACTIVE_ROLE_LISTENER);
     }
+    
+    public ObservableList<Role> getActiveRoles() {
+	return this.activeRoles;
+    }
 
     public void showActiveNodes() {
 	for (Node node : nodeRoles.keySet()) {
-	    System.out.println("for node: " + node + " isActive(node)= "+ isActive(node));
+	    System.out.println("for node: " + node + " isActive(node)= "
+		    + isActive(node));
 	    node.setVisible(isActive(node));
 	}
     }
@@ -59,7 +65,8 @@ public class RoleManager {
 	    List<Role> roles = new ArrayList<>();
 	    for (Object object : (ObservableList) userData) {
 		if (object instanceof Role) {
-		    System.out.println("Adding Role: "+object.toString() +" to Node: "+node.toString());
+		    System.out.println("Adding Role: " + object.toString()
+			    + " to Node: " + node.toString());
 		    roles.add((Role) object);
 		}
 	    }
@@ -78,5 +85,21 @@ public class RoleManager {
 		assignRolesToNodeTree(child);
 	    }
 	}
+    }
+
+    public void remove(Role role) {
+	// TODO Auto-generated method stub
+	if (activeRoles.contains(role)) {
+	    activeRoles.remove(role);
+	}
+	this.showActiveNodes();
+    }
+
+    public void add(Role role) {
+	// TODO Auto-generated method stub
+	if (!activeRoles.contains(role)) {
+	    activeRoles.add(role);
+	}
+	this.showActiveNodes();
     }
 }
