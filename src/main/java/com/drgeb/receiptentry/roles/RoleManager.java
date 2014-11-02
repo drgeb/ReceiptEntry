@@ -5,10 +5,16 @@ import javafx.scene.*;
 
 import java.util.*;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.drgeb.receiptentry.App;
+
 public class RoleManager {
     private final Map<Node, List<Role>> nodeRoles = new HashMap<>();
     private ObservableList<Role> activeRoles;
-
+    private static Logger logger = LogManager.getLogger(RoleManager.class);
+    
     public final ListChangeListener<Role> ACTIVE_ROLE_LISTENER = new ListChangeListener<Role>() {
 	@Override
 	public void onChanged(Change<? extends Role> c) {
@@ -30,7 +36,7 @@ public class RoleManager {
 
     public void showActiveNodes() {
 	for (Node node : nodeRoles.keySet()) {
-	    System.out.println("for node: " + node + " isActive(node)= "
+	    logger.debug("for node: " + node + " isActive(node)= "
 		    + isActive(node));
 	    node.setVisible(isActive(node));
 	}
@@ -65,7 +71,7 @@ public class RoleManager {
 	    List<Role> roles = new ArrayList<>();
 	    for (Object object : (ObservableList) userData) {
 		if (object instanceof Role) {
-		    System.out.println("Adding Role: " + object.toString()
+		    logger.info("Adding Role: " + object.toString()
 			    + " to Node: " + node.toString());
 		    roles.add((Role) object);
 		}

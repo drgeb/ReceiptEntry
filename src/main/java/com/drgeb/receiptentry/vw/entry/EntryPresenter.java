@@ -6,11 +6,20 @@ package com.drgeb.receiptentry.vw.entry;
  * 
  **/
 import java.net.URL;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.HashMap;
-import java.util.Properties;
 import java.util.ResourceBundle;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import javax.inject.Inject;
 
@@ -19,22 +28,7 @@ import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.vw.receipttable.ReceiptTablePresenter;
 
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextArea;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.StringProperty;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.TextField;
-import javafx.stage.Stage;
+import org.springframework.context.annotation.Configuration;
 
 public class EntryPresenter implements Initializable {
     @FXML
@@ -63,10 +57,10 @@ public class EntryPresenter implements Initializable {
     TextField location;
 
     @FXML
-    ChoiceBox type;
+    ChoiceBox<String> paymentType;
 
     @FXML
-    ChoiceBox currency;
+    ChoiceBox<String> currency;
 
     @FXML
     TextArea notes;
@@ -85,7 +79,6 @@ public class EntryPresenter implements Initializable {
    
     @FXML
     Button importPDFButton;
-    
     
     private Stage stage;
     private ReceiptWO receiptWO;
@@ -108,10 +101,12 @@ public class EntryPresenter implements Initializable {
 	this.updateDate.setText(receipt.getUpdateDate().toString());
 	this.amount.setText(new Double(receipt.getAmount()).toString());
 	this.salesTax.setText(new Double(receipt.getSalesTax()).toString());
-	//TODO implement currency
-	String currency=receipt.getCurrency();
-	//TODO implement paymentTypeText
-	String paymentTypeText=receipt.getPaymentType();
+	//TODO implement currency & payment
+	String receiptCurrency=receipt.getCurrency();
+	String receiptPaymentType=receipt.getPaymentType();
+	//currency.getItems().addAll("Dog", "Cat", "Horse");
+	currency.getSelectionModel().select(receiptCurrency);
+	paymentType.getSelectionModel().select(receiptPaymentType);
 	this.location.setText(receipt.getLocation());
 	this.reimbursable.setSelected(receipt.getReimbursable());
 	this.paid.setSelected(receipt.getPaid());
@@ -121,14 +116,13 @@ public class EntryPresenter implements Initializable {
 	if(receiptWO.getReceipt().getState()==ReceiptState.ViewState){
 	    saveButton.setVisible(false); 
 	    importPDFButton.setVisible(false);
-	    
 	    //Make everything uneditable
 	    this.vendor.setEditable(false);
 	    this.date.setEditable(false);
 	    this.amount.setEditable(false);
 	    this.salesTax.setEditable(false);
-	    //TODO this.currency
-	    //TODO this.paymentType
+	    this.currency.setDisable(true);
+	    this.paymentType.setDisable(true);
 	    this.location.setEditable(false);
 	    this.reimbursable.setDisable(true);
 	    this.paid.setDisable(true);
@@ -136,15 +130,8 @@ public class EntryPresenter implements Initializable {
 	    this.notes.setEditable(false);
 	} else
 	{
-	    //Make everythign editable
-	    
 	    saveButton.setVisible(true);
 	}
-	//setup currecy list
-	//Properties currency = new Properties();
-	//for (Property p in currency) {
-	    
-	//}
     }
 
     @FXML
@@ -152,17 +139,16 @@ public class EntryPresenter implements Initializable {
 	Receipt receipt = receiptWO.getReceipt();
 	receipt.setVendor(vendor.getText());
 	//TODO Need to implement setting Author part of General Settings
+	//TODO The Author will be otained from User Login information
 	String author="Gerald E. Bennett";
 	receipt.setAuthor(author);
 	receipt.setPurchaseDate(date.getValue());
 	receipt.setUpdateDate(LocalDateTime.now());
 	receipt.setAmount(Double.valueOf(amount.getText()).doubleValue());
 	receipt.setSalesTax(Double.valueOf(salesTax.getText()).doubleValue());
-	//TODO implement getting currencyText from currency ChoiceBox
-	String currencyText="";
+	String currencyText=(String) currency.getValue();
 	receipt.setCurrency(currencyText);
-	//TODO implement getting paymentTypeText from currency ChoiceBox
-	String paymentTypeText="";	
+	String paymentTypeText=(String) paymentType.getValue();	
 	receipt.setPaymentType(paymentTypeText);
 	receipt.setLocation(location.getText());
 	receipt.setReimbursable(reimbursable.selectedProperty().get());

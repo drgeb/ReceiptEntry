@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
 import com.airhacks.afterburner.injection.Injector;
 import com.drgeb.receiptentry.roles.Role;
 import com.drgeb.receiptentry.roles.RoleManager;
-import com.drgeb.receiptentry.vw.receipttable.Receipttable;
+import com.drgeb.receiptentry.vw.receipttable.ReceiptTableView;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -36,8 +36,6 @@ public class App extends Application {
 	// List<String> parameters = this.getParameters().getRaw();
 	// String [] args= parameters.toArray(new String[parameters.size()]);
 
-	Receipttable appView = new Receipttable();
-
 	// Manually set the Role of a User
 	// Ones Users are added to application we can change this to be set from
 	// the users profile.
@@ -54,6 +52,7 @@ public class App extends Application {
          */
         Injector.setConfigurationSource(customProperties::get);
         
+	ReceiptTableView appView = new ReceiptTableView();
 	Scene scene = new Scene(appView.getView());
 	stage.setTitle("GINGERLICEUOS RECEIPT ENTRY");
 	final String uri = getClass().getResource("app.css").toExternalForm();

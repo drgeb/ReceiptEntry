@@ -32,47 +32,47 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="Receipt ID">
+                        <Label text="%Label.ReceiptID">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Vendor" GridPane.rowIndex="1">
+                        <Label text="%Label.Vendor" GridPane.rowIndex="1">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Date" GridPane.rowIndex="2">
+                        <Label text="%Label.Date" GridPane.rowIndex="2">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Amount" GridPane.rowIndex="3">
+                        <Label text="%Label.Amount" GridPane.rowIndex="3">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Payment Type" GridPane.rowIndex="6">
+                        <Label text="%Label.PaymentType" GridPane.rowIndex="6">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Location" GridPane.rowIndex="7">
+                        <Label text="%Label.Location" GridPane.rowIndex="7">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Currency" GridPane.rowIndex="5">
+                        <Label text="%Label.Currency" GridPane.rowIndex="5">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Sales Tax" GridPane.rowIndex="4">
+                        <Label text="%Label.SalesTax" GridPane.rowIndex="4">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
                         </Label>
-                        <Label text="Last Modified:" GridPane.rowIndex="11">
+                        <Label text="%Label.LastModified" GridPane.rowIndex="11">
                            <padding>
                               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                            </padding>
@@ -109,7 +109,7 @@
                         </AnchorPane>
                         <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="6">
                            <children>
-                              <ChoiceBox fx:id="type" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <ChoiceBox fx:id="paymentType" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                            </children>
                         </AnchorPane>
                         <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="7">
@@ -119,7 +119,7 @@
                         </AnchorPane>
                         <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="8">
                            <children>
-                              <CheckBox fx:id="reimbursable" mnemonicParsing="false" text="Reimbursable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <CheckBox fx:id="reimbursable" mnemonicParsing="false" text="%CheckBox.Reimbursable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <padding>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
@@ -128,7 +128,7 @@
                         </AnchorPane>
                         <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="9">
                            <children>
-                              <CheckBox fx:id="paid" mnemonicParsing="false" text="Paid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <CheckBox fx:id="paid" mnemonicParsing="false" text="%CheckBox.Paid" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <padding>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
@@ -137,7 +137,7 @@
                         </AnchorPane>
                         <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="10">
                            <children>
-                              <CheckBox fx:id="reconciled" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Reconciled" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <CheckBox fx:id="reconciled" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%CheckBox.Reconciled" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <padding>
                                     <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                                  </padding>
@@ -155,7 +155,7 @@
             </AnchorPane>
             <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
                <children>
-                  <Label text="Notes" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Label fx:id="notesLabel" text="%Label.Notes" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <padding>
                         <Insets bottom="5.0" left="25.0" right="5.0" top="5.0" />
                      </padding>
@@ -169,7 +169,7 @@
             </AnchorPane>
             <FlowPane fx:id="importPDF">
                <children>
-                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveAction" text="Save">
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveAction" text="%Button.Save">
                      <padding>
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </padding>
@@ -177,7 +177,7 @@
                         <Insets />
                      </FlowPane.margin>
                   </Button>
-                  <Button fx:id="close" cancelButton="true" mnemonicParsing="false" onAction="#closeAction" text="Close">
+                  <Button fx:id="close" cancelButton="true" mnemonicParsing="false" onAction="#closeAction" text="%Button.Close">
                      <padding>
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </padding>
@@ -185,7 +185,7 @@
                         <Insets left="10.0" right="10.0" />
                      </FlowPane.margin>
                   </Button>
-                  <Button fx:id="importPDFButton" mnemonicParsing="false" onAction="#importPDFAction" text="Import PDF">
+                  <Button fx:id="importPDFButton" mnemonicParsing="false" onAction="#importPDFAction" text="%Button.ImportPDF">
                      <padding>
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </padding>

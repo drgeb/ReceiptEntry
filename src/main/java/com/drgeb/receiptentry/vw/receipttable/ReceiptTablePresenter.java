@@ -110,8 +110,10 @@ public class ReceiptTablePresenter extends Control implements Initializable {
     @Inject
     private RoleManager roleManager;
 
+    private String label_Records;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+	label_Records=resources.getString("Label.Records");
 	this.selectedReceipt = new SimpleObjectProperty<>();
 	this.receipts = FXCollections.observableArrayList();
 	new SimpleBooleanProperty();
@@ -251,7 +253,7 @@ public class ReceiptTablePresenter extends Control implements Initializable {
 	this.clearAll();
 	List<ReceiptWO> all = service.all();
 	if (recordLabel != null)
-	    recordLabel.setText("#: " + all.size());
+	    recordLabel.setText(label_Records +" "+ all.size());
 	for (ReceiptWO receipt : all) {
 	    add(receipt);
 	}
@@ -322,6 +324,7 @@ public class ReceiptTablePresenter extends Control implements Initializable {
 	} else {
 	    roleManager.remove(Role.Administrator);
 	}
+	buttonEnablement();
     }
 
     @FXML
@@ -331,6 +334,7 @@ public class ReceiptTablePresenter extends Control implements Initializable {
 	} else {
 	    roleManager.remove(Role.Editor);
 	}
+	buttonEnablement();
     }
 
     @FXML
@@ -340,6 +344,7 @@ public class ReceiptTablePresenter extends Control implements Initializable {
 	} else {
 	    roleManager.remove(Role.Viewer);
 	}
+	buttonEnablement();
     }
 
 }

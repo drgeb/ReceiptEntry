@@ -14,7 +14,7 @@ public class ReceiptWOContextWrapper implements ReceiptTransitions {
 
     public ReceiptWOContextWrapper(ReceiptWO owner) {
 	receiptContext = new ReceiptWOContext(owner);
-	receiptContext.setDebugFlag(true);
+	receiptContext.setDebugFlag(false);
 	synchronizeState(owner);
     }
 

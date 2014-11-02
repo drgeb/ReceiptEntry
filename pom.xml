@@ -79,14 +79,44 @@
 			<version>2.0-rc1</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.0-rc1</version>
+		</dependency>
+		<dependency>
 			<groupId>org.loadui</groupId>
 			<artifactId>testFx</artifactId>
 			<version>3.1.2</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -100,6 +130,7 @@
 					</archive>
 				</configuration>
 			</plugin>
+<!-- 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>smc-maven-plugin</artifactId>
@@ -107,97 +138,99 @@
 				<configuration>
 					<verbose>true</verbose>
 					<glevel>0</glevel>
-					[0, 1 or 2. Defaults to 0 and can be omitted]
+					 -->
+					<!-- [0, 1 or 2. Defaults to 0 and can be omitted] -->
+<!-- 
 				</configuration>
 			</plugin>
+			  -->
 			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
+			  <artifactId>maven-resources-plugin</artifactId>
 				<version>2.7</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
 				<executions>
 					<execution>
-						<id>copy-legal-info</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/license/META-INF</outputDirectory>
-							<resources>
-								<resource>
-									<directory>${basedir}</directory>
-									<filtering>false</filtering>
-									<includes>
-										<include>COPYRIGHT.txt</include>
-										<include>LICENSE.txt</include>
-										<include>NOTICE.txt</include>
-										<include>license/*.txt</include>
-									</includes>
-								</resource>
-							</resources>
-						</configuration>
+					  <id>copy-legal-info</id>
+					  <phase>validate</phase>
+					  <goals>
+					    <goal>copy-resources</goal>
+					  </goals>
+					  <configuration>
+					    <outputDirectory>${basedir}/target/license/META-INF</outputDirectory>
+					    <resources>
+					      <resource>
+						<directory>${basedir}</directory>
+						<filtering>false</filtering>
+						<includes>
+						  <include>COPYRIGHT.txt</include>
+						  <include>LICENSE.txt</include>
+						  <include>NOTICE.txt</include>
+						  <include>license/*.txt</include>
+						</includes>
+					      </resource>
+					    </resources>
+					  </configuration>
 					</execution>
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>us.bryon</groupId>
-				<artifactId>graphviz-maven-plugin</artifactId>
-				<version>1.0</version>
-				<configuration>
-					<basedir>./doc</basedir>
-					<destdir>./doc</destdir>
-					<includes>**/*.dot</includes>
-					<layout>dot</layout>
-					<output>png</output>
-				</configuration>
+			  <groupId>us.bryon</groupId>
+			  <artifactId>graphviz-maven-plugin</artifactId>
+			  <version>1.0</version>
+			  <configuration>
+			    <basedir>./doc</basedir>
+			    <destdir>./doc</destdir>
+			    <includes>**/*.dot</includes>
+			    <layout>dot</layout>
+			    <output>png</output>
+			  </configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.3</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-						<configuration>
-							<artifactSet>
-								<excludes>
-									<exclude>junit:junit</exclude>
-								</excludes>
-							</artifactSet>
-						</configuration>
-					</execution>
-				</executions>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-shade-plugin</artifactId>
+			  <version>2.3</version>
+			  <executions>
+			    <execution>
+			      <phase>package</phase>
+			      <goals>
+				<goal>shade</goal>
+			      </goals>
+			      <configuration>
+				<artifactSet>
+				  <excludes>
+				    <exclude>junit:junit</exclude>
+				  </excludes>
+				</artifactSet>
+			      </configuration>
+			    </execution>
+			  </executions>
 			</plugin>
 
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.3</version>
-				<executions>
-					<execution>
-						<id>receiptentry</id>
-						<phase>install</phase>
-						<goals>
-							<goal>exec</goal>
-						</goals>
-						<configuration>
-							<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/bin/java</executable>
-							<mainClass>com.light.control.App</mainClass>
-							<arguments>
-								<argument>-Djavafx.verbose=true</argument>
-								<argument>-cp</argument>
-								<argument>./target/receiptentry.jar</argument>
-								<argument>com.light.control.App</argument>
-							</arguments>
-						</configuration>
-					</execution>
-				</executions>
-
+			  <groupId>org.codehaus.mojo</groupId>
+			  <artifactId>exec-maven-plugin</artifactId>
+			  <version>1.3.2</version>
+			  <executions>
+			    <execution>
+			      <id>receiptentry</id>
+			      <phase>install</phase>
+			      <goals>
+				<goal>java</goal>
+			      </goals>
+			      <configuration>
+				<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/bin/java</executable>
+				<mainClass>com.drgeb.receiptentry.App</mainClass>
+				<arguments>
+				  <argument>-Djavafx.verbose=true</argument>
+				  <argument>-cp</argument>
+				  <argument>./target/receiptentry.jar</argument>
+				  <argument>com.drgeb.receiptentry.App</argument>
+				</arguments>
+			      </configuration>
+			    </execution>
+			  </executions>				
 			</plugin>
 
 			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>smc-maven-plugin</artifactId> 
@@ -206,77 +239,78 @@
 				</configuration> </plugin> -->
 
 			<plugin>
-				<groupId>com.salesforce.smc</groupId>
-				<artifactId>smc-plugin</artifactId>
-				<version>6.1.0-SNAPSHOT</version>
-				<executions>
-					<execution>
-						<id>xgenerate</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<targetDirectory>target/generated-sources/sm</targetDirectory>
-							<docDirectory>doc</docDirectory>
-							<table>true</table>
-							<graph>true</graph>
-							<graphLevel>2</graphLevel>
-							<verbose>true</verbose>
-							<serialize>true</serialize>
-							<sync>true</sync>
-						</configuration>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>net.sf.sm.parser</groupId>
-						<artifactId>SmcParser</artifactId>
-						<version>6.4.0</version>
-					</dependency>
-					<dependency>
-						<groupId>net.sf.sm.statemap</groupId>
-						<artifactId>statemap</artifactId>
-						<version>6.4.0</version>
-					</dependency>
-					<dependency>
-						<groupId>net.sf.sm.generator</groupId>
-						<artifactId>SmcGenerator</artifactId>
-						<version>6.4.0</version>
-					</dependency>
-				</dependencies>
+			  <groupId>com.salesforce.smc</groupId>
+			  <artifactId>smc-plugin</artifactId>
+			  <version>6.1.0-SNAPSHOT</version>
+			  <executions>
+			    <execution>
+			      <id>generate</id>
+			      <phase>generate-sources</phase>
+			      <goals>
+				<goal>generate</goal>
+			      </goals>
+			      <configuration>
+				<targetDirectory>target/generated-sources/sm</targetDirectory>
+				<docDirectory>doc</docDirectory>
+				<table>true</table>
+				<graph>true</graph>
+				<graphLevel>2</graphLevel>
+				<verbose>true</verbose>
+				<serialize>true</serialize>
+				<sync>true</sync>
+			      </configuration>
+			    </execution>
+			  </executions>
+			  <dependencies>
+			    <dependency>
+			      <groupId>net.sf.sm.parser</groupId>
+			      <artifactId>SmcParser</artifactId>
+			      <version>6.4.0</version>
+			    </dependency>
+			    <dependency>
+			      <groupId>net.sf.sm.statemap</groupId>
+			      <artifactId>statemap</artifactId>
+			      <version>6.4.0</version>
+			    </dependency>
+			    <dependency>
+			      <groupId>net.sf.sm.generator</groupId>
+			      <artifactId>SmcGenerator</artifactId>
+			      <version>6.4.0</version>
+			    </dependency>
+			  </dependencies>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>copy-dependencies</id>
-						<phase>package</phase>
-						<goals>
-							<goal>copy-dependencies</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
-							<overWriteReleases>false</overWriteReleases>
-							<overWriteSnapshots>false</overWriteSnapshots>
-							<overWriteIfNewer>true</overWriteIfNewer>
-						</configuration>
-					</execution>
-				</executions>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-dependency-plugin</artifactId>
+			  <executions>
+			    <execution>
+			      <id>copy-dependencies</id>
+			      <phase>package</phase>
+			      <goals>
+				<goal>copy-dependencies</goal>
+			      </goals>
+			      <configuration>
+				<outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
+				<overWriteReleases>false</overWriteReleases>
+				<overWriteSnapshots>false</overWriteSnapshots>
+				<overWriteIfNewer>true</overWriteIfNewer>
+			      </configuration>
+			    </execution>
+			  </executions>
 			</plugin>
-		</plugins>
-		<resources>
+		      </plugins>
+		      <resources>
 			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.fxml</include>
-					<include>**/*.css</include>
-					<include>**/*.sm</include>
-				</includes>
+			  <directory>src/main/java</directory>
+			  <includes>
+			    <include>**/*.properties</include>
+			    <include>**/*.fxml</include>
+			    <include>**/*.css</include>
+			    <include>**/*.sm</include>
+			  </includes>
 			</resource>
 			<resource>
-				<directory>src/main/resources</directory>
+			  <directory>src/main/resources</directory>
 				<includes>
 					<include>**/*.xml</include>
 				</includes>
@@ -309,28 +343,13 @@
 					<windowtitle>${project.name} ${project.version} API</windowtitle>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>smc-maven-plugin</artifactId>
-				<version>1.0-alpha-1</version>
-				<configuration>
-					<verbose>true</verbose>
-					<glevel>0</glevel>
-					[0, 1 or 2. Defaults to 0 and can be omitted]
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>us.bryon</groupId>
-				<artifactId>graphviz-maven-plugin</artifactId>
-				<version>1.0</version>
-				<configuration>
-					<basedir>./doc/</basedir>
-					<destdir>./doc/</destdir>
-					<includes>**/*.dot</includes>
-					<layout>dot</layout>
-					<output>png</output>
-				</configuration>
-			</plugin>
+			<!-- <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>smc-maven-plugin</artifactId> 
+				<version>1.0-alpha-1</version> <configuration> <verbose>true</verbose> <glevel>0</glevel> 
+				[0, 1 or 2. Defaults to 0 and can be omitted] </configuration> </plugin> 
+				<plugin> <groupId>us.bryon</groupId> <artifactId>graphviz-maven-plugin</artifactId> 
+				<version>1.0</version> <configuration> <basedir>./doc/</basedir> <destdir>./doc/</destdir> 
+				<includes>**/*.dot</includes> <layout>dot</layout> <output>png</output> </configuration> 
+				</plugin> -->
 		</plugins>
 	</reporting>
 </project>
