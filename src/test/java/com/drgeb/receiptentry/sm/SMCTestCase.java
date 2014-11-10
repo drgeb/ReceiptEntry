@@ -1,8 +1,8 @@
 package com.drgeb.receiptentry.sm;
 
-import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
-
 import junit.framework.TestCase;
+
+import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
 
 /**
  * A test case for the state transitions of the Receipt object.

@@ -7,13 +7,6 @@ package com.drgeb.receiptentry.sm.impl;
  **/
 import javax.inject.Inject;
 
-import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
-import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
-import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
-import com.drgeb.receiptentry.sm.action.EditReceiptAction;
-import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
-import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
-import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
 import com.drgeb.receiptentry.sm.ReceiptActions;
@@ -21,6 +14,13 @@ import com.drgeb.receiptentry.sm.ReceiptConditions;
 import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptTransitions;
 import com.drgeb.receiptentry.sm.ReceiptWO;
+import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
+import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
+import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
+import com.drgeb.receiptentry.sm.action.EditReceiptAction;
+import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
+import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
+import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
 
 public class ReceiptWOImpl implements ReceiptWO {
     private Receipt receipt;

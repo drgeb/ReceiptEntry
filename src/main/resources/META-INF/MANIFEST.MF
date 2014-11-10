@@ -9,7 +9,7 @@ Specification-Timestamp: 2013-07-24 21:58:10+0200
 Build-Jdk: 1.7.0_25
 Implementation-Timestamp: 1374695891398
 Specification-Version: 1.9.8
-Main-Class: com.test.webtest.WebTest
+Main-Class: com.drgeb.receiptentry.ReceiptEntryApp
 Archiver-Version: Plexus Archiver
 Appcast-Version: 2.0.1322
 Appcast-Url: http://jfx4ee.org/WebTest/appcast/appcast.xml

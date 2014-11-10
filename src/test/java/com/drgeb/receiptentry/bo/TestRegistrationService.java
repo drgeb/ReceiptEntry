@@ -8,8 +8,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import com.drgeb.receiptentry.bo.Receipt;
-
 /**
  *
  * @author adam-bien.com

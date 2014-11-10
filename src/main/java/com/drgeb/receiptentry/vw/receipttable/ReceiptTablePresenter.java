@@ -11,8 +11,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import javax.inject.Inject;
-
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -29,6 +27,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckMenuItem;
 import javafx.scene.control.Control;
 import javafx.scene.control.Label;
 import javafx.scene.control.SelectionMode;
@@ -39,18 +38,21 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.stage.WindowEvent;
-import javafx.scene.control.CheckMenuItem;
 
-import com.drgeb.receiptentry.roles.Role;
-import com.drgeb.receiptentry.roles.RoleManager;
-import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
+import javax.inject.Inject;
+
+
+import com.drgeb.login.client.vw.PresenterImpl;
 //import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.bo.registrations.boundary.RegistrationService;
+import com.drgeb.receiptentry.roles.Role;
+import com.drgeb.receiptentry.roles.RoleManager;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOFactory;
+import com.drgeb.receiptentry.sm.impl.ReceiptWOFactoryImpl;
 import com.drgeb.receiptentry.vw.entry.EntryView;
 
-public class ReceiptTablePresenter extends Control implements Initializable {
+public class ReceiptTablePresenter extends PresenterImpl implements Initializable {
     @FXML
     Button create;
 

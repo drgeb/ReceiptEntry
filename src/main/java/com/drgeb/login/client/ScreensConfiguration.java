@@ -27,6 +27,7 @@
 
 package com.drgeb.login.client;
 
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -36,6 +37,7 @@ import javafx.event.EventType;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.stage.WindowEvent;
 
 import org.slf4j.Logger;
@@ -46,39 +48,43 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
 
 import com.airhacks.afterburner.injection.Injector;
 import com.airhacks.afterburner.views.FXMLView;
 import com.drgeb.login.client.vw.Presenter;
+import com.drgeb.login.client.vw.ScreensConfig;
 import com.drgeb.login.client.vw.addcustomer.AddCustomerView;
 import com.drgeb.login.client.vw.error.ErrorView;
 import com.drgeb.login.client.vw.login.LoginView;
 import com.drgeb.receiptentry.roles.Role;
 import com.drgeb.receiptentry.roles.RoleManager;
+import com.drgeb.receiptentry.sm.ReceiptWO;
+import com.drgeb.receiptentry.vw.entry.EntryView;
+import com.drgeb.receiptentry.vw.receipttable.ReceiptTablePresenter;
 import com.drgeb.receiptentry.vw.receipttable.ReceiptTableView;
 
 @Configuration
 @Lazy
-public class ScreensConfiguration {
+public class ScreensConfiguration implements ScreensConfig {
 	private Stage primaryStage;
+	public final static String DEFAULT_ENDING = "view";
 
 	@Autowired
 	@Qualifier("authenticationManager")
 	private AuthenticationManager authenticationManager;
 	private RoleManager roleManager = new RoleManager();
 	private Logger logger = LoggerFactory.getLogger(ScreensConfiguration.class);
-	
+
 	public AuthenticationManager getAuthenticationManager() {
 		return authenticationManager;
 	}
 
-	public void setAuthenticationManager(AuthenticationManager authenticationManager) {
+	public void setAuthenticationManager(
+			AuthenticationManager authenticationManager) {
 		this.authenticationManager = authenticationManager;
 	}
 
-	public void setPrimaryStage(Stage primaryStage) {
+	public void setStage(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 	}
 
@@ -90,14 +96,21 @@ public class ScreensConfiguration {
 	private void showDialog(FXMLView view) {
 		Scene scene = new Scene(view.getView());
 		Presenter presenter = (Presenter) view.getPresenter();
-		//Initialization should be Autowired in!!
+		// Initialization should be Autowired in!!
 		presenter.setStage(primaryStage);
 		presenter.setScreenConfiguation(this);
 		presenter.setAuthenticationManager(authenticationManager);
-		// final String uri =
-		// getClass().getResource("login.css").toExternalForm();
-		// scene.getStylesheets().add(uri);
 
+		//Configure css file
+		Class c = view.getClass();
+		String clazz = view.getClass().getSimpleName().toLowerCase();
+		String cssname = stripEnding(clazz) +".css";
+
+		URL u = c.getResource(cssname);
+		if (u != null) {
+			final String uri = u.toExternalForm();
+			scene.getStylesheets().add(uri);
+		}
 		primaryStage.setScene(scene);
 
 		// center stage on screen
@@ -132,7 +145,7 @@ public class ScreensConfiguration {
 		showDialog(loginView);
 	}
 
-	public void receiptEntryDialog() {
+	public void receiptTableDialog() {
 		// TODO Auto-generated method stub
 		logger.info("Starting Application");
 		// List<String> parameters = this.getParameters().getRaw();
@@ -153,14 +166,26 @@ public class ScreensConfiguration {
 		 * Object as result can be used as source.
 		 */
 		Injector.setConfigurationSource(customProperties::get);
-
-		ReceiptTableView appView = new ReceiptTableView();
-		Scene scene = new Scene(appView.getView());
 		primaryStage.setTitle("GINGERLICEUOS RECEIPT ENTRY");
-		//final String uri = getClass().getResource("app.css").toExternalForm();
-		//scene.getStylesheets().add(uri);
-		primaryStage.setScene(scene);
-		primaryStage.show();
+		ReceiptTableView receiptTableView = new ReceiptTableView();
+		showDialog(receiptTableView);
+	}
+	
+	public void entryDialog() {
+		EntryView entryView = new EntryView();
+		showDialog(entryView);
+	}
+	
+	static String stripEnding(String clazz) {
+		if (!clazz.endsWith(DEFAULT_ENDING)) {
+			return clazz;
+		}
+		int viewIndex = clazz.lastIndexOf(DEFAULT_ENDING);
+		return clazz.substring(0, viewIndex);
 	}
 
+	@Override
+	public Stage getStage() {
+		return this.primaryStage;
+	}
 }

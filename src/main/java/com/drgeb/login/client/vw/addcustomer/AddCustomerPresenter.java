@@ -25,34 +25,42 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client.vw.addcustomer;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class AddCustomerController implements DialogController {
+import com.drgeb.login.client.bo.CustomerModel;
+import com.drgeb.login.client.vw.PresenterImpl;
+
+public class AddCustomerPresenter extends PresenterImpl {
     @Autowired
     private CustomerModel model;
-    private FXMLDialog dialog;
-
-    public void setDialog(FXMLDialog dialog) {
-        this.dialog = dialog;
-    }
 
     @FXML
     TextField firstName;
+    
     @FXML
     TextField lastName;
 
     @FXML
     public void add() {
         model.addCustomer(firstName.getText(), lastName.getText());
-        dialog.close();
+        getStage().close();
     }
 
     @FXML
     public void cancel() {
-        dialog.close();
+        getStage().close();
     }
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		super.initialize(arg0,arg1);
+	}
 }

@@ -27,13 +27,15 @@
 
 package com.drgeb.login.client.bo;
 
+import java.util.Date;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.client.RestTemplate;
-import com.drgeb.login.server.Customer;
 
-import java.util.Date;
+import com.drgeb.login.server.Customer;
 
 public class CustomerModel {
     private ObservableList<Customer> customers = FXCollections.observableArrayList();

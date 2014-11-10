@@ -1,14 +1,5 @@
 package com.drgeb.receiptentry.sm.impl;
 
-import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
-import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
-import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
-import com.drgeb.receiptentry.sm.action.EditReceiptAction;
-import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
-import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
-import com.drgeb.receiptentry.sm.action.SyncStateAction;
-import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
-import com.drgeb.receiptentry.bo.Receipt;
 /**
  *
  * @author Dr. Gerald E. Bennett
@@ -17,6 +8,14 @@ import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptActions;
 import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWO;
+import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
+import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
+import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
+import com.drgeb.receiptentry.sm.action.EditReceiptAction;
+import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
+import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
+import com.drgeb.receiptentry.sm.action.SyncStateAction;
+import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
 
 public class ReceiptActionsImpl implements ReceiptActions {
     private CreateReceiptAction createReceiptAction;

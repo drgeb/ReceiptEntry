@@ -7,20 +7,19 @@ package com.drgeb.receiptentry.vw.receipttable;
 
  */
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javafx.beans.NamedArg;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.util.Callback;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.sm.ReceiptWOContext;
 import com.sun.javafx.property.PropertyReference;
-import com.sun.javafx.scene.control.Logging;
 
 public class ReceiptPropertyValueFactory<S, T> implements
 	Callback<CellDataFeatures<S, T>, ObservableValue<T>> {

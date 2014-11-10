@@ -27,6 +27,10 @@
 
 package com.drgeb.login.client;
 
+import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
@@ -36,10 +40,6 @@ import org.springframework.http.converter.json.MappingJacksonHttpMessageConverte
 import org.springframework.web.client.RestTemplate;
 
 import com.drgeb.login.client.bo.CustomerModel;
-
-import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
 
 @Configuration
 @Import(ScreensConfiguration.class)

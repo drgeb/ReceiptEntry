@@ -3,7 +3,6 @@
 
     <persistence-unit name="receiptentry" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <class>com.drgeb.receiptentry.bo.Mio</class>
         <properties>
             <property name="eclipselink.logging.level" value="FINE"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:derby:./mioentryDB;create=true"/>

@@ -25,31 +25,45 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login.client;
+package com.drgeb.receiptentry;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Modality;
+import javafx.application.Application;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
-import javafx.stage.Window;
-import javafx.util.Callback;
 
-import java.io.IOException;
-import java.net.URL;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.airhacks.afterburner.views.FXMLView;
+import com.airhacks.afterburner.injection.Injector;
+import com.drgeb.login.client.CustomerAppConfiguration;
+import com.drgeb.login.client.ScreensConfiguration;
 
-public class FXMLDialog extends Stage {
-	public FXMLDialog(FXMLView view, Window owner) {
-		this(view, owner, StageStyle.DECORATED);
+@SuppressWarnings("restriction")
+public class ReceiptEntryApp extends Application {
+	public static void main(String[] args) {
+		launch(args);
 	}
 
-	public FXMLDialog(FXMLView view, Window owner, StageStyle style) {
-		super(style);
-		initOwner(owner);
-		initModality(Modality.WINDOW_MODAL);
-		//setScene(new Scene((Parent) view.load()));
+	private ApplicationContext applicationContext;
+
+	public void start(Stage stage) throws Exception {
+		applicationContext = new AnnotationConfigApplicationContext(
+				CustomerAppConfiguration.class);
+		ScreensConfiguration screens = applicationContext
+				.getBean(ScreensConfiguration.class);
+		printBeans();
+		screens.setStage(stage);
+		screens.loginDialog();
 	}
+
+	public void printBeans() {
+		String[] list = applicationContext.getBeanDefinitionNames();
+		for (String item : list) {
+			System.out.println(item);
+		}
+	}
+
+	public void stop() throws Exception {
+		Injector.forgetAll();
+	}
+
 }

@@ -8,3 +8,5 @@ dependency-reduced-pom.xml
 .classpath
 /.settings/
 .project
+
+.settings/org.eclipse.jdt.core.prefs

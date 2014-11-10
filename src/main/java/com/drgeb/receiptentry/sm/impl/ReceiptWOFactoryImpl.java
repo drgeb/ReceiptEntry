@@ -5,6 +5,14 @@ package com.drgeb.receiptentry.sm.impl;
  * @author Dr. Gerald E. Bennett
  * 
  **/
+import com.drgeb.receiptentry.bo.Receipt;
+import com.drgeb.receiptentry.sm.ReceiptActions;
+import com.drgeb.receiptentry.sm.ReceiptConditions;
+import com.drgeb.receiptentry.sm.ReceiptState;
+import com.drgeb.receiptentry.sm.ReceiptTransitions;
+import com.drgeb.receiptentry.sm.ReceiptWO;
+import com.drgeb.receiptentry.sm.ReceiptWOContextWrapper;
+import com.drgeb.receiptentry.sm.ReceiptWOFactory;
 import com.drgeb.receiptentry.sm.action.CloseReceiptAction;
 import com.drgeb.receiptentry.sm.action.CreateReceiptAction;
 import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
@@ -21,15 +29,6 @@ import com.drgeb.receiptentry.sm.action.impl.ExportReceiptActionImpl;
 import com.drgeb.receiptentry.sm.action.impl.SaveReceiptActionImpl;
 import com.drgeb.receiptentry.sm.action.impl.SyncStateActionImpl;
 import com.drgeb.receiptentry.sm.action.impl.ViewReceiptActionImpl;
-import com.drgeb.receiptentry.sm.impl.ReceiptActionsImpl;
-import com.drgeb.receiptentry.bo.Receipt;
-import com.drgeb.receiptentry.sm.ReceiptActions;
-import com.drgeb.receiptentry.sm.ReceiptConditions;
-import com.drgeb.receiptentry.sm.ReceiptState;
-import com.drgeb.receiptentry.sm.ReceiptTransitions;
-import com.drgeb.receiptentry.sm.ReceiptWO;
-import com.drgeb.receiptentry.sm.ReceiptWOContextWrapper;
-import com.drgeb.receiptentry.sm.ReceiptWOFactory;
 
 /**
  * Factory class for the <code>ReceiptWO</code> classes. It hides the details

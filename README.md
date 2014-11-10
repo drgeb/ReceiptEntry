@@ -22,8 +22,12 @@ Name of Presenter Class file is: <package_name>Presenter.java
 For example: 
 receipttable.fxml
 receipttable.css
-Receipttable.java		
-ReceipttablePresenter.java	
+ReceiptTableView.java		
+ReceiptTablePresenter.java	
+receipttable.properties
+receipttable_en_US.properties
+
+For internationalisation the two properties file in the list above where created and in the fxml file for each text property %KEY is used and the framework automatically hooks in the values for the corresponding keys used in the fxml file with the % symbol.
 
 So the structure of the code is such that all code for the presentation layer is contained in the foloder "vw" and for each FXML Stage one would have a subfolder with a specifc name. Now the control of the application I wanted to deligate and manage by a statemachine. I choose to investigate SMC and this code is contained in the folder named sm.
 

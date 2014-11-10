@@ -5,8 +5,6 @@ package com.drgeb.receiptentry.sm;
 * Following architectural pattern of Jason Zhicheng Li (jason@lizjason.com)
 */
 import com.drgeb.receiptentry.bo.Receipt;
-import com.drgeb.receiptentry.sm.ReceiptConditions;
-import com.drgeb.receiptentry.sm.ReceiptTransitions;
 
 /** 
  * The wrapper object ( or working object) to

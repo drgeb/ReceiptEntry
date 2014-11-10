@@ -6,7 +6,6 @@ package com.drgeb.login.client.vw.login;
 * 
 **/
 
-import java.util.function.Function;
 import com.airhacks.afterburner.views.FXMLView;
 
 public class LoginView extends FXMLView {

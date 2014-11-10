@@ -23,14 +23,13 @@ import javafx.stage.Stage;
 
 import javax.inject.Inject;
 
+import com.drgeb.login.client.vw.PresenterImpl;
 import com.drgeb.receiptentry.bo.Receipt;
 import com.drgeb.receiptentry.sm.ReceiptState;
 import com.drgeb.receiptentry.sm.ReceiptWO;
 import com.drgeb.receiptentry.vw.receipttable.ReceiptTablePresenter;
 
-import org.springframework.context.annotation.Configuration;
-
-public class EntryPresenter implements Initializable {
+public class EntryPresenter  extends PresenterImpl implements Initializable {
     @FXML
     TextField id;
 

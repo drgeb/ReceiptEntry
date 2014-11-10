@@ -69,7 +69,7 @@ public class LoginPresenter extends PresenterImpl {
 			return;
 		}
 		getStage().close();
-		screens.receiptEntryDialog();
+		screens.receiptTableDialog();
 	}
 
 	@FXML

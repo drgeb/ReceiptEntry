@@ -6,9 +6,7 @@ import com.drgeb.receiptentry.sm.action.DeleteReceiptAction;
 import com.drgeb.receiptentry.sm.action.EditReceiptAction;
 import com.drgeb.receiptentry.sm.action.ExportReceiptAction;
 import com.drgeb.receiptentry.sm.action.SaveReceiptAction;
-import com.drgeb.receiptentry.sm.action.SyncStateAction;
 import com.drgeb.receiptentry.sm.action.ViewReceiptAction;
-import com.drgeb.receiptentry.bo.Receipt;
 
 /**
  * All the actions for the order object state machine
