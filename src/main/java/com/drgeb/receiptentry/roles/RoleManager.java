@@ -1,19 +1,23 @@
 package com.drgeb.receiptentry.roles;
 
-import javafx.collections.*;
-import javafx.scene.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import com.drgeb.receiptentry.App;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class RoleManager {
     private final Map<Node, List<Role>> nodeRoles = new HashMap<>();
     private ObservableList<Role> activeRoles;
-    private static Logger logger = LogManager.getLogger(RoleManager.class);
+    private Logger logger= LoggerFactory.getLogger(RoleManager.class);
     
     public final ListChangeListener<Role> ACTIVE_ROLE_LISTENER = new ListChangeListener<Role>() {
 	@Override

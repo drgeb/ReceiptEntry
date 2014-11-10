@@ -6,5 +6,5 @@
 **.out
 dependency-reduced-pom.xml
 .classpath
-
+/.settings/
 .project

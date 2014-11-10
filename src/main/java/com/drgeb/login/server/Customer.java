@@ -25,19 +25,52 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.server;
 
-import javafx.fxml.FXML;
+import java.io.Serializable;
+import java.util.Date;
 
-public class ErrorController implements DialogController {
-    private FXMLDialog dialog;
+public class Customer implements Serializable {
 
-    public void setDialog(FXMLDialog dialog) {
-        this.dialog = dialog;
+    private static final long serialVersionUID = 1L;
+
+    private Integer id;
+
+    private Date signupDate;
+
+    private String firstName;
+
+    private String lastName;
+
+    public Integer getId() {
+	return id;
     }
 
-    @FXML
-    public void close() {
-        dialog.close();
+    public void setId(Integer id) {
+	this.id = id;
+    }
+
+    public String getFirstName() {
+	return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+	this.firstName = firstName;
+    }
+
+    public String getLastName() {
+	return lastName;
+    }
+
+    public void setLastName(String lastName) {
+	this.lastName = lastName;
+    }
+
+    public Date getSignupDate() {
+	return signupDate;
+    }
+
+    public void setSignupDate(Date signupDate) {
+	this.signupDate = signupDate;
     }
 }

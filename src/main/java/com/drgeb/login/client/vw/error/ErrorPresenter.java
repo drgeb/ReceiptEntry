@@ -25,40 +25,30 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client.vw.error;
 
-import javafx.collections.ObservableList;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class CustomerDataScreenController {
+import javafx.fxml.FXML;
 
-    @Autowired
-    private CustomerModel customerModel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-    private ScreensConfiguration screens;
+import com.drgeb.login.client.vw.PresenterImpl;
 
-    public CustomerDataScreenController() {
+public class ErrorPresenter extends PresenterImpl {
+	
+       
+    @FXML
+    public void close() {
+    	getStage().close();
     }
-
-    public CustomerDataScreenController(ScreensConfiguration screens) {
-        this.screens = screens;
-    }
-
-    public void showErrorDialog() {
-        screens.errorDialog().show();
-    }
-
-    public ObservableList<Customer> getCustomers() {
-        return customerModel.getCustomers();
-    }
-
-    @Secured({"ROLE_MANAGER", "ROLE_EMPLOYEE"})
-    public void addCustomer() {
-        screens.addCustomerDialog().show();
-    }
-
-    public void removeCustomer(Customer customer) {
-        customerModel.remove(customer);
-    }
+    
+	private Logger logger= LoggerFactory.getLogger(ErrorPresenter.class);
+	
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {;
+		logger.info("ErrorPresenter initialized.");
+	}
 }

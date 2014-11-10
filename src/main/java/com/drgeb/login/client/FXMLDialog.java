@@ -25,64 +25,31 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import javafx.stage.Window;
+import javafx.util.Callback;
 
-import java.io.Serializable;
-import java.util.Date;
+import java.io.IOException;
+import java.net.URL;
 
-@Entity
-public class Customer implements Serializable {
+import com.airhacks.afterburner.views.FXMLView;
 
-    private static final long serialVersionUID = 1L;
+public class FXMLDialog extends Stage {
+	public FXMLDialog(FXMLView view, Window owner) {
+		this(view, owner, StageStyle.DECORATED);
+	}
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-
-    @NotNull
-    private Date signupDate;
-
-    @NotNull
-    private String firstName;
-
-    @NotNull
-    private String lastName;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public Date getSignupDate() {
-        return signupDate;
-    }
-
-    public void setSignupDate(Date signupDate) {
-        this.signupDate = signupDate;
-    }
+	public FXMLDialog(FXMLView view, Window owner, StageStyle style) {
+		super(style);
+		initOwner(owner);
+		initModality(Modality.WINDOW_MODAL);
+		//setScene(new Scene((Parent) view.load()));
+	}
 }

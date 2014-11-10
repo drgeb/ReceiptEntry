@@ -25,64 +25,67 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client.vw.login;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.AuthenticationManager;
+import javafx.stage.Stage;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 
-public class LoginController implements DialogController {
-    @Autowired
-    private AuthenticationManager authenticationManager;
-    private ScreensConfiguration screens;
-    private FXMLDialog dialog;
+import com.drgeb.login.client.vw.PresenterImpl;
 
-    public void setDialog(FXMLDialog dialog) {
-        this.dialog = dialog;
-    }
+public class LoginPresenter extends PresenterImpl {
+	@FXML
+	Label header;
+	@FXML
+	TextField username;
+	@FXML
+	TextField password;
+	private Stage stage;
 
-    public LoginController(ScreensConfiguration screens) {
-        this.screens = screens;
-    }
+	private Logger logger= LoggerFactory.getLogger(LoginPresenter.class);
+	
+	@FXML
+	public void login() {
+		Authentication authToken = new UsernamePasswordAuthenticationToken(
+				username.getText(), password.getText());
+		try {
+			authToken = authenticationManager.authenticate(authToken);
+			SecurityContextHolder.getContext().setAuthentication(authToken);
+		} catch (AuthenticationException e) {
+			header.setText("Login failure, please try again:");
+			header.setTextFill(Color.DARKRED);
+			return;
+		}
+		getStage().close();
+		screens.receiptEntryDialog();
+	}
 
-    @FXML
-    Label header;
-    @FXML
-    TextField username;
-    @FXML
-    TextField password;
+	@FXML
+	public void employee() {
+		username.setText("employee");
+		password.setText("lol");
+	}
 
-    @FXML
-    public void login() {
-        Authentication authToken = new UsernamePasswordAuthenticationToken(username.getText(), password.getText());
-        try {
-            authToken = authenticationManager.authenticate(authToken);
-            SecurityContextHolder.getContext().setAuthentication(authToken);
-        } catch (AuthenticationException e) {
-            header.setText("Login failure, please try again:");
-            header.setTextFill(Color.DARKRED);
-            return;
-        }
-        dialog.close();
-        screens.showScreen(screens.customerDataScreen());
-    }
+	@FXML
+	public void manager() {
+		username.setText("manager");
+		password.setText("password");
+	}
 
-    @FXML
-    public void employee() {
-        username.setText("employee");
-        password.setText("lol");
-    }
-
-    @FXML
-    public void manager() {
-        username.setText("manager");
-        password.setText("password");
-    }
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		System.out.println("LoginPresenter initialized.");
+	}
 }

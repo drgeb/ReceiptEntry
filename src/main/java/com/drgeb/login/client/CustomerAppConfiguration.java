@@ -25,7 +25,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -35,8 +35,11 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
+import com.drgeb.login.client.bo.CustomerModel;
+
 import java.io.IOException;
 import java.util.Collections;
+import java.util.List;
 
 @Configuration
 @Import(ScreensConfiguration.class)
@@ -49,11 +52,23 @@ public class CustomerAppConfiguration {
         customerModel.loadData();
         return customerModel;
     }
-
+    
     @Bean
     RestTemplate restTemplate() {
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.setMessageConverters(Collections.<HttpMessageConverter<?>>singletonList(new MappingJacksonHttpMessageConverter()));
+        List<HttpMessageConverter<?>> converters =Collections.<HttpMessageConverter<?>>singletonList(new  MappingJacksonHttpMessageConverter());
+		restTemplate.setMessageConverters(converters );
         return restTemplate;
     }
+    
+    /*
+    @Bean
+    public RestTemplate restTemplate() {
+        RestTemplate restTemplate = new RestTemplate();
+        List<HttpMessageConverter<?>> converters = new ArrayList<HttpMessageConverter<?>>();
+        converters.add(new MappingJacksonHttpMessageConverter());
+        restTemplate.setMessageConverters(converters);
+        return restTemplate;
+    }
+    */
 }

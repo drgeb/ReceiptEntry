@@ -25,8 +25,38 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client;
 
-public interface DialogController {
-    void setDialog(FXMLDialog dialog);
+import java.util.Arrays;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+import org.springframework.beans.factory.ListableBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.security.authentication.AuthenticationManager;
+
+@SuppressWarnings("restriction")
+public class CustomerApp extends Application {
+	public static void main(String[] args) {
+		launch(args);
+	}
+	private ApplicationContext applicationContext;
+
+	public void start(Stage stage) throws Exception {
+		applicationContext = new AnnotationConfigApplicationContext(
+				CustomerAppConfiguration.class);
+		ScreensConfiguration screens = applicationContext
+				.getBean(ScreensConfiguration.class);
+		//AuthenticationManager authenticationManager = applicationContext
+		//		.getBean(AuthenticationManager.class);
+		//screens.setAuthenticationManager(authenticationManager);
+		//printBeans();
+		screens.setPrimaryStage(stage);
+		screens.loginDialog();
+	}
+	   public void printBeans() {
+	        System.out.println(Arrays.asList(applicationContext.getBeanDefinitionNames()));
+	    }
 }

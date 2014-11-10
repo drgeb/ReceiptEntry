@@ -25,12 +25,13 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login;
+package com.drgeb.login.client.bo;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.client.RestTemplate;
+import com.drgeb.login.server.Customer;
 
 import java.util.Date;
 
