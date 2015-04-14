@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 
 import org.springframework.security.authentication.AuthenticationManager;
 
-import com.drgeb.login.client.ScreensConfiguration;
+import com.drgeb.login.client.spring.ScreensConfiguration;
 
 public interface Presenter extends Initializable,ScreensConfig {
 

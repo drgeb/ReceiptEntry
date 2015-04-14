@@ -25,7 +25,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login.client;
+package com.drgeb.login.client.spring;
 
 import java.net.URL;
 import java.util.HashMap;
@@ -37,17 +37,19 @@ import javafx.event.EventType;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
 import javafx.stage.WindowEvent;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+
 import org.springframework.context.annotation.Lazy;
-import org.springframework.security.authentication.AuthenticationManager;
+
 
 import com.airhacks.afterburner.injection.Injector;
 import com.airhacks.afterburner.views.FXMLView;
@@ -58,9 +60,8 @@ import com.drgeb.login.client.vw.error.ErrorView;
 import com.drgeb.login.client.vw.login.LoginView;
 import com.drgeb.receiptentry.roles.Role;
 import com.drgeb.receiptentry.roles.RoleManager;
-import com.drgeb.receiptentry.sm.ReceiptWO;
+
 import com.drgeb.receiptentry.vw.entry.EntryView;
-import com.drgeb.receiptentry.vw.receipttable.ReceiptTablePresenter;
 import com.drgeb.receiptentry.vw.receipttable.ReceiptTableView;
 
 @Configuration

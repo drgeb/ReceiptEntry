@@ -27,6 +27,7 @@
 
 package com.drgeb.login.client.bo;
 
+import java.net.ConnectException;
 import java.util.Date;
 
 import javafx.collections.FXCollections;
@@ -52,8 +53,12 @@ public class CustomerModel {
 
     @SuppressWarnings("unchecked")
     public void loadData() {
+	try {
         Customer[] customers = restTemplate.getForObject("http://localhost:8080/crm/customers", Customer[].class);
         this.customers.setAll(customers);
+	} catch (Exception e) {
+	    System.err.println("Unable to connect");
+	}
     }
 
     @Secured("ROLE_MANAGER")

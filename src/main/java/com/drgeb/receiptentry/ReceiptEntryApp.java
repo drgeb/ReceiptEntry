@@ -27,6 +27,8 @@
 
 package com.drgeb.receiptentry;
 
+import java.net.ConnectException;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -34,8 +36,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.airhacks.afterburner.injection.Injector;
-import com.drgeb.login.client.CustomerAppConfiguration;
-import com.drgeb.login.client.ScreensConfiguration;
+import com.drgeb.login.client.spring.ReceiptEntrySpringAppConfiguration;
+import com.drgeb.login.client.spring.ScreensConfiguration;
 
 @SuppressWarnings("restriction")
 public class ReceiptEntryApp extends Application {
@@ -45,9 +47,9 @@ public class ReceiptEntryApp extends Application {
 
 	private ApplicationContext applicationContext;
 
-	public void start(Stage stage) throws Exception {
-		applicationContext = new AnnotationConfigApplicationContext(
-				CustomerAppConfiguration.class);
+	public void start(Stage stage) { 
+	    	applicationContext = new AnnotationConfigApplicationContext(
+	    		ReceiptEntrySpringAppConfiguration.class);
 		ScreensConfiguration screens = applicationContext
 				.getBean(ScreensConfiguration.class);
 		printBeans();
@@ -58,7 +60,7 @@ public class ReceiptEntryApp extends Application {
 	public void printBeans() {
 		String[] list = applicationContext.getBeanDefinitionNames();
 		for (String item : list) {
-			System.out.println(item);
+			System.out.println("Bean defined name:"+ item);
 		}
 	}
 

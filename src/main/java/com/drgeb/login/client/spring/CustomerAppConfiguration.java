@@ -25,7 +25,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.drgeb.login.client;
+package com.drgeb.login.client.spring;
 
 import java.io.IOException;
 import java.util.Collections;
@@ -33,8 +33,6 @@ import java.util.List;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
@@ -42,8 +40,6 @@ import org.springframework.web.client.RestTemplate;
 import com.drgeb.login.client.bo.CustomerModel;
 
 @Configuration
-@Import(ScreensConfiguration.class)
-@ImportResource("classpath:applicationContext-security.xml")
 public class CustomerAppConfiguration {
     @Bean
     CustomerModel customerModel() throws IOException {
